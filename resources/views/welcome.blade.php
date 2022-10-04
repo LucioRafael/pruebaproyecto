@@ -82,256 +82,451 @@
         <tbody>
             <tr>
                 <td>1.- Verifique que los operadores utilizen guantes limpios, sin daños</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>2.-Verifique que operadores tengan cubre-cabello limpios.</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>3.- Verifique que operadores con barba y/o bigote tengan cubre-bocas limpios.</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>4.- Verifique que operadores tengan batas limpias sin daños.</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>5.- Verifique que operadores tengan cubre zapatos limpios sin daños</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>6.- Verifique que las batas en los racks esten bien colgadas.</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>7.- Verifique que los cubre zapatos en uso esten enrollados y correctamente en su ubicacion.</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td>CAMBIO DE TAPETES DEL AREA DE PREPARACION DEL CUARTO LIMPIO</td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <th colspan ="32" class= "table-secondary"><p align="center">Diario</p></th>
             </tr>
             <tr>
                 <td><p align="center">7:00 AM</p></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
             <td><p align="center">11:00 AM</p></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+            <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
             <td><p align="center">3:00 PM</p></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+            <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <th colspan ="32" class= "table-secondary"><p align="center">Durante su verificacion diaria, reemplace cualquier material que se encuentre dañado.</p></th>
             </tr>
             <tr>
             <td><p align="center">VERIFICACION DEL ENTRENADOR</p></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+            <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
             <td><p align="center">VERIFICACION DEL AUDITOR</p></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td><td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+            <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
+                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
             </tr>
             <tr>
                 <td colspan="32"><p>Nota 1: Especifique la lectura de los controles (KCC'S) al momento de realizar su revision</p></td>
