@@ -25,3 +25,6 @@ Route::get('/welcome', function(){
     return view('registro');
   });
 
+  Route::get('/login', function(){
+    return view('login');
+  });
