@@ -34,15 +34,21 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h6>Usuario:</h6>
-        <input type="text" placeholder="Escribir usuario..." id="name">
-        <br><br>
-        <h6>Contraseña:</h6>
-        <input type="password" placeholder="Esribir contraseña..." id="password">
+      <form method="POST" action="{{route('inicia-sesion')}}">
+        @csrf
+        <div>
+          <label id="txt2" for="emailinput" class="form-label">Correo:</label>
+          <input type="email" name="emailinput"class="form-control" id="email" placeholder="Escribir Correo...">         
+        </div>
+        <div>
+          <label id="txt2" for="passwordinput" class="form-label">Contraseña:</label>
+          <input type="password" name="passwordinput"class="form-control" id="password" placeholder="Escribir Contraseña..."> 
+        </div><br>
+        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>       
+      </form>
       </div>
       <div class="modal-footer">
         <a type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</a>
-        <a type="button" href="welcome"class="btn btn-primary">Iniciar Sesion</a>
       </div>
     </div>
   </div>

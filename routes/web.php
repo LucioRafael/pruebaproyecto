@@ -13,18 +13,15 @@ use App\Http\Controllers\LoginController;
 |
 */
 //Rutas de navegacion
-Route::get('/', function () {
+Route::get('/reverso', function () {
   return view('reverso');
 });
 Route::get('/welcome', function(){
   return view('welcome');
 });
-Route::get('/registro', function(){
-  return view('registro');
-});
-Route::get('/login', function(){
-  return view('login');
-});
+Route::view('/welcome',"welcome")->middleware('auth')->name('welcome');
+Route::view('/login',"login")->name('login');
+Route::view('/registro',"registro")->name('registro');
 
 //Rutas para el login
 Route::post('/validar-registro',[LoginController::class,'register'])->
