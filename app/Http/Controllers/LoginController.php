@@ -4,21 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\users;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
     public function register(Request $request){
-        $users = new users();
-        $users-> IBM = $request->IBM;
-        $users-> firstname = $request->firstname;
-        $users-> lastname = $request->lastname;
-        $users-> email = $request->email;
-        $users-> password = Hash::make($request->password);
+        $user = new User();
+        $user-> IBM = $request->IBM;
+        $user-> firstname = $request->firstname;
+        $user-> lastname = $request->lastname;
+        $user-> email = $request->email;
+        $user-> password = Hash::make($request->password);
 
-        $users->save();
+        $user->save();
         
         return redirect(route('login'));
 

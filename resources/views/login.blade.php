@@ -38,11 +38,11 @@
         @csrf
         <div>
           <label id="txt2" for="emailinput" class="form-label">Correo:</label>
-          <input type="email" name="emailinput"class="form-control" id="email" placeholder="Escribir Correo...">         
+          <input type="email" name="email"class="form-control" id="emailinput" placeholder="Escribir Correo...">         
         </div>
         <div>
           <label id="txt2" for="passwordinput" class="form-label">Contraseña:</label>
-          <input type="password" name="passwordinput"class="form-control" id="password" placeholder="Escribir Contraseña..."> 
+          <input type="password" name="password"class="form-control" id="passwordinput" placeholder="Escribir Contraseña..."> 
         </div><br>
         <button type="submit" class="btn btn-primary">Iniciar Sesion</button>       
       </form>
