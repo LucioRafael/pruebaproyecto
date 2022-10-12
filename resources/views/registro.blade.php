@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
     <link href="/css/app.css" rel="stylesheet" >
-<body>
+<body id="login">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
@@ -20,19 +20,19 @@
   <p id="txtreg">Registrarse</p>
   <div>
     <label id="txt1" for="ibminput" class="form-label">#IBM:</label>
-    <input type="text" name="IBM"class="form-control" id="ibminput" placeholder="Escribir #IBM...">
+    <input type="text" name="IBM"class="form-control" id="ibminput" required autocomplete="disable" placeholder="Escribir #IBM...">
   </div>
   <div>
     <label id="txt1" for="firstnameinput" class="form-label">Nombre(s):</label>
-    <input type="text" name="firstname"class="form-control" id="firstnameinput" placeholder="Escribir Nombre(s)...">
+    <input type="text" name="firstname"class="form-control" id="firstnameinput" required autocomplete="disable" placeholder="Escribir Nombre(s)...">
   </div>
   <div>
     <label id="txt1" for="lastnameinput" class="form-label">Apellidos:</label>
-    <input type="text" name="lastname"class="form-control" id="lastnameinput" placeholder="Escribir Apellidos...">
+    <input type="text" name="lastname"class="form-control" id="lastnameinput" required autocomplete="disable" placeholder="Escribir Apellidos...">
   </div>
   <div>
     <label id="txt1" for="emailinput" class="form-label">Correo:</label>
-    <input type="email" name="email"class="form-control" id="emailinput" placeholder="Escribir Correo...">
+    <input type="email" name="email"class="form-control" id="emailinput" required autocomplete="disable" placeholder="Escribir Correo...">
   </div>
   <div>
     <label id="txt1" for="passwordinput" class="form-label">Contraseña</label>

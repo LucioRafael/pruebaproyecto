@@ -8,7 +8,7 @@ h1.title{
 {
   height: 50px;
 }
-body{
+#login{
   background-image: url("../images/Free-road-wallpaper-hd.jpg");
   margin: 0;
   padding: 0;
@@ -36,6 +36,41 @@ body{
   padding-left: 105px;
   padding-right: 105px;
 }
+#b3{
+  color: white;
+  background-color: red;
+}
+#boton57{
+display: block;
+font-size: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: rgb(124, 144, 255);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: white;
+border-color: black;
+border: 20px;
+border-style: solid;
+}
+#boton68{
+display: block;
+font-size: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: rgb(145, 255, 123);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: white;
+border: 20px;
+border-style: solid;
+}
+.contenedor-turnos{
+  padding-left: 15%;
+  padding-right: 15%;
+}
 #loginreg{
   position:absolute;
   min-width: 400px;
@@ -57,4 +92,13 @@ body{
 #txt1{
   color: white;
   padding-right: 300px;
+}
+#vistas{
+  background-image: url("../images/BTN68.jfif");
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }

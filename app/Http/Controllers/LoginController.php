@@ -34,7 +34,7 @@ class LoginController extends Controller
 
             $request->session()->regenerate();
 
-            return redirect()->intended(route('welcome'));
+            return redirect()->intended(route('turnos'));
         }else{
             return redirect('login');
         }
