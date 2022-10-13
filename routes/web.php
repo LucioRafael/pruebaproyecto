@@ -16,18 +16,19 @@ use App\Http\Controllers\LoginController;
 Route::get('/reverso', function () {
   return view('reverso');
 });
-Route::get('/', function(){
-  return view('login');
-});
+
 Route::view('/welcome',"welcome")->middleware('auth')->name('welcome');
-Route::view('/turnos',"turnos")->middleware('auth')->name('turnos');
-Route::view('/5-7',"5-7")->middleware('auth')->name('5-7');
-Route::view('/6-8',"6-8")->middleware('auth')->name('6-8');
+Route::view('/turnos',"login.turnos")->middleware('auth')->name('turnos');
+Route::view('/5-7',"turno.5-7")->middleware('auth')->name('5-7');
+Route::view('/6-8',"turno.6-8")->middleware('auth')->name('6-8');
+
+//Rutas de los turnos
+Route::resource('Turno57','App\Http\Controllers\Turno57Controller');
 
 
 //Rutas para el login
-Route::view('/login',"login")->name('login');
-Route::view('/registro',"registro")->name('registro');
+Route::view('/',"login.login")->name('login');
+Route::view('/registro',"login.registro")->name('registro');
 Route::post('/validar-registro',[LoginController::class,'register'])->
     name('validar-registro');
 Route::post('/inicia-sesion',[LoginController::class,'login'])->
