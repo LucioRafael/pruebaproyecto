@@ -1,8 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Models\Turno57;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class Turno57Controller extends Controller
 {
@@ -13,7 +14,9 @@ class Turno57Controller extends Controller
      */
     public function index()
     {
-        //
+        $turno57s = Turno57::all();
+        return view('turno.5-7.index')->with('turno57s',$turno57s);
+
     }
 
     /**
@@ -23,7 +26,8 @@ class Turno57Controller extends Controller
      */
     public function create()
     {
-        //
+        return view('turno.5-7.create');
+
     }
 
     /**
@@ -34,7 +38,16 @@ class Turno57Controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $turno57s = new Turno57();
+        $turno57s->DocumentoID = $request->get('documentoid');
+        $turno57s->Titulo = $request->get('titulo');
+        $turno57s->Operacion = $request->get('operacion');
+        $turno57s->Descripcion = $request->get('descripcion');
+        $turno57s->Ruta = $request->get('ruta');
+
+        $turno57s->save();
+
+        return redirect('/Turno57');
     }
 
     /**
@@ -56,7 +69,8 @@ class Turno57Controller extends Controller
      */
     public function edit($id)
     {
-        //
+        $turno57 = Turno57::find($id);
+        return view('turno.5-7.edit')->with('turno57',$turno57);
     }
 
     /**
@@ -68,7 +82,17 @@ class Turno57Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $turno57 = Turno57::find($id);
+
+        $turno57->DocumentoID = $request->get('documentoid');
+        $turno57->Titulo = $request->get('titulo');
+        $turno57->Operacion = $request->get('operacion');
+        $turno57->Descripcion = $request->get('descripcion');
+        $turno57->Ruta = $request->get('ruta');
+
+        $turno57->save();
+
+        return redirect('/Turno57');
     }
 
     /**
@@ -79,6 +103,8 @@ class Turno57Controller extends Controller
      */
     public function destroy($id)
     {
-        //
+        $turno57 = Turno57::find($id);
+        $turno57->delete();
+        return redirect('/Turno57');
     }
 }

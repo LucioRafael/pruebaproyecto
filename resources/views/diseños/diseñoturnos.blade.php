@@ -13,14 +13,14 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <img src="images/R.png" alt="" id="logoborg">
-    <a href="logout" class="btn" id="b3">Cerrar sesion</a>
+    <div>
+    <a href="turnos" class="btn btn-info" style="color: white">Volver</a>
+    <a href="logout" class="btn" id="b3">Cerrar sesion</a>        
+    </div>
   </div>
 </nav>
-<br><br>
-<div class="contenedor-turnos">
-<a href="Turno57" class="btn" id="boton57">Turno 5-7</a>
-<br><br>
-<a href="6-8" class="btn" id="boton68">Turno 6-8</a>       
+<div class="container">
+    @yield('diseñomenus')
 </div>
 </body>
 </html>

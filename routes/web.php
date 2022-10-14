@@ -19,12 +19,11 @@ Route::get('/reverso', function () {
 
 Route::view('/welcome',"welcome")->middleware('auth')->name('welcome');
 Route::view('/turnos',"login.turnos")->middleware('auth')->name('turnos');
-Route::view('/5-7',"turno.5-7")->middleware('auth')->name('5-7');
-Route::view('/6-8',"turno.6-8")->middleware('auth')->name('6-8');
 
 //Rutas de los turnos
-Route::resource('Turno57','App\Http\Controllers\Turno57Controller');
-
+Route::middleware(['auth'])->group(function () {
+Route::resource('Turno57','App\Http\Controllers\Turno57Controller');    
+});
 
 //Rutas para el login
 Route::view('/',"login.login")->name('login');
