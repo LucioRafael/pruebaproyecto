@@ -20,7 +20,7 @@
 <div class="contenedor-turnos">
 <a href="Turno57" class="btn" id="boton57">Turno 5-7</a>
 <br><br>
-<a href="6-8" class="btn" id="boton68">Turno 6-8</a>       
+<a href="Turno68" class="btn" id="boton68">Turno 6-8</a>       
 </div>
 </body>
 </html>

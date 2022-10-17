@@ -23,6 +23,7 @@ Route::view('/turnos',"login.turnos")->middleware('auth')->name('turnos');
 //Rutas de los turnos
 Route::middleware(['auth'])->group(function () {
 Route::resource('Turno57','App\Http\Controllers\Turno57Controller');    
+Route::resource('Turno68','App\Http\Controllers\Turno68Controller');  
 });
 
 //Rutas para el login
