@@ -41,6 +41,21 @@
         <label for="" id=txt1 class="form-label">Ruta</label>
         <input type="text" name="ruta" id="ruta" class="form-control" tabindex="1" value="{{$turno57->Ruta}}">
     </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">#</label>
+        <select id="numero" name="numero" class="form-control" tabindex="1" value="{{$turno68->Numero}}">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="0">0</option>
+        </select>
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/Turno57" class="btn btn-danger">Cancelar</a>

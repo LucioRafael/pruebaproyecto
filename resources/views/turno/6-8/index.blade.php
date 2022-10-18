@@ -1,7 +1,7 @@
 @extends('diseños.diseñoturnos')
 @section('diseñomenus')
 <br>
-<h1 style="text-align: center; color:white; background-color:rgb(113, 113, 255)">Lista de hojas de chequeo turno 5-7</h1>
+<h1 style="text-align: center; color:white; background-color:rgb(113, 113, 255)">Lista de hojas de chequeo turno 6-8</h1>
 <table class="table table-success table-striped mt-4">
     <thead>
         <tr>

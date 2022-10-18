@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('Titulo');
             $table->string('Operacion');
             $table->string('Descripcion');
-            $table->string('#');
+            $table->string('Numero');
             $table->string('Ruta');
             $table->timestamps();
         });

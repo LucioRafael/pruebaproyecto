@@ -9,6 +9,7 @@
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Operacion</th>
+            <th scope="col">#</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -19,6 +20,7 @@
             <td>{{$turno57->Titulo}}</td>
             <td>{{$turno57->Descripcion}}</td>
             <td>{{$turno57->Operacion}}</td>
+            <td>{{$turno57->Numero}}</td>
             <td>
                 <form action="{{route('Turno57.destroy',$turno57->id)}}" method="POST">
                 <a href="Turno57/{{$turno57->id}}/edit" style="color: white" class="btn btn-info">Editar</a>

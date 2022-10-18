@@ -43,7 +43,7 @@ class Turno68Controller extends Controller
         $turno68s->Titulo = $request->get('titulo');
         $turno68s->Operacion = $request->get('operacion');
         $turno68s->Descripcion = $request->get('descripcion');
-        $turno68s->Numero =$request->get('#');
+        $turno68s->Numero =$request->get('numero');
         $turno68s->Ruta = $request->get('ruta');
 
         $turno68s->save();
@@ -89,7 +89,7 @@ class Turno68Controller extends Controller
         $turno68->Titulo = $request->get('titulo');
         $turno68->Operacion = $request->get('operacion');
         $turno68->Descripcion = $request->get('descripcion');
-        $turno68->Numero =$request->get('#');
+        $turno68->Numero =$request->get('numero');
         $turno68->Ruta = $request->get('ruta');
 
         $turno68->save();

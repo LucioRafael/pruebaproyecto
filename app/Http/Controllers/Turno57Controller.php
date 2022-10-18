@@ -43,7 +43,7 @@ class Turno57Controller extends Controller
         $turno57s->Titulo = $request->get('titulo');
         $turno57s->Operacion = $request->get('operacion');
         $turno57s->Descripcion = $request->get('descripcion');
-        $turno57s->Numero =$request->get('#');
+        $turno57s->Numero =$request->get('numero');
         $turno57s->Ruta = $request->get('ruta');
 
         $turno57s->save();
@@ -89,7 +89,7 @@ class Turno57Controller extends Controller
         $turno57->Titulo = $request->get('titulo');
         $turno57->Operacion = $request->get('operacion');
         $turno57->Descripcion = $request->get('descripcion');
-        $turno57->Numero =$request->get('#');
+        $turno57->Numero =$request->get('numero');
         $turno57->Ruta = $request->get('ruta');
 
         $turno57->save();
