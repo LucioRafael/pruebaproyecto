@@ -37,8 +37,8 @@
       <form method="POST" action="{{route('inicia-sesion')}}">
         @csrf
         <div>
-          <label id="txt2" for="emailinput" class="form-label">Correo:</label>
-          <input type="email" name="email"class="form-control" required autocomplete="disable" id="emailinput" placeholder="Escribir Correo...">         
+          <label id="txt2" for="ibminput" class="form-label">IBM:</label>
+          <input type="number" name="IBM"class="form-control" required autocomplete="disable" id="ibminput" placeholder="Escribir #IBM...">         
         </div>
         <div>
           <label id="txt2" for="passwordinput" class="form-label">Contraseña:</label>

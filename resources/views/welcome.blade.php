@@ -537,5 +537,6 @@
         </tbody>
     </table>
     </div>
+    <a href="reverso" class="btn btn-primary">Reverso</a>
 </body>
 </html>

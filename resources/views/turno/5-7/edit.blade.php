@@ -43,7 +43,7 @@
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">#</label>
-        <select id="numero" name="numero" class="form-control" tabindex="1" value="{{$turno68->Numero}}">
+        <select id="numero" name="numero" class="form-control" tabindex="1" value="{{$turno57->Numero}}">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -53,7 +53,6 @@
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
-            <option value="0">0</option>
         </select>
     </div>
     <div>

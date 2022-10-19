@@ -20,7 +20,7 @@
   <p id="txtreg">Registrarse</p>
   <div>
     <label id="txt1" for="ibminput" class="form-label">#IBM:</label>
-    <input type="text" name="IBM"class="form-control" id="ibminput" required autocomplete="disable" placeholder="Escribir #IBM...">
+    <input type="number" name="IBM"class="form-control" id="ibminput" required autocomplete="disable" placeholder="Escribir #IBM...">
   </div>
   <div>
     <label id="txt1" for="firstnameinput" class="form-label">Nombre(s):</label>
@@ -29,10 +29,6 @@
   <div>
     <label id="txt1" for="lastnameinput" class="form-label">Apellidos:</label>
     <input type="text" name="lastname"class="form-control" id="lastnameinput" required autocomplete="disable" placeholder="Escribir Apellidos...">
-  </div>
-  <div>
-    <label id="txt1" for="emailinput" class="form-label">Correo:</label>
-    <input type="email" name="email"class="form-control" id="emailinput" required autocomplete="disable" placeholder="Escribir Correo...">
   </div>
   <div>
     <label id="txt1" for="passwordinput" class="form-label">Contraseña</label>

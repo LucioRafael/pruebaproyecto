@@ -13,7 +13,6 @@ class LoginController extends Controller
         $user-> IBM = $request->IBM;
         $user-> firstname = $request->firstname;
         $user-> lastname = $request->lastname;
-        $user-> email = $request->email;
         $user-> password = Hash::make($request->password);
 
         $user->save();
@@ -23,7 +22,7 @@ class LoginController extends Controller
     }
     public function login( Request $request){
         $credentials =[
-            "email" => $request->email,
+            "IBM" => $request->IBM,
             "password"=> $request->password
         ];
         $remember = ($request->has('remember') ? true : false);

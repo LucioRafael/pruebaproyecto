@@ -35,3 +35,9 @@ Route::post('/inicia-sesion',[LoginController::class,'login'])->
     name('inicia-sesion');
 Route::get('/logout',[LoginController::class,'logout'])->
     name('logout');
+
+//Rutas de hojas de chequeo 5-7
+Route::view('/f7_setcs_ele_cr_l1_01',"welcome")->middleware('auth')->name('f7_setcs_ele_cr_l1_01');
+Route::view('/f7_setcs_ele_20_l1_01',"welcome2")->middleware('auth')->name('f7_setcs_ele_20_l1_01');
+
+//Rutas de hojas de chequeo 6-8
