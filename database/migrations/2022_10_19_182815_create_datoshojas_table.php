@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('documentoid');
             $table->integer('numero_cambio');
             $table->date('fecha');
-            $table->string('Revision');
-            $table->string('ME-IE');
+            $table->string('revision');
+            $table->string('meie');
             $table->string('calidad');
             $table->string('manufactura');
             $table->string('area');
