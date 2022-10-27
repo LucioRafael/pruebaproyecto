@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Registro;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class RegistroController extends Controller
 {
@@ -13,7 +16,7 @@ class RegistroController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**

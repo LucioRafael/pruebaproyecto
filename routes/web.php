@@ -26,6 +26,11 @@ Route::resource('Turno57','App\Http\Controllers\Turno57Controller');
 Route::resource('Turno68','App\Http\Controllers\Turno68Controller');  
 });
 
+//Rutas de hojas de chequeo 5-7
+Route::middleware(['auth',])->group(function () {
+Route::resource('F7-SETCS-ELE-CR-L1-01-57', 'App\Http\Controllers\DatoshojaController');
+});
+
 //Rutas para el login
 Route::view('/',"login.login")->name('login');
 Route::view('/registro',"login.registro")->name('registro');
