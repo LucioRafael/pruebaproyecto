@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Datoshoja;
 use App\Models\Registro;
+use App\Models\option;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,9 +18,11 @@ class DatoshojaController extends Controller
     {
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
+        $options = option::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.index')
         ->with('registros',$registros)
-        ->with('datoshojas',$datoshojas);
+        ->with('datoshojas',$datoshojas)
+        ->with('options', $options);
     }
     /**
      * Show the form for creating a new resource.

@@ -73,9 +73,10 @@
                 <th colspan="3">{{$datoshoja->año}}</th>
             </tr>
             @endif
-            @endforeach                
+            @endforeach              
         </thead>
-     </table>    
+     </table>
+     <a href="" class="btn btn-warning">Editar</a> 
     <div class="table-responsive" align="center">
     <table class="table table-success table-bordered">
         <thead>
@@ -101,44 +102,872 @@
             @if ($registro->turno == '5-7' && $registro->documentoid =='F7-SETCS-ELE-CR-L1-01' && $registro->partetabla == 'AL INICIO DE TURNO')
             <tr>
                 <td>{{$registro->criterio}}</td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-                <td><select name="" id=""><option value="">--Seleccionar--</option><option value="">Si cumple</option><option value="">no cumple</option></select></td>
-            </tr>                
+                <td>
+                    <select name="" id="1">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d1']}}</p>
+                </td>
+                <td>
+                    <select name="" id="2">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d2']}}</p>
+                </td>
+                <td>
+                    <select name="" id="3">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d3']}}</p>
+                </td>
+                <td>
+                    <select name="" id="4">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d4']}}</p>
+                </td>
+                <td>
+                    <select name="" id="5">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d5']}}</p>
+                </td>
+                <td>
+                    <select name="" id="6">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d6']}}</p>
+                </td>
+                <td>
+                    <select name="" id="7">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d7']}}</p>
+                </td> 
+                <td>
+                    <select name="" id="8">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d8']}}</p>
+                </td>
+                <td>
+                    <select name="" id="9">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d9']}}</p>
+                </td>
+                <td>
+                    <select name="" id="10">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d10']}}</p>
+                </td>
+                <td>
+                    <select name="" id="11">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d11']}}</p>
+                </td>
+                <td>
+                    <select name="" id="12">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d12']}}</p>
+                </td>
+                <td>
+                    <select name="" id="13">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d13']}}</p>
+                </td>
+                <td>
+                    <select name="" id="14">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d14']}}</p>
+                </td>
+                <td>
+                    <select name="" id="15">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d15']}}</p>
+                </td>
+                <td>
+                    <select name="" id="16">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d16']}}</p>
+                </td>
+                <td>
+                    <select name="" id="17">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d17']}}</p>
+                </td>
+                <td>
+                    <select name="" id="18">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d18']}}</p>
+                </td>
+                <td>
+                    <select name="" id="19">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d19']}}</p>
+                </td>
+                <td>
+                    <select name="" id="20">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d20']}}</p>
+                </td>
+                <td>
+                    <select name="" id="21">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d21']}}</p>
+                </td>
+                <td>
+                    <select name="" id="22">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d22']}}</p>
+                </td>
+                <td>
+                    <select name="" id="23">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d23']}}</p>
+                </td>
+                <td>
+                    <select name="" id="24">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d24']}}</p>
+                </td>
+                <td>
+                    <select name="" id="25">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d25']}}</p>
+                </td>
+                <td>
+                    <select name="" id="26">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d26']}}</p>
+                </td>
+                <td>
+                    <select name="" id="27">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d27']}}</p>
+                </td>
+                <td>
+                    <select name="" id="28">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d28']}}</p>
+                </td>
+                <td>
+                    <select name="" id="29">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d29']}}</p>
+                </td>
+                <td>
+                    <select name="" id="30">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d30']}}</p>
+                </td>
+                <td>
+                    <select name="" id="31">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d31']}}</p>
+                </td>
+            </tr>
             @endif
             @endforeach
-
+            <tr>
+                <th colspan="32" class= "table-secondary"><p align ="center">Diario</p></th>
+            </tr>
+            @foreach ($registros as $registro)
+            @if ($registro->turno == '5-7' && $registro->documentoid =='F7-SETCS-ELE-CR-L1-01' && $registro->partetabla == 'DIARIO')
+            <tr>
+                <td>{{$registro->criterio}}</td>
+                <td>
+                    <select name="" id="1">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d1']}}</p>
+                </td>
+                <td>
+                    <select name="" id="2">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d2']}}</p>
+                </td>
+                <td>
+                    <select name="" id="3">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d3']}}</p>
+                </td>
+                <td>
+                    <select name="" id="4">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d4']}}</p>
+                </td>
+                <td>
+                    <select name="" id="5">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d5']}}</p>
+                </td>
+                <td>
+                    <select name="" id="6">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d6']}}</p>
+                </td>
+                <td>
+                    <select name="" id="7">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d7']}}</p>
+                </td> 
+                <td>
+                    <select name="" id="8">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d8']}}</p>
+                </td>
+                <td>
+                    <select name="" id="9">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d9']}}</p>
+                </td>
+                <td>
+                    <select name="" id="10">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d10']}}</p>
+                </td>
+                <td>
+                    <select name="" id="11">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d11']}}</p>
+                </td>
+                <td>
+                    <select name="" id="12">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d12']}}</p>
+                </td>
+                <td>
+                    <select name="" id="13">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d13']}}</p>
+                </td>
+                <td>
+                    <select name="" id="14">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d14']}}</p>
+                </td>
+                <td>
+                    <select name="" id="15">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d15']}}</p>
+                </td>
+                <td>
+                    <select name="" id="16">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d16']}}</p>
+                </td>
+                <td>
+                    <select name="" id="17">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d17']}}</p>
+                </td>
+                <td>
+                    <select name="" id="18">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d18']}}</p>
+                </td>
+                <td>
+                    <select name="" id="19">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d19']}}</p>
+                </td>
+                <td>
+                    <select name="" id="20">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d20']}}</p>
+                </td>
+                <td>
+                    <select name="" id="21">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d21']}}</p>
+                </td>
+                <td>
+                    <select name="" id="22">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d22']}}</p>
+                </td>
+                <td>
+                    <select name="" id="23">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d23']}}</p>
+                </td>
+                <td>
+                    <select name="" id="24">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d24']}}</p>
+                </td>
+                <td>
+                    <select name="" id="25">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d25']}}</p>
+                </td>
+                <td>
+                    <select name="" id="26">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d26']}}</p>
+                </td>
+                <td>
+                    <select name="" id="27">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d27']}}</p>
+                </td>
+                <td>
+                    <select name="" id="28">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d28']}}</p>
+                </td>
+                <td>
+                    <select name="" id="29">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d29']}}</p>
+                </td>
+                <td>
+                    <select name="" id="30">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d30']}}</p>
+                </td>
+                <td>
+                    <select name="" id="31">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d31']}}</p>
+                </td>
+            </tr>
+            @endif
+            @endforeach
+            <tr>
+                <th colspan="32" class="table-secondary"><p align = "center">Nota: Durante su verificacion diaria, reemplace cualquier material que encuentre dañado</p></th>
+            </tr>
+            @foreach ($registros as $registro)
+            @if ($registro->turno == '5-7' && $registro->documentoid =='F7-SETCS-ELE-CR-L1-01' && $registro->partetabla == 'NOTA')
+            <tr>
+                <td>{{$registro->criterio}}</td>
+                <td>
+                    <select name="" id="1">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d1']}}</p>
+                </td>
+                <td>
+                    <select name="" id="2">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d2']}}</p>
+                </td>
+                <td>
+                    <select name="" id="3">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d3']}}</p>
+                </td>
+                <td>
+                    <select name="" id="4">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d4']}}</p>
+                </td>
+                <td>
+                    <select name="" id="5">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d5']}}</p>
+                </td>
+                <td>
+                    <select name="" id="6">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d6']}}</p>
+                </td>
+                <td>
+                    <select name="" id="7">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d7']}}</p>
+                </td> 
+                <td>
+                    <select name="" id="8">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d8']}}</p>
+                </td>
+                <td>
+                    <select name="" id="9">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d9']}}</p>
+                </td>
+                <td>
+                    <select name="" id="10">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d10']}}</p>
+                </td>
+                <td>
+                    <select name="" id="11">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d11']}}</p>
+                </td>
+                <td>
+                    <select name="" id="12">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d12']}}</p>
+                </td>
+                <td>
+                    <select name="" id="13">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d13']}}</p>
+                </td>
+                <td>
+                    <select name="" id="14">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d14']}}</p>
+                </td>
+                <td>
+                    <select name="" id="15">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d15']}}</p>
+                </td>
+                <td>
+                    <select name="" id="16">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d16']}}</p>
+                </td>
+                <td>
+                    <select name="" id="17">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d17']}}</p>
+                </td>
+                <td>
+                    <select name="" id="18">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d18']}}</p>
+                </td>
+                <td>
+                    <select name="" id="19">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d19']}}</p>
+                </td>
+                <td>
+                    <select name="" id="20">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d20']}}</p>
+                </td>
+                <td>
+                    <select name="" id="21">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d21']}}</p>
+                </td>
+                <td>
+                    <select name="" id="22">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d22']}}</p>
+                </td>
+                <td>
+                    <select name="" id="23">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d23']}}</p>
+                </td>
+                <td>
+                    <select name="" id="24">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d24']}}</p>
+                </td>
+                <td>
+                    <select name="" id="25">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d25']}}</p>
+                </td>
+                <td>
+                    <select name="" id="26">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d26']}}</p>
+                </td>
+                <td>
+                    <select name="" id="27">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d27']}}</p>
+                </td>
+                <td>
+                    <select name="" id="28">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d28']}}</p>
+                </td>
+                <td>
+                    <select name="" id="29">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d29']}}</p>
+                </td>
+                <td>
+                    <select name="" id="30">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d30']}}</p>
+                </td>
+                <td>
+                    <select name="" id="31">
+                    @foreach ($options as $option)
+                    <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
+                    @endforeach
+                    </select>
+                    <br><br><br>
+                    <p>{{$registro['d31']}}</p>
+                </td>
+            </tr>
+            @endif
+            @endforeach
         </tbody>
     </table>
     </div>
-
+    <div class="contanier">
+        <a href="" class="btn btn-primary">Guardar Cambios</a>
+        <a href="" class="btn btn-success">Añadir criterio</a>
+    </div>
 </body>
 </html>
