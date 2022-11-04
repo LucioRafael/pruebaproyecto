@@ -85,25 +85,25 @@
                 <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
                 <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th>
                 <th>20</th><th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th>
-                <th>29</th><th>30</th><th>31</th>
+                <th>29</th><th>30</th><th>31</th><th>Acciones</th>
             </tr>
             <tr>
                 <th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th>
                 <th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th>
                 <th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th>
-                <th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th>
+                <th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>5/7</th><th>...</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th colspan="32" class= "table-secondary"><p align ="center">Al inicio del turno</p></th>
+                <th colspan="33" class= "table-secondary"><p align ="center">Al inicio del turno</p></th>
             </tr>
             @foreach ($registros as $registro)
             @if ($registro->turno == '5-7' && $registro->documentoid =='F7-SETCS-ELE-CR-L1-01' && $registro->partetabla == 'AL INICIO DE TURNO')
             <tr>
                 <td>{{$registro->criterio}}</td>
                 <td>
-                    <select name="" id="1">
+                    <select name="d1" id="1">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -112,7 +112,7 @@
                     <p>{{$registro['d1']}}</p>
                 </td>
                 <td>
-                    <select name="" id="2">
+                    <select name="d2" id="2">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -121,7 +121,7 @@
                     <p>{{$registro['d2']}}</p>
                 </td>
                 <td>
-                    <select name="" id="3">
+                    <select name="d3" id="3">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -130,7 +130,7 @@
                     <p>{{$registro['d3']}}</p>
                 </td>
                 <td>
-                    <select name="" id="4">
+                    <select name="d4" id="4">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -139,7 +139,7 @@
                     <p>{{$registro['d4']}}</p>
                 </td>
                 <td>
-                    <select name="" id="5">
+                    <select name="d5" id="5">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -148,7 +148,7 @@
                     <p>{{$registro['d5']}}</p>
                 </td>
                 <td>
-                    <select name="" id="6">
+                    <select name="d6" id="6">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -157,7 +157,7 @@
                     <p>{{$registro['d6']}}</p>
                 </td>
                 <td>
-                    <select name="" id="7">
+                    <select name="d7" id="7">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -166,7 +166,7 @@
                     <p>{{$registro['d7']}}</p>
                 </td> 
                 <td>
-                    <select name="" id="8">
+                    <select name="d8" id="8">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -175,7 +175,7 @@
                     <p>{{$registro['d8']}}</p>
                 </td>
                 <td>
-                    <select name="" id="9">
+                    <select name="d9" id="9">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -184,7 +184,7 @@
                     <p>{{$registro['d9']}}</p>
                 </td>
                 <td>
-                    <select name="" id="10">
+                    <select name="d10" id="10">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -193,7 +193,7 @@
                     <p>{{$registro['d10']}}</p>
                 </td>
                 <td>
-                    <select name="" id="11">
+                    <select name="d11" id="11">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -202,7 +202,7 @@
                     <p>{{$registro['d11']}}</p>
                 </td>
                 <td>
-                    <select name="" id="12">
+                    <select name="d12" id="12">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -211,7 +211,7 @@
                     <p>{{$registro['d12']}}</p>
                 </td>
                 <td>
-                    <select name="" id="13">
+                    <select name="d13" id="13">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -220,7 +220,7 @@
                     <p>{{$registro['d13']}}</p>
                 </td>
                 <td>
-                    <select name="" id="14">
+                    <select name="d14" id="14">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -229,7 +229,7 @@
                     <p>{{$registro['d14']}}</p>
                 </td>
                 <td>
-                    <select name="" id="15">
+                    <select name="d15" id="15">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -238,7 +238,7 @@
                     <p>{{$registro['d15']}}</p>
                 </td>
                 <td>
-                    <select name="" id="16">
+                    <select name="d16" id="16">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -247,7 +247,7 @@
                     <p>{{$registro['d16']}}</p>
                 </td>
                 <td>
-                    <select name="" id="17">
+                    <select name="d17" id="17">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -256,7 +256,7 @@
                     <p>{{$registro['d17']}}</p>
                 </td>
                 <td>
-                    <select name="" id="18">
+                    <select name="d18" id="18">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -265,7 +265,7 @@
                     <p>{{$registro['d18']}}</p>
                 </td>
                 <td>
-                    <select name="" id="19">
+                    <select name="d19" id="19">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -274,7 +274,7 @@
                     <p>{{$registro['d19']}}</p>
                 </td>
                 <td>
-                    <select name="" id="20">
+                    <select name="d20" id="20">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -283,7 +283,7 @@
                     <p>{{$registro['d20']}}</p>
                 </td>
                 <td>
-                    <select name="" id="21">
+                    <select name="d21" id="21">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -292,7 +292,7 @@
                     <p>{{$registro['d21']}}</p>
                 </td>
                 <td>
-                    <select name="" id="22">
+                    <select name="d22" id="22">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -301,7 +301,7 @@
                     <p>{{$registro['d22']}}</p>
                 </td>
                 <td>
-                    <select name="" id="23">
+                    <select name="d23" id="23">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -310,7 +310,7 @@
                     <p>{{$registro['d23']}}</p>
                 </td>
                 <td>
-                    <select name="" id="24">
+                    <select name="d24" id="24">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -319,7 +319,7 @@
                     <p>{{$registro['d24']}}</p>
                 </td>
                 <td>
-                    <select name="" id="25">
+                    <select name="d25" id="25">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -328,7 +328,7 @@
                     <p>{{$registro['d25']}}</p>
                 </td>
                 <td>
-                    <select name="" id="26">
+                    <select name="d26" id="26">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -337,7 +337,7 @@
                     <p>{{$registro['d26']}}</p>
                 </td>
                 <td>
-                    <select name="" id="27">
+                    <select name="d27" id="27">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -346,7 +346,7 @@
                     <p>{{$registro['d27']}}</p>
                 </td>
                 <td>
-                    <select name="" id="28">
+                    <select name="d28" id="28">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -355,7 +355,7 @@
                     <p>{{$registro['d28']}}</p>
                 </td>
                 <td>
-                    <select name="" id="29">
+                    <select name="d29" id="29">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -364,7 +364,7 @@
                     <p>{{$registro['d29']}}</p>
                 </td>
                 <td>
-                    <select name="" id="30">
+                    <select name="d30" id="30">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -373,7 +373,7 @@
                     <p>{{$registro['d30']}}</p>
                 </td>
                 <td>
-                    <select name="" id="31">
+                    <select name="d31" id="31">
                     @foreach ($options as $option)
                     <option value="{{$option['opcion']}}">{{$option['opcion']}}</option>
                     @endforeach
@@ -381,11 +381,15 @@
                     <br><br><br>
                     <p>{{$registro['d31']}}</p>
                 </td>
+                <td>
+                    <a href="" class="btn btn-warning">Editar</a>
+                    <a href="" class="btn btn-danger">Eliminar</a>
+                </td>
             </tr>
             @endif
             @endforeach
             <tr>
-                <th colspan="32" class= "table-secondary"><p align ="center">Diario</p></th>
+                <th colspan="33" class= "table-secondary"><p align ="center">Diario</p></th>
             </tr>
             @foreach ($registros as $registro)
             @if ($registro->turno == '5-7' && $registro->documentoid =='F7-SETCS-ELE-CR-L1-01' && $registro->partetabla == 'DIARIO')
@@ -674,7 +678,7 @@
             @endif
             @endforeach
             <tr>
-                <th colspan="32" class="table-secondary"><p align = "center">Nota: Durante su verificacion diaria, reemplace cualquier material que encuentre dañado</p></th>
+                <th colspan="33" class="table-secondary"><p align = "center">Nota: Durante su verificacion diaria, reemplace cualquier material que encuentre dañado</p></th>
             </tr>
             @foreach ($registros as $registro)
             @if ($registro->turno == '5-7' && $registro->documentoid =='F7-SETCS-ELE-CR-L1-01' && $registro->partetabla == 'NOTA')
