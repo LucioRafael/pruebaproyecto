@@ -76,7 +76,7 @@
             @endforeach              
         </thead>
      </table>
-     <a href="" class="btn btn-warning">Editar</a> 
+     <a href="" class="btn btn-warning">Editar</a>
     <div class="table-responsive" align="center">
     <table class="table table-success table-bordered">
         <thead>
@@ -969,9 +969,12 @@
         </tbody>
     </table>
     </div>
+    <form action="{{('F7-SETCS-ELE-CR-L1-01-57.check')}}" method="POST">
+        @csrf
     <div class="contanier">
-        <a href="" class="btn btn-primary">Guardar Cambios</a>
+        <a type="submit" class="btn btn-primary">Guardar Cambios</a>
         <a href="" class="btn btn-success">Añadir criterio</a>
     </div>
+    </form>
 </body>
 </html>
