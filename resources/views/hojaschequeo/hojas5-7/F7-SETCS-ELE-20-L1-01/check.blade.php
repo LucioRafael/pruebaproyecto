@@ -81,7 +81,7 @@
                 @endforeach
             </thead>
         </table>
-        <a href="F7-SETCS-ELE-CR-L1-01-57/{{$datoshoja->id}}/edit2" class="btn btn-warning">Editar</a>
+        <a href="" class="btn btn-warning">Editar</a>
         <div class="table-responsive" align="center">
             <table class="table table-success table-bordered">
                 <thead>
@@ -155,6 +155,9 @@
                         <th>...</th>
                     </tr>
                 </thead>
+                <form action="/F7-SETCS-ELE-CR-L1-01-57/check" method="POST">
+                    @csrf
+                    @method('PUT')
                     <tbody>
                         <tr>
                             <th colspan="33" class="table-secondary">
@@ -490,12 +493,8 @@
                                         <p>{{ $registro['d31'] }}</p>
                                     </td>
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-CR-L1-01-57.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-CR-L1-01-57/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                                        </form>
+                                        <a href="" class="btn btn-warning">Editar</a>
+                                        <a href="" class="btn btn-danger">Eliminar</a>
                                     </td>
                                 </tr>
                             @endif
@@ -1151,10 +1150,11 @@
                             @endif
                         @endforeach
                     </tbody>
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    <a href="" class="btn btn-success">Añadir criterio</a>
+                </form>
             </table>
         </div>
-                    <a href="/F7-SETCS-ELE-CR-L1-01-57/check" class="btn btn-primary">Guardar Cambios</a>
-                    <a href="F7-SETCS-ELE-CR-L1-01-57/create" class="btn btn-success">Añadir criterio</a>
 </body>
-
 </html>

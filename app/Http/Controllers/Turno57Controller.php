@@ -84,14 +84,12 @@ class Turno57Controller extends Controller
     public function update(Request $request, $id)
     {
         $turno57 = Turno57::find($id);
-
         $turno57->DocumentoID = $request->get('documentoid');
         $turno57->Titulo = $request->get('titulo');
         $turno57->Operacion = $request->get('operacion');
         $turno57->Descripcion = $request->get('descripcion');
         $turno57->Numero =$request->get('numero');
         $turno57->Ruta = $request->get('ruta');
-
         $turno57->save();
 
         return redirect('/Turno57');
