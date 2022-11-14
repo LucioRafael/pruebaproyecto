@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DatoshojaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +30,8 @@ Route::resource('Turno68','App\Http\Controllers\Turno68Controller');
 //Rutas de hojas de chequeo 5-7
 Route::middleware(['auth',])->group(function () {
 Route::resource('F7-SETCS-ELE-CR-L1-01-57', 'App\Http\Controllers\DatoshojaController');
+Route::get('/check',[DatoshojaController::class,'check'])->name('check');
+Route::put('/finalcheck',[DatoshojaController::class,'finalcheck'])->name('finalcheck');
 });
 
 //Rutas para el login
