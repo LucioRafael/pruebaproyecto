@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DatoshojaController;
+use App\Http\Controllers\ReversoController00;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,8 +31,11 @@ Route::resource('Turno68','App\Http\Controllers\Turno68Controller');
 //Rutas de hojas de chequeo 5-7
 Route::middleware(['auth',])->group(function () {
 Route::resource('F7-SETCS-ELE-CR-L1-01-57', 'App\Http\Controllers\DatoshojaController');
+Route::resource('reverso', ReversoController00::class);
 Route::get('/check',[DatoshojaController::class,'check'])->name('check');
-Route::put('/finalcheck',[DatoshojaController::class,'finalcheck'])->name('finalcheck');
+Route::put('/finalcheck/{id}',[DatoshojaController::class,'finalcheck'])->name('finalcheck');
+Route::get('/edit2/{id}',[DatoshojaController::class,'edit2'])->name('edit2');
+Route::put('/update2/{id}',[DatoshojaController::class,'update2'])->name('update2');
 });
 
 //Rutas para el login

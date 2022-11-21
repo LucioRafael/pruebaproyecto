@@ -19,7 +19,7 @@ class DatoshojaController extends Controller
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
         $options = option::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.index')
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.index')
         ->with('registros',$registros)
         ->with('datoshojas',$datoshojas)
         ->with('options', $options);
@@ -33,11 +33,6 @@ class DatoshojaController extends Controller
     {
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.create');
     }
-    public function create2()
-    {
-
-    }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -116,14 +111,6 @@ class DatoshojaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
-    public function show2($id)
-    {
-
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -134,12 +121,12 @@ class DatoshojaController extends Controller
     public function edit($id)
     {
         $registro = Registro::find($id);
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.edit')->with('registro',$registro);
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.edit')->with('registro',$registro);
     }
     public function edit2($id)
     {
         $datoshoja = Datoshoja::find($id);
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.edit2')->with('datoshoja',$datoshoja);
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.edit2')->with('datoshoja',$datoshoja);
     }
     public function check(Request $request)
     {
@@ -150,43 +137,48 @@ class DatoshojaController extends Controller
         ->with('options',$options);
     }
 
-    public function finalcheck(Request $request)
+    public function finalcheck(Request $request,$id)
     {
-        $registros = Registro::all();
-        $registros->d1 = $request->get('d1');
-        $registros->d2 = $request->get('d2');
-        $registros->d3 = $request->get('d3');
-        $registros->d4 = $request->get('d4');
-        $registros->d5 = $request->get('d5');
-        $registros->d6 = $request->get('d6');
-        $registros->d7 = $request->get('d7');
-        $registros->d8 = $request->get('d8');
-        $registros->d9 = $request->get('d9');
-        $registros->d10 = $request->get('d10');
-        $registros->d11 = $request->get('d11');
-        $registros->d12 = $request->get('d12');
-        $registros->d13 = $request->get('d13');
-        $registros->d14 = $request->get('d14');
-        $registros->d15 = $request->get('d15');
-        $registros->d16 = $request->get('d16');
-        $registros->d17 = $request->get('d17');
-        $registros->d18 = $request->get('d18');
-        $registros->d19 = $request->get('d19');
-        $registros->d20 = $request->get('d20');
-        $registros->d21 = $request->get('d21');
-        $registros->d22 = $request->get('d22');
-        $registros->d23 = $request->get('d23');
-        $registros->d24 = $request->get('d24');
-        $registros->d25 = $request->get('d25');
-        $registros->d26 = $request->get('d26');
-        $registros->d27 = $request->get('d27');
-        $registros->d28 = $request->get('d28');
-        $registros->d29 = $request->get('d29');
-        $registros->d30 = $request->get('d30');
-        $registros->d31 = $request->get('d31');
-        $registros->save();
-        return redirect ('/F7-SETCS-ELE-CR-L1-01-57');
-        //checar esta solucion: https://stackoverflow.com/questions/68126753/method-illuminate-database-eloquent-collectionsave-does-not-exist
+        foreach($request->registro as $key=>$value)
+        {
+            $registro = Registro::find($value['id']);
+            if($registro)
+            {
+                $registro->d1 = $value['d1'];
+                $registro->d2 = $value['d2'];
+                $registro->d3 = $value['d3'];
+                $registro->d4 = $value['d4'];
+                $registro->d5 = $value['d5'];
+                $registro->d6 = $value['d6'];
+                $registro->d7 = $value['d7'];
+                $registro->d8 = $value['d8'];
+                $registro->d9 = $value['d9'];
+                $registro->d10 = $value['d10'];
+                $registro->d11 = $value['d11'];
+                $registro->d12 = $value['d12'];
+                $registro->d13 = $value['d13'];
+                $registro->d14 = $value['d14'];
+                $registro->d15 = $value['d15'];
+                $registro->d16 = $value['d16'];
+                $registro->d17 = $value['d17'];
+                $registro->d18 = $value['d18'];
+                $registro->d19 = $value['d19'];
+                $registro->d20 = $value['d20'];
+                $registro->d21 = $value['d21'];
+                $registro->d22 = $value['d22'];
+                $registro->d23 = $value['d23'];
+                $registro->d24 = $value['d24'];
+                $registro->d25 = $value['d25'];
+                $registro->d26 = $value['d26'];
+                $registro->d27 = $value['d27'];
+                $registro->d28 = $value['d28'];
+                $registro->d29 = $value['d29'];
+                $registro->d30 = $value['d30'];
+                $registro->d31 = $value['d31'];
+                $registro->save();
+            }
+        }
+        return redirect ('/F7-SETCS-ELE-CR-L1-01-57');    
     }
     /**
      * Update the specified resource in storage.
@@ -243,10 +235,5 @@ class DatoshojaController extends Controller
         $registro = Registro::find($id);
         $registro->delete();
         return redirect('/F7-SETCS-ELE-CR-L1-01-57');
-    }
-
-    public function destroy2($id)
-    {
-        
     }
 }

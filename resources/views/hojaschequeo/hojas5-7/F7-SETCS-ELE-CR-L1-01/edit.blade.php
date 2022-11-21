@@ -36,6 +36,7 @@
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Parte</label>
         <select id="partetabla" name="partetabla" class="form-control" tabindex="1" value="{{$registro->partetabla}}">
+            <option value="{{$registro->partetabla}}">{{$registro->partetabla}}</option>
             <option value="AL INICIO DE TURNO">AL INICIO DE TURNO</option>
             <option value="DIARIO">DIARIO</option>
             <option value="NOTA">NOTA</option>
