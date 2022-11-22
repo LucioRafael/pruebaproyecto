@@ -33,6 +33,7 @@
                     <th scope="col" rowspan="2">Causa raiz asignable</th>
                     <th scope="col" rowspan="2">Accion correctiva</th>
                     <th scope="col">Responsable</th>
+                    <th scope="col" rowspan="2">Acciones</th>
                 </tr>
                 <tr>
                     <th scope="col">Muestreo de confirmacion</th>
@@ -44,15 +45,19 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
+                @if ($reverso->documentoid == "F7-SETCS-ELE-CR-L1-01-57" && $reverso->turno == "1")
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
                     <td>{{$reverso->proceso}}</td>
                     <td>{{$reverso->porque}}</td>
                     <td>{{$reverso->confirmacion}}</td>
-                    <td>{{$reverso->disposicion}}</td>
-                    <td>{{$reverso->cantidad}}</td>
+                    <td>{{$reverso->dispocision}}</td>
+                    <td>{{$reverso->Cantidad}}</td>
                     <td>{{$reverso->nombre}}</td>
+                    <td>{{$reverso->causa}}</td>
+                    <td>{{$reverso->accion}}</td>
+                    <td>{{$reverso->responsable}}</td>
                     <td>
                         <form action="{{route('reverso.destroy',$reverso->id)}}" method="POST">
                         <a href="reverso/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
@@ -61,9 +66,11 @@
                         <button type="submit" class="btn btn-danger">Eliminar</button>    
                         </form>         
                     </td>
-                </tr>  
+                </tr>                      
+                @endif
                 @endforeach
             </tbody>
         </table>
+        <a href="/reverso/create" class="btn btn-primary">Añadir campo</a>
     </body>
 </html>

@@ -31,7 +31,7 @@ Route::resource('Turno68','App\Http\Controllers\Turno68Controller');
 //Rutas de hojas de chequeo 5-7
 Route::middleware(['auth',])->group(function () {
 Route::resource('F7-SETCS-ELE-CR-L1-01-57', 'App\Http\Controllers\DatoshojaController');
-Route::resource('reverso', ReversoController00::class);
+Route::resource('reverso', 'App\Http\Controllers\ReversoController00');
 Route::get('/check',[DatoshojaController::class,'check'])->name('check');
 Route::put('/finalcheck/{id}',[DatoshojaController::class,'finalcheck'])->name('finalcheck');
 Route::get('/edit2/{id}',[DatoshojaController::class,'edit2'])->name('edit2');

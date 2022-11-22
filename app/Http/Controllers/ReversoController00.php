@@ -42,11 +42,16 @@ class ReversoController00 extends Controller
         $reversos->proceso = $request->get('proceso');
         $reversos->porque = $request->get('porque');
         $reversos->confirmacion = $request->get('confirmacion');
-        $reversos->disposicion = $request->get('disposicion');
-        $reversos->cantidad = $request->get('cantidad');
+        $reversos->dispocision = $request->get('dispocision');
+        $reversos->Cantidad = $request->get('Cantidad');
         $reversos->nombre = $request->get('nombre');
         $reversos->causa = $request->get('causa');
-
+        $reversos->accion = $request->get('accion');
+        $reversos->responsable = $request->get('responsable');
+        $reversos->turno = $request->get('turno');
+        $reversos->documentoid = $request->get('documentoid');
+        $reversos->save();
+        return redirect('/reverso');
     }
     /**
      * Show the form for editing the specified resource.
@@ -75,8 +80,8 @@ class ReversoController00 extends Controller
         $reverso->proceso = $request->get('proceso');
         $reverso->porque = $request->get('porque');
         $reverso->confirmacion = $request->get('confirmacion');
-        $reverso->disposicion = $request->get('disposicion');
-        $reverso->cantidad = $request->get('cantidad');
+        $reverso->dispocision = $request->get('dispocision');
+        $reverso->Cantidad = $request->get('Cantidad');
         $reverso->nombre = $request->get('nombre');
         $reverso->causa = $request->get('causa');
         $reverso->save();
