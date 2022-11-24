@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +11,10 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
 </head>
-
-<body id="vistas">
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
-    <div>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <img src="/images/R.png" alt="" id="logoborg">
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
-            </div>
-        </nav>
-        <br>
-    </div>
     <div class="table-responsive">
         <table class="table table-success table-bordered">
             <thead>
@@ -81,7 +72,6 @@
                 @endforeach
             </thead>
         </table>
-        <a href="/edit2/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
         <div class="table-responsive" align="center">
             <table class="table table-success table-bordered">
                 <thead>
@@ -118,7 +108,6 @@
                         <th>29</th>
                         <th>30</th>
                         <th>31</th>
-                        <th>Acciones</th>
                     </tr>
                     <tr>
                         <th>5/7</th>
@@ -152,7 +141,6 @@
                         <th>5/7</th>
                         <th>5/7</th>
                         <th>5/7</th>
-                        <th>...</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -384,14 +372,6 @@
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
                                     </td>
-                                    <td>
-                                        <form action="{{route('F7-SETCS-ELE-CR-L1-01-57.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-CR-L1-01-57/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                                        </form>
-                                    </td>
                                 </tr>
                             @endif
                         @endforeach
@@ -622,14 +602,6 @@
                                         @else
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
-                                    </td>
-                                    <td>
-                                        <form action="{{route('F7-SETCS-ELE-CR-L1-01-57.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-CR-L1-01-57/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                                        </form>
                                     </td>
                                 </tr>
                             @endif
@@ -864,24 +836,12 @@
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
                                     </td>
-                                    <td>
-                                        <form action="{{route('F7-SETCS-ELE-CR-L1-01-57.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-CR-L1-01-57/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                                        </form>
-                                    </td>
                                 </tr>
                             @endif
                         @endforeach
                     </tbody>
             </table>
         </div>
-                    <a href="{{route('check')}}" class="btn btn-primary">Chequeo Diario</a>
-                    <a href="F7-SETCS-ELE-CR-L1-01-57/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="/reverso" class="btn btn-secondary">Reverso</a>
-                    <a href="{{route('pdfprint')}}" class="btn btn-danger">Guardar PDF</a>
 </body>
 
 </html>

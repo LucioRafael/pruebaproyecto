@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use PDF;
 use App\Models\Datoshoja;
 use App\Models\Registro;
 use App\Models\option;
@@ -24,6 +25,17 @@ class DatoshojaController extends Controller
         ->with('datoshojas',$datoshojas)
         ->with('options', $options);
     }
+    public function printindex()
+    {
+        $registros = Registro::all();
+        $datoshojas = Datoshoja::all();
+        $options = option::all();
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.printindex')
+        ->with('registros',$registros)
+        ->with('datoshojas',$datoshojas)
+        ->with('options', $options);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -31,7 +43,7 @@ class DatoshojaController extends Controller
      */
     public function create()
     {
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.create');
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.create');
     }
     /**
      * Store a newly created resource in storage.
@@ -132,7 +144,7 @@ class DatoshojaController extends Controller
     {
         $options = option::all();
         $registros = Registro::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01.check')
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.check')
         ->with('registros',$registros)
         ->with('options',$options);
     }
@@ -235,5 +247,17 @@ class DatoshojaController extends Controller
         $registro = Registro::find($id);
         $registro->delete();
         return redirect('/F7-SETCS-ELE-CR-L1-01-57');
+    }
+    public function pdfprint()
+    {
+        $registros = Registro::all();
+        $datoshojas = Datoshoja::all();
+        $options = option::all();
+        view()-> share('datoshojas',$datoshojas);
+        view()-> share('registros',$registros);
+        view()-> share('options',$options);
+        $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.printindex');
+        $pdf->setPaper('b3','landscape');
+        return $pdf-> download('F7-SETCS-ELE-CR-L1-01-1.pdf');
     }
 }

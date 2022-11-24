@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DatoshojaController;
 use App\Http\Controllers\ReversoController00;
+use App\Exports\UsersExport;
+use Maatwebsite\Excel\Facades\Excel;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,6 +38,11 @@ Route::get('/check',[DatoshojaController::class,'check'])->name('check');
 Route::put('/finalcheck/{id}',[DatoshojaController::class,'finalcheck'])->name('finalcheck');
 Route::get('/edit2/{id}',[DatoshojaController::class,'edit2'])->name('edit2');
 Route::put('/update2/{id}',[DatoshojaController::class,'update2'])->name('update2');
+Route::get('/pdfprint',[DatoshojaController::class,'pdfprint'])->name('pdfprint');
+Route::get('/printindex',[DatoshojaController::class,'printindex'])->name('printindex');
+});
+Route::get('/export', function() {
+    return Excel::download(new UsersExport, 'users.xlsx');
 });
 
 //Rutas para el login
