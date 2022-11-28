@@ -17,7 +17,7 @@
     <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/Turno1"id="loginreg" method="POST">
+<form action="/Turno3"id="loginreg" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -56,7 +56,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/Turno1" class="btn btn-danger">Cancelar</a>
+        <a href="/Turno3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

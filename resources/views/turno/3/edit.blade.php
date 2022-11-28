@@ -12,33 +12,38 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <img src="../images/R.png" alt="" id="logoborg">
+    <img src="/images/R.png" alt="" id="logoborg">
     <h4 style="padding-right: 200px">Registro</h4>
-    <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
+    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/Turno1"id="loginreg" method="POST">
+<form action="/Turno3/{{$turno3->id}}"id="loginreg" method="POST">
     @csrf
+    @method('PUT')
     <div class="container">
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">DocumentoID</label>
-        <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1">
+        <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1" value="{{$turno3->DocumentoID}}">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">Titulo</label>
-        <input type="text" name="titulo" id="titulo" class="form-control" tabindex="1">
+        <input type="text" name="titulo" id="titulo" class="form-control" tabindex="1" value="{{$turno3->Titulo}}">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">Operacion</label>
-        <input type="text" name="operacion" id="operacion" class="form-control" tabindex="1">
+        <input type="text" name="operacion" id="operacion" class="form-control" tabindex="1" value="{{$turno3->Operacion}}">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">Descripcion</label>
-        <input type="text" name="descripcion" id="descripcion" class="form-control" tabindex="1">
+        <input type="text" name="descripcion" id="descripcion" class="form-control" tabindex="1" value="{{$turno3->Descripcion}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Ruta</label>
+        <input type="text" name="ruta" id="ruta" class="form-control" tabindex="1" value="{{$turno3->Ruta}}">
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">#</label>
-        <select id="numero" name="numero" class="form-control" tabindex="1">
+        <select id="numero" name="numero" class="form-control" tabindex="1" value="{{$turno3->Numero}}">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -50,16 +55,11 @@
             <option value="9">9</option>
         </select>
     </div>
-    <div class="mb-3">
-        <label for="" id=txt1 class="form-label">Ruta</label>
-        <input type="text" name="ruta" id="ruta" class="form-control" tabindex="1">
-    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/Turno1" class="btn btn-danger">Cancelar</a>
+        <a href="/Turno3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    
 </body>
 </html>
-

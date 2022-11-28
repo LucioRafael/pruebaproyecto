@@ -150,7 +150,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '5-7' &&
+                            @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <tr>
@@ -381,7 +381,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '5-7' &&
+                            @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO')
                                 <tr>
@@ -614,7 +614,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '5-7' &&
+                            @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA')
                                 <tr>

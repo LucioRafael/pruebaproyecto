@@ -18,9 +18,11 @@
 </nav>
 <br><br>
 <div class="contenedor-turnos">
-<a href="Turno57" class="btn" id="boton57">Turno 5-7</a>
+<a href="Turno1" class="btn" id="boton57">Turno 1</a>
 <br><br>
-<a href="Turno68" class="btn" id="boton68">Turno 6-8</a>       
+<a href="Turno2" class="btn" id="boton68">Turno 2</a>
+<br><br>
+<a href="Turno3" class="btn" id="boton57">Turno 3</a>   
 </div>
 </body>
 </html>

@@ -34,6 +34,14 @@
     <label id="txt1" for="passwordinput" class="form-label">Contraseña</label>
     <input type="password" name="password"class="form-control" id="passwordinput" placeholder="Escribir Contraseña...">
   </div>
+  <div>
+    <label id="txt1" for="role" class="form-label">Tipo de usuario</label>
+    <select name="role" id="role">
+    <option value="">--Seleccionar--</option>   
+    <option value="Admin">Administrador</option>
+    <option value="Operador">Operador</option>   
+    </select>
+  </div>
   <br>
   <button type="submit" class="btn btn-primary">Registrarse</button>
 </form>  

@@ -1,7 +1,7 @@
 @extends('diseños.diseñoturnos')
 @section('diseñomenus')
 <br>
-<h1 style="text-align: center; color:white; background-color:rgb(113, 113, 255)">Lista de hojas de chequeo turno 6-8</h1>
+<h1 style="text-align: center; color:white; background-color:rgb(113, 113, 255)">Lista de hojas de chequeo turno 2</h1>
 <table class="table table-success table-striped mt-4">
     <thead>
         <tr>
@@ -22,8 +22,8 @@
             <td>{{$turno68->Operacion}}</td>
             <td>{{$turno68->Numero}}</td>
             <td>
-                <form action="{{route('Turno68.destroy',$turno68->id)}}" method="POST">
-                <a href="Turno68/{{$turno68->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                <form action="{{route('Turno2.destroy',$turno68->id)}}" method="POST">
+                <a href="Turno2/{{$turno68->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
                 @csrf
                 @method('DELETE')
                 <a href="{{$turno68->Ruta}}" class="btn btn-success">Mostrar</a>
@@ -34,5 +34,5 @@
         @endforeach
     </tbody>
 </table>
-<a href="Turno68/create" class="btn btn-primary">Crear</a>
+<a href="Turno2/create" class="btn btn-primary">Crear</a>
 @endsection

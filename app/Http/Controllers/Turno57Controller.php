@@ -48,7 +48,7 @@ class Turno57Controller extends Controller
 
         $turno57s->save();
 
-        return redirect('/Turno57');
+        return redirect('/Turno1');
     }
 
     /**
@@ -92,7 +92,7 @@ class Turno57Controller extends Controller
         $turno57->Ruta = $request->get('ruta');
         $turno57->save();
 
-        return redirect('/Turno57');
+        return redirect('/Turno1');
     }
 
     /**
@@ -105,6 +105,6 @@ class Turno57Controller extends Controller
     {
         $turno57 = Turno57::find($id);
         $turno57->delete();
-        return redirect('/Turno57');
+        return redirect('/Turno1');
     }
 }

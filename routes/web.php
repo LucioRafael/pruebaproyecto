@@ -26,8 +26,9 @@ Route::view('/turnos',"login.turnos")->middleware('auth')->name('turnos');
 
 //Rutas de los turnos
 Route::middleware(['auth'])->group(function () {
-Route::resource('Turno57','App\Http\Controllers\Turno57Controller');    
-Route::resource('Turno68','App\Http\Controllers\Turno68Controller');  
+Route::resource('Turno1','App\Http\Controllers\Turno57Controller');    
+Route::resource('Turno2','App\Http\Controllers\Turno68Controller');  
+Route::resource('Turno3','App\Http\Controllers\Turno3Controller'); 
 });
 
 //Rutas de hojas de chequeo 5-7

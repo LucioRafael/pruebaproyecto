@@ -17,7 +17,7 @@
     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/Turno57/{{$turno57->id}}"id="loginreg" method="POST">
+<form action="/Turno1/{{$turno57->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -57,7 +57,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/Turno57" class="btn btn-danger">Cancelar</a>
+        <a href="/Turno1" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

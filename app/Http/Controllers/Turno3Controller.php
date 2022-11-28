@@ -1,11 +1,13 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
-use App\Models\Turno68;
+use App\Models\Turno3;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
-class Turno68Controller extends Controller
+class Turno3Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +16,8 @@ class Turno68Controller extends Controller
      */
     public function index()
     {
-        $turno68s = Turno68::all();
-        return view('turno.6-8.index')->with('turno68s',$turno68s);
+        $turno3s = Turno3::all();
+        return view('turno.3.index')->with('turno3s',$turno3s);
 
     }
 
@@ -26,7 +28,7 @@ class Turno68Controller extends Controller
      */
     public function create()
     {
-        return view('turno.6-8.create');
+        return view('turno.3.create');
 
     }
 
@@ -38,17 +40,17 @@ class Turno68Controller extends Controller
      */
     public function store(Request $request)
     {
-        $turno68s = new Turno68();
-        $turno68s->DocumentoID = $request->get('documentoid');
-        $turno68s->Titulo = $request->get('titulo');
-        $turno68s->Operacion = $request->get('operacion');
-        $turno68s->Descripcion = $request->get('descripcion');
-        $turno68s->Numero =$request->get('numero');
-        $turno68s->Ruta = $request->get('ruta');
+        $turno3s = new Turno3();        
+        $turno3s->DocumentoID = $request->get('documentoid');
+        $turno3s->Titulo = $request->get('titulo');
+        $turno3s->Operacion = $request->get('operacion');
+        $turno3s->Descripcion = $request->get('descripcion');
+        $turno3s->Numero =$request->get('numero');
+        $turno3s->Ruta = $request->get('ruta');
 
-        $turno68s->save();
+        $turno3s->save();
 
-        return redirect('/Turno2');
+        return redirect('/Turno3');
     }
 
     /**
@@ -70,8 +72,8 @@ class Turno68Controller extends Controller
      */
     public function edit($id)
     {
-        $turno68 = Turno68::find($id);
-        return view('turno.6-8.edit')->with('turno68',$turno68);
+        $turno3 = Turno3::find($id);
+        return view('turno.3.edit')->with('turno3',$turno3);
     }
 
     /**
@@ -83,18 +85,16 @@ class Turno68Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $turno68 = Turno68::find($id);
+        $turno3 = Turno3::find($id);
+        $turno3->DocumentoID = $request->get('documentoid');
+        $turno3->Titulo = $request->get('titulo');
+        $turno3->Operacion = $request->get('operacion');
+        $turno3->Descripcion = $request->get('descripcion');
+        $turno3->Numero =$request->get('numero');
+        $turno3->Ruta = $request->get('ruta');
+        $turno3->save();
 
-        $turno68->DocumentoID = $request->get('documentoid');
-        $turno68->Titulo = $request->get('titulo');
-        $turno68->Operacion = $request->get('operacion');
-        $turno68->Descripcion = $request->get('descripcion');
-        $turno68->Numero =$request->get('numero');
-        $turno68->Ruta = $request->get('ruta');
-
-        $turno68->save();
-
-        return redirect('/Turno2');
+        return redirect('/Turno3');
     }
 
     /**
@@ -105,9 +105,8 @@ class Turno68Controller extends Controller
      */
     public function destroy($id)
     {
-        $turno68 = Turno68::find($id);
-        $turno68->delete();
-        return redirect('/Turno2');
+        $turno3 = Turno3::find($id);
+        $turno3->delete();
+        return redirect('/Turno3');
     }
 }
-

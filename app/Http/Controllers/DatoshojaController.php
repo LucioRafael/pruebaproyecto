@@ -19,21 +19,17 @@ class DatoshojaController extends Controller
     {
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
-        $options = option::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.index')
         ->with('registros',$registros)
-        ->with('datoshojas',$datoshojas)
-        ->with('options', $options);
+        ->with('datoshojas',$datoshojas);
     }
     public function printindex()
     {
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
-        $options = option::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.printindex')
         ->with('registros',$registros)
-        ->with('datoshojas',$datoshojas)
-        ->with('options', $options);
+        ->with('datoshojas',$datoshojas);
     }
 
     /**
@@ -142,11 +138,9 @@ class DatoshojaController extends Controller
     }
     public function check(Request $request)
     {
-        $options = option::all();
         $registros = Registro::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.check')
-        ->with('registros',$registros)
-        ->with('options',$options);
+        ->with('registros',$registros);
     }
 
     public function finalcheck(Request $request,$id)
@@ -252,10 +246,8 @@ class DatoshojaController extends Controller
     {
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
-        $options = option::all();
         view()-> share('datoshojas',$datoshojas);
         view()-> share('registros',$registros);
-        view()-> share('options',$options);
         $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.printindex');
         $pdf->setPaper('b3','landscape');
         return $pdf-> download('F7-SETCS-ELE-CR-L1-01-1.pdf');

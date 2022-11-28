@@ -105,7 +105,7 @@
                         </tr>
                         @foreach ($registros as $key=>$registro)
                         <form action="{{route('finalcheck',$registro->id)}}" method="POST">                            
-                            @if ($registro->turno == '5-7' &&
+                            @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -114,280 +114,278 @@
                                     <td>
                                         <select name="registro[{{$key}}][d1]" id="d1">
                                             <option value="{{$registro->d1}}">{{$registro->d1}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d2]" id="d2">
                                             <option value="{{$registro->d2}}">{{$registro->d2}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d3]" id="d3">
                                             <option value="{{$registro->d3}}">{{$registro->d3}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d4]" id="d4">
                                             <option value="{{$registro->d4}}">{{$registro->d4}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d5]" id="d5">
                                             <option value="{{$registro->d5}}">{{$registro->d5}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d6]" id="d6">
                                             <option value="{{$registro->d6}}">{{$registro->d6}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d7]" id="d7">
                                             <option value="{{$registro->d7}}">{{$registro->d7}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d8]" id="d8">
                                             <option value="{{$registro->d8}}">{{$registro->d8}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d9]" id="d9">
                                             <option value="{{$registro->d9}}">{{$registro->d9}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d10]" id="d10">
                                             <option value="{{$registro->d10}}">{{$registro->d10}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d11]" id="d11">
                                             <option value="{{$registro->d11}}">{{$registro->d11}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d12]" id="d12">
                                             <option value="{{$registro->d12}}">{{$registro->d12}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d13]" id="d13">
                                             <option value="{{$registro->d13}}">{{$registro->d13}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d14]" id="d14">
-                                            <option value="{{$registro->d14}}">{{$registro->d14}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d15]" id="d15">
                                             <option value="{{$registro->d15}}">{{$registro->d15}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d16]" id="d16">
                                             <option value="{{$registro->d16}}">{{$registro->d16}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
-                                        </select>
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d17]" id="d17">
                                             <option value="{{$registro->d17}}">{{$registro->d17}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d18]" id="d18">
                                             <option value="{{$registro->d18}}">{{$registro->d18}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d19]" id="d19">
                                             <option value="{{$registro->d19}}">{{$registro->d19}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d20]" id="d20">
                                             <option value="{{$registro->d20}}">{{$registro->d20}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d21]" id="d21">
                                             <option value="{{$registro->d21}}">{{$registro->d21}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d22]" id="d22">
                                             <option value="{{$registro->d22}}">{{$registro->d22}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d23]" id="d23">
                                             <option value="{{$registro->d23}}">{{$registro->d23}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d24]" id="d24">
                                             <option value="{{$registro->d24}}">{{$registro->d24}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d25]" id="d25">
                                             <option value="{{$registro->d25}}">{{$registro->d25}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d26]" id="d26">
                                             <option value="{{$registro->d26}}">{{$registro->d26}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d27]" id="d27">
                                             <option value="{{$registro->d27}}">{{$registro->d27}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d28]" id="d28">
                                             <option value="{{$registro->d28}}">{{$registro->d28}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d29]" id="d29">
                                             <option value="{{$registro->d29}}">{{$registro->d29}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d30]" id="d30">
                                             <option value="{{$registro->d30}}">{{$registro->d30}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d31]" id="d31">
                                             <option value="{{$registro->d31}}">{{$registro->d31}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -399,7 +397,7 @@
                         </th>                              
                         </tr>
                         @foreach ($registros as $key=>$registro)                          
-                            @if ($registro->turno == '5-7' &&
+                            @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -408,280 +406,280 @@
                                     <td>
                                         <select name="registro[{{$key}}][d1]" id="d1">
                                             <option value="{{$registro->d1}}">{{$registro->d1}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d2]" id="d2">
                                             <option value="{{$registro->d2}}">{{$registro->d2}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d3]" id="d3">
                                             <option value="{{$registro->d3}}">{{$registro->d3}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d4]" id="d4">
                                             <option value="{{$registro->d4}}">{{$registro->d4}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d5]" id="d5">
                                             <option value="{{$registro->d5}}">{{$registro->d5}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d6]" id="d6">
                                             <option value="{{$registro->d6}}">{{$registro->d6}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d7]" id="d7">
                                             <option value="{{$registro->d7}}">{{$registro->d7}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d8]" id="d8">
                                             <option value="{{$registro->d8}}">{{$registro->d8}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d9]" id="d9">
                                             <option value="{{$registro->d9}}">{{$registro->d9}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d10]" id="d10">
                                             <option value="{{$registro->d10}}">{{$registro->d10}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d11]" id="d11">
                                             <option value="{{$registro->d11}}">{{$registro->d11}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d12]" id="d12">
                                             <option value="{{$registro->d12}}">{{$registro->d12}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d13]" id="d13">
                                             <option value="{{$registro->d13}}">{{$registro->d13}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d14]" id="d14">
                                             <option value="{{$registro->d14}}">{{$registro->d14}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d15]" id="d15">
                                             <option value="{{$registro->d15}}">{{$registro->d15}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d16]" id="d16">
                                             <option value="{{$registro->d16}}">{{$registro->d16}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d17]" id="d17">
                                             <option value="{{$registro->d17}}">{{$registro->d17}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d18]" id="d18">
                                             <option value="{{$registro->d18}}">{{$registro->d18}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d19]" id="d19">
                                             <option value="{{$registro->d19}}">{{$registro->d19}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d20]" id="d20">
                                             <option value="{{$registro->d20}}">{{$registro->d20}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d21]" id="d21">
                                             <option value="{{$registro->d21}}">{{$registro->d21}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d22]" id="d22">
                                             <option value="{{$registro->d22}}">{{$registro->d22}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d23]" id="d23">
                                             <option value="{{$registro->d23}}">{{$registro->d23}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d24]" id="d24">
                                             <option value="{{$registro->d24}}">{{$registro->d24}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d25]" id="d25">
                                             <option value="{{$registro->d25}}">{{$registro->d25}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d26]" id="d26">
                                             <option value="{{$registro->d26}}">{{$registro->d26}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d27]" id="d27">
                                             <option value="{{$registro->d27}}">{{$registro->d27}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d28]" id="d28">
                                             <option value="{{$registro->d28}}">{{$registro->d28}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d29]" id="d29">
                                             <option value="{{$registro->d29}}">{{$registro->d29}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d30]" id="d30">
                                             <option value="{{$registro->d30}}">{{$registro->d30}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d31]" id="d31">
                                             <option value="{{$registro->d31}}">{{$registro->d31}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -695,7 +693,7 @@
                         </th>                           
                         </tr>
                         @foreach ($registros as $key=>$registro)                          
-                            @if ($registro->turno == '5-7' &&
+                            @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -704,280 +702,280 @@
                                     <td>
                                         <select name="registro[{{$key}}][d1]" id="d1">
                                             <option value="{{$registro->d1}}">{{$registro->d1}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d2]" id="d2">
                                             <option value="{{$registro->d2}}">{{$registro->d2}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d3]" id="d3">
                                             <option value="{{$registro->d3}}">{{$registro->d3}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d4]" id="d4">
                                             <option value="{{$registro->d4}}">{{$registro->d4}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d5]" id="d5">
                                             <option value="{{$registro->d5}}">{{$registro->d5}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d6]" id="d6">
                                             <option value="{{$registro->d6}}">{{$registro->d6}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d7]" id="d7">
                                             <option value="{{$registro->d7}}">{{$registro->d7}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d8]" id="d8">
                                             <option value="{{$registro->d8}}">{{$registro->d8}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d9]" id="d9">
                                             <option value="{{$registro->d9}}">{{$registro->d9}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d10]" id="d10">
                                             <option value="{{$registro->d10}}">{{$registro->d10}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d11]" id="d11">
                                             <option value="{{$registro->d11}}">{{$registro->d11}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d12]" id="d12">
                                             <option value="{{$registro->d12}}">{{$registro->d12}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d13]" id="d13">
                                             <option value="{{$registro->d13}}">{{$registro->d13}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d14]" id="d14">
                                             <option value="{{$registro->d14}}">{{$registro->d14}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d15]" id="d15">
                                             <option value="{{$registro->d15}}">{{$registro->d15}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d16]" id="d16">
                                             <option value="{{$registro->d16}}">{{$registro->d16}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d17]" id="d17">
                                             <option value="{{$registro->d17}}">{{$registro->d17}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d18]" id="d18">
                                             <option value="{{$registro->d18}}">{{$registro->d18}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d19]" id="d19">
                                             <option value="{{$registro->d19}}">{{$registro->d19}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d20]" id="d20">
                                             <option value="{{$registro->d20}}">{{$registro->d20}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d21]" id="d21">
                                             <option value="{{$registro->d21}}">{{$registro->d21}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d22]" id="d22">
                                             <option value="{{$registro->d22}}">{{$registro->d22}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d23]" id="d23">
                                             <option value="{{$registro->d23}}">{{$registro->d23}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d24]" id="d24">
                                             <option value="{{$registro->d24}}">{{$registro->d24}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d25]" id="d25">
                                             <option value="{{$registro->d25}}">{{$registro->d25}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d26]" id="d26">
                                             <option value="{{$registro->d26}}">{{$registro->d26}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d27]" id="d27">
                                             <option value="{{$registro->d27}}">{{$registro->d27}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d28]" id="d28">
                                             <option value="{{$registro->d28}}">{{$registro->d28}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d29]" id="d29">
                                             <option value="{{$registro->d29}}">{{$registro->d29}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d30]" id="d30">
                                             <option value="{{$registro->d30}}">{{$registro->d30}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d31]" id="d31">
                                             <option value="{{$registro->d31}}">{{$registro->d31}}</option>
-                                            @foreach ($options as $option)
-                                                <option value="{{ $option['opcion'] }}">{{ $option['opcion'] }}
-                                                </option>
-                                            @endforeach
+                                            <option value="-">-</option>
+                                            <option value="Cumple">Cumple</option>
+                                            <option value="No Cumple">No Cumple</option>
+                                            <option value="No Aplica">No Aplica</option>
                                         </select>
                                     </td>
                                 </tr>

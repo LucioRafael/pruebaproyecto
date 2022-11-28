@@ -150,7 +150,7 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>Turno</label>
-        <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden value="5-7">
+        <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden value="1">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>

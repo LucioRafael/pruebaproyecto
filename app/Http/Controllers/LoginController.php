@@ -14,7 +14,7 @@ class LoginController extends Controller
         $user-> firstname = $request->firstname;
         $user-> lastname = $request->lastname;
         $user-> password = Hash::make($request->password);
-
+        $user-> assignRole($request->role);
         $user->save();
         
         return redirect(route('login'));

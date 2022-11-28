@@ -51,37 +51,6 @@ return new class extends Migration
             $table->string('documentoid');
             $table->string('partetabla');
             $table->timestamps();
-            $table->foreign('d1')->references('opcion')->on('options');
-            $table->foreign('d2')->references('opcion')->on('options');
-            $table->foreign('d3')->references('opcion')->on('options');
-            $table->foreign('d4')->references('opcion')->on('options');
-            $table->foreign('d5')->references('opcion')->on('options');
-            $table->foreign('d6')->references('opcion')->on('options');
-            $table->foreign('d7')->references('opcion')->on('options');
-            $table->foreign('d8')->references('opcion')->on('options');
-            $table->foreign('d9')->references('opcion')->on('options');
-            $table->foreign('d10')->references('opcion')->on('options');
-            $table->foreign('d11')->references('opcion')->on('options');
-            $table->foreign('d12')->references('opcion')->on('options');
-            $table->foreign('d13')->references('opcion')->on('options');
-            $table->foreign('d14')->references('opcion')->on('options');
-            $table->foreign('d15')->references('opcion')->on('options');
-            $table->foreign('d16')->references('opcion')->on('options');
-            $table->foreign('d17')->references('opcion')->on('options');
-            $table->foreign('d18')->references('opcion')->on('options');
-            $table->foreign('d19')->references('opcion')->on('options');
-            $table->foreign('d20')->references('opcion')->on('options');
-            $table->foreign('d21')->references('opcion')->on('options');
-            $table->foreign('d22')->references('opcion')->on('options');
-            $table->foreign('d23')->references('opcion')->on('options');
-            $table->foreign('d24')->references('opcion')->on('options');
-            $table->foreign('d25')->references('opcion')->on('options');
-            $table->foreign('d26')->references('opcion')->on('options');
-            $table->foreign('d27')->references('opcion')->on('options');
-            $table->foreign('d28')->references('opcion')->on('options');
-            $table->foreign('d29')->references('opcion')->on('options');
-            $table->foreign('d30')->references('opcion')->on('options');
-            $table->foreign('d31')->references('opcion')->on('options');
         });
     }
 
