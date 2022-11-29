@@ -360,7 +360,7 @@ class DatosHojaSeeder extends Seeder
             'revision' => '-',
             'meie' => 'Carlos P. / Ulises R. / Emmanuel L.',
             'calidad' => 'Rodolfo Guerrero',
-            'manufactura' => 'K. Mendoza / G. Espinoza' / M. Loma,
+            'manufactura' => 'K. Mendoza / G. Espinoza / M. Loma',
             'area' => 'Cuarto Limpio',
             'linea' => '1',
             'operacion' => 160,
