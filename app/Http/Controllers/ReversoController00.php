@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Reverso;
-
+use PDF;
 class ReversoController00 extends Controller
 {
     /**
@@ -99,5 +99,13 @@ class ReversoController00 extends Controller
         $reverso = Reverso::find($id);
         $reverso->delete();
         return redirect('/reverso');
+    }
+    public function pdfprintReversoF7SETCSELECRL1011()
+    {
+        $reversos = Reverso::all();
+        view()-> share('reversos',$reversos);
+        $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.printreverso');
+        $pdf->setPaper('b4','landscape');
+        return $pdf-> download('Reverso-F7-SETCS-ELE-CR-L1-01-1.pdf');
     }
 }

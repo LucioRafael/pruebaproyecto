@@ -22,7 +22,9 @@
 <br><br>
 <a href="Turno2" class="btn" id="boton68">Turno 2</a>
 <br><br>
-<a href="Turno3" class="btn" id="boton57">Turno 3</a>   
+<a href="Turno3" class="btn" id="boton57">Turno 3</a>  
+<br><br>
+<a href="registro" class="btn" id="boton68">Registrar usuario</a>  
 </div>
 </body>
 </html>

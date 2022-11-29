@@ -22,9 +22,6 @@
   <a href="welcome"class="btn" id="b1" data-bs-toggle="modal" data-bs-target="#exampleModal">Inciar Sesion</a>    
   </div>
   <p></p>
-  <div>
-  <a href="registro" class="btn" id="b2">Registrarse</a>    
-  </div>
 </form>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

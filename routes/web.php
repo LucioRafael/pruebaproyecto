@@ -41,9 +41,8 @@ Route::get('/edit2/{id}',[DatoshojaController::class,'edit2'])->name('edit2');
 Route::put('/update2/{id}',[DatoshojaController::class,'update2'])->name('update2');
 Route::get('/pdfprint',[DatoshojaController::class,'pdfprint'])->name('pdfprint');
 Route::get('/printindex',[DatoshojaController::class,'printindex'])->name('printindex');
-});
-Route::get('/export', function() {
-    return Excel::download(new UsersExport, 'users.xlsx');
+Route::get('/printreverso',[ReversoController00::class,'printreverso'])->name('printreverso');
+Route::get('/pdfprintReversoF7SETCSELECRL1011',[ReversoController00::class,'pdfprintReversoF7SETCSELECRL1011'])->name('pdfprintReversoF7SETCSELECRL1011');
 });
 
 //Rutas para el login

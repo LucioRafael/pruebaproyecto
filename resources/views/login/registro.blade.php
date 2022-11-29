@@ -44,6 +44,7 @@
   </div>
   <br>
   <button type="submit" class="btn btn-primary">Registrarse</button>
+  <a href="turnos" class="btn btn-danger">Cancelar</a>
 </form>  
 </body>
 </html>
