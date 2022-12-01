@@ -64,37 +64,37 @@
                         <th>31</th>
                     </tr>
                     <tr>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
-                        <th>5/7</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -230,6 +230,7 @@
                                     </td>
                                     <td>
                                         <select name="registro[{{$key}}][d14]" id="d14">
+                                            <option value="{{$registro->d14}}">{{$registro->d14}}</option>
                                             <option value="-">-</option>
                                             <option value="Cumple">Cumple</option>
                                             <option value="No Cumple">No Cumple</option>

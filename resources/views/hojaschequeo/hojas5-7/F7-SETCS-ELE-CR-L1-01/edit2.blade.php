@@ -21,7 +21,6 @@
     <div class="table table-responsive">
         <table class="table table-success table-bordered">
             <thead>
-                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-CR-L1-01')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center"><input type="text" name="titulo" id="titulo" value="{{ $datoshoja->titulo }}"></th>
@@ -70,7 +69,6 @@
                             <th colspan="3" style="text-align: end">Año:</th>
                             <th colspan="3"><input type="text" name="año" id="año" value="{{$datoshoja->año}}"></th>
                         </tr>
-                    @endif
             </thead>
         </table>
     </div>

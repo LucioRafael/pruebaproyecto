@@ -131,9 +131,9 @@ class DatoshojaController extends Controller
         $registro = Registro::find($id);
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.edit')->with('registro',$registro);
     }
-    public function edit2($id)
+    public function edit2($documentoid)
     {
-        $datoshoja = Datoshoja::find($id);
+        $datoshoja = Datoshoja::find($documentoid);
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.edit2')->with('datoshoja',$datoshoja);
     }
     public function check(Request $request)

@@ -80,13 +80,20 @@
                             <th colspan="3" style="text-align: end">Año:</th>
                             <th colspan="3">{{ $datoshoja->año }}</th>
                         </tr>
+                        <tr>
+                            <th>accion</th>
+                            <th>
+                            @role('Admin')
+                            <a href="/edit2/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            @endrole                                
+                            </th>
+                            <th colspan="30"></th>
+                        </tr>
                     @endif
                 @endforeach
             </thead>
         </table>
-        @role('Admin')
-        <a href="/edit2/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
-        @endrole
+
         <div class="table-responsive" align="center">
             <table class="table table-success table-bordered">
                 <thead>
