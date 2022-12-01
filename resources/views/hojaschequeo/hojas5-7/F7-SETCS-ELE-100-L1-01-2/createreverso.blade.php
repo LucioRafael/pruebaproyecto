@@ -22,7 +22,7 @@
             <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
         </div>
     </nav>
-    <form action="/reversoSETCS100111" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS100121" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         <div class="container">
             <div class="mb-3">
@@ -79,7 +79,7 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
                 <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1"
-                    hidden value="F7-SETCS-ELE-100-L1-01-1-1">
+                    hidden value="F7-SETCS-ELE-100-L1-01-2-1">
             </div>
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
@@ -88,7 +88,7 @@
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS100111" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS100121" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>

@@ -31,7 +31,7 @@
         <table class="table table-success table-bordered">
             <thead>
                 @foreach ($datoshojas as $datoshoja)
-                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-100-L1-01')
+                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-100-L1-02')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>
@@ -84,7 +84,7 @@
                             <th>accion</th>
                             <th>
                             @role('Admin')
-                            <a href="/edit2SETCS100111/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            <a href="/edit2SETCS10021/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
                             @endrole                                
                             </th>
                             <th colspan="30"></th>
@@ -178,7 +178,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-02-1' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -401,8 +401,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-100-L1-01-1-1.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-100-L1-01-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-100-L1-02-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-100-L1-02-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -419,7 +419,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-02-1' &&
                                 $registro->partetabla == 'ABAJO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -642,8 +642,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-100-L1-01-1-1.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-100-L1-01-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-100-L1-02-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-100-L1-02-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -656,11 +656,11 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{route('checkSETCS100111')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS10021')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-100-L1-01-1-1/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintSETCS100111')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-SETCS-ELE-100-L1-02-1/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS10021')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoSETCS100111" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS10021" class="btn btn-secondary">Reverso</a>                    
 </body>
 </html>

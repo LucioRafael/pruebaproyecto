@@ -19,7 +19,7 @@
         <table class="table table-success table-bordered">
             <thead>
                 @foreach ($datoshojas as $datoshoja)
-                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-40-L1-01')
+                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-100-L1-01')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>
@@ -146,12 +146,12 @@
                     <tbody>
                         <tr>
                             <th colspan="33" class="table-secondary">
-                                <p align="center">Primera hoja despues del cambio de modelo</p>
+                                <p align="center">INICIO DE TURNO</p>
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-01-1-1' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -377,12 +377,12 @@
                         @endforeach
                         <tr>
                             <th colspan="33" class="table-secondary">
-                                <p align="center">Primera hoja despues del cambio de modelo</p>
+                                <p align="center">Despues de ajustes por mantenimiento o cambio de modelo</p>
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-01-1-1' &&
                                 $registro->partetabla == 'ABAJO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

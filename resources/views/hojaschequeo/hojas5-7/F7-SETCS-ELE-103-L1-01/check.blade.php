@@ -98,15 +98,10 @@
                     </tr>
                 </thead>
                     <tbody>
-                        <tr>
-                            <th colspan="33" class="table-secondary">
-                                <p align="center">INICIO DE TURNO</p>
-                            </th>
-                        </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS100111',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS10311',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-103-L1-01-1' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
@@ -398,9 +393,9 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS100111',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS10311',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-100-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-103-L1-01-1' &&
                                 $registro->partetabla == 'ABAJO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>

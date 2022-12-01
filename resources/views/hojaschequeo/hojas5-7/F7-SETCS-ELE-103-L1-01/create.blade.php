@@ -17,7 +17,7 @@
     <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/F7-SETCS-ELE-100-L1-01-1-1"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-103-L1-01-1"id="loginreg" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -154,18 +154,18 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
-        <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1" hidden value="F7-SETCS-ELE-100-L1-01-1-1">
+        <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1" hidden value="F7-SETCS-ELE-103-L1-01-1">
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Parte</label>
         <select id="partetabla" name="partetabla" class="form-control" tabindex="1">
-            <option value="ARRIBA">INICIO DE TURNO</option>
+            <option value="ARRIBA">INICIO</option>
             <option value="ABAJO">MANTENIMIENTO/CAMBIO DE MODELO</option>
         </select>
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-100-L1-01-1-1" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-103-L1-01-1" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    
