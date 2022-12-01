@@ -9,9 +9,9 @@ use App\Models\Registro;
 use App\Models\option;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
-class Datoshojasetcs606411Controller extends Controller
+class Datoshojasetcs606521Controller extends Controller
 {
-                    /**
+                        /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -20,7 +20,7 @@ class Datoshojasetcs606411Controller extends Controller
     {
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.index')
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.index')
         ->with('registros',$registros)
         ->with('datoshojas',$datoshojas);
     }
@@ -28,7 +28,7 @@ class Datoshojasetcs606411Controller extends Controller
     {
         $registros = Registro::all();
         $datoshojas = Datoshoja::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.printindex')
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.printindex')
         ->with('registros',$registros)
         ->with('datoshojas',$datoshojas);
     }
@@ -40,7 +40,7 @@ class Datoshojasetcs606411Controller extends Controller
      */
     public function create()
     {
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.create');
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.create');
     }
     /**
      * Store a newly created resource in storage.
@@ -111,7 +111,7 @@ class Datoshojasetcs606411Controller extends Controller
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
         $registros->save();
-        return redirect ('/F7-SETCS-ELE-60-L1-06-4-1-1');
+        return redirect ('/F7-SETCS-ELE-60-L1-06-5-2-1');
     }
 
     /**
@@ -130,17 +130,17 @@ class Datoshojasetcs606411Controller extends Controller
     public function edit($id)
     {
         $registro = Registro::find($id);
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.edit')->with('registro',$registro);
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.edit')->with('registro',$registro);
     }
     public function edit2($documentoid)
     {
         $datoshoja = Datoshoja::find($documentoid);
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.edit2')->with('datoshoja',$datoshoja);
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.edit2')->with('datoshoja',$datoshoja);
     }
     public function check(Request $request)
     {
         $registros = Registro::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.check')
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.check')
         ->with('registros',$registros);
     }
 
@@ -185,7 +185,7 @@ class Datoshojasetcs606411Controller extends Controller
                 $registro->save();
             }
         }
-        return redirect ('/F7-SETCS-ELE-60-L1-06-4-1-1');
+        return redirect ('/F7-SETCS-ELE-60-L1-06-5-2-1');
     }
     /**
      * Update the specified resource in storage.
@@ -202,7 +202,7 @@ class Datoshojasetcs606411Controller extends Controller
         $registro->documentoid = $request->get('documentoid');
         $registro->partetabla = $request->get('partetabla');
         $registro->save();
-        return redirect ('/F7-SETCS-ELE-60-L1-06-4-1-1');
+        return redirect ('/F7-SETCS-ELE-60-L1-06-5-2-1');
     }
 
     public function update2(Request $request, $id)
@@ -228,7 +228,7 @@ class Datoshojasetcs606411Controller extends Controller
         $datoshojas->mes = $request ->get('mes');
         $datoshojas->año = $request ->get('año');
         $datoshojas->save();
-        return redirect ('/F7-SETCS-ELE-60-L1-06-4-1-1');
+        return redirect ('/F7-SETCS-ELE-60-L1-06-5-2-1');
     }
 
     /**
@@ -241,7 +241,7 @@ class Datoshojasetcs606411Controller extends Controller
     {
         $registro = Registro::find($id);
         $registro->delete();
-        return redirect('/F7-SETCS-ELE-60-L1-06-4-1-1');
+        return redirect('/F7-SETCS-ELE-60-L1-06-5-2-1');
     }
     public function pdfprint()
     {
@@ -249,8 +249,8 @@ class Datoshojasetcs606411Controller extends Controller
         $datoshojas = Datoshoja::all();
         view()-> share('datoshojas',$datoshojas);
         view()-> share('registros',$registros);
-        $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-1.printindex');
+        $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-5-2.printindex');
         $pdf->setPaper('b3','landscape');
-        return $pdf-> download('F7-SETCS-ELE-60-L1-06-4-1-1.pdf');
+        return $pdf-> download('F7-SETCS-ELE-60-L1-06-5-2-1.pdf');
     }
 }

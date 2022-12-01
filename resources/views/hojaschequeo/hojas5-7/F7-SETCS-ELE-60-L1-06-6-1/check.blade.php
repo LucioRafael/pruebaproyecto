@@ -104,9 +104,9 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS606511',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS606611',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == 'INICIO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
@@ -399,7 +399,7 @@
                         </tr>
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == 'AJUSTES')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
@@ -693,7 +693,7 @@
                         </tr>
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == '#1')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
@@ -987,7 +987,7 @@
                            </tr>
                            @foreach ($registros as $key=>$registro)                          
                                @if ($registro->turno == '1' &&
-                                   $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                   $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                    $registro->partetabla == '#2')
                                    <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                    <tr>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-</style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +10,23 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
 </head>
-<body>
+
+<body id="vistas">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="/images/R.png" alt="" id="logoborg">
+                <div>
+                <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                </div>
+            </div>
+        </nav>
+        <br>
+    </div>
     <div class="table-responsive">
         <table class="table table-success table-bordered">
             <thead>
@@ -68,10 +80,20 @@
                             <th colspan="3" style="text-align: end">Año:</th>
                             <th colspan="3">{{ $datoshoja->año }}</th>
                         </tr>
+                        <tr>
+                            <th>accion</th>
+                            <th>
+                            @role('Admin')
+                            <a href="/edit2SETCS606611/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            @endrole                                
+                            </th>
+                            <th colspan="30"></th>
+                        </tr>
                     @endif
                 @endforeach
             </thead>
         </table>
+
         <div class="table-responsive" align="center">
             <table class="table table-success table-bordered">
                 <thead>
@@ -108,6 +130,9 @@
                         <th>29</th>
                         <th>30</th>
                         <th>31</th>
+                        @role('Admin')
+                        <th>Acciones</th>
+                        @endrole
                     </tr>
                     <tr>
                         <th>1</th>
@@ -141,6 +166,9 @@
                         <th>1</th>
                         <th>1</th>
                         <th>1</th>
+                        @role('Admin')
+                        <th>...</th>
+                        @endrole
                     </tr>
                 </thead>
                     <tbody>
@@ -151,7 +179,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == 'INICIO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -372,6 +400,16 @@
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
                                     </td>
+                                    @role('Admin')
+                                    <td>
+                                        <form action="{{route('F7-SETCS-ELE-60-L1-06-6-1-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-60-L1-06-6-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </td>
+                                    @endrole
                                 </tr>
                             @endif
                         @endforeach
@@ -382,7 +420,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == 'AJUSTES')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -603,6 +641,16 @@
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
                                     </td>
+                                    @role('Admin')
+                                    <td>
+                                        <form action="{{route('F7-SETCS-ELE-60-L1-06-6-1-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-60-L1-06-6-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </td>
+                                    @endrole
                                 </tr>
                             @endif
                         @endforeach
@@ -613,7 +661,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == '#1')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -834,6 +882,16 @@
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
                                     </td>
+                                    @role('Admin')
+                                    <td>
+                                        <form action="{{route('F7-SETCS-ELE-60-L1-06-6-1-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-60-L1-06-6-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </td>
+                                    @endrole
                                 </tr>
                             @endif
                         @endforeach
@@ -844,7 +902,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == '#2')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -1065,12 +1123,27 @@
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
                                     </td>
+                                    @role('Admin')
+                                    <td>
+                                        <form action="{{route('F7-SETCS-ELE-60-L1-06-6-1-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-60-L1-06-6-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </td>
+                                    @endrole
                                 </tr>
                             @endif
                         @endforeach
                     </tbody>
             </table>
         </div>
+                    <a href="{{route('checkSETCS606611')}}" class="btn btn-primary">Chequeo Diario</a>
+                    @role('Admin')
+                    <a href="F7-SETCS-ELE-60-L1-06-6-1-1/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS606611')}}" class="btn btn-danger">Guardar PDF</a>
+                    @endrole
+                    <a href="/reversoSETCS606611" class="btn btn-secondary">Reverso</a>                    
 </body>
-
 </html>

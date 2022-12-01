@@ -19,7 +19,7 @@
         <table class="table table-success table-bordered">
             <thead>
                 @foreach ($datoshojas as $datoshoja)
-                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-60-L1-06')
+                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-40-L1-01')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>
@@ -146,13 +146,13 @@
                     <tbody>
                         <tr>
                             <th colspan="33" class="table-secondary">
-                                <p align="center">Inicio de turno</p>
+                                <p align="center">Primera hoja despues del cambio de modelo</p>
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
-                                $registro->partetabla == 'INICIO')
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-1' &&
+                                $registro->partetabla == 'ARRIBA')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -377,13 +377,13 @@
                         @endforeach
                         <tr>
                             <th colspan="33" class="table-secondary">
-                                <p align="center">Ajustes por mantenimiento</p>
+                                <p align="center">Primera hoja despues del cambio de modelo</p>
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
-                                $registro->partetabla == 'AJUSTES')
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-1' &&
+                                $registro->partetabla == 'ABAJO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -409,24 +409,24 @@
                                     </td>
                                     <td>
                                         @if ($registro['d4'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d4'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d4'] }}</p>
-                                        @endif
+                                        <p style="color: green">{{ $registro['d4'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d4'] }}</p>
+                                    @endif
                                     </td>
                                     <td>
                                         @if ($registro['d5'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d5'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d5'] }}</p>
-                                        @endif
+                                        <p style="color: green">{{ $registro['d5'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d5'] }}</p>
+                                    @endif
                                     </td>
                                     <td>
                                         @if ($registro['d6'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d6'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d6'] }}</p>
-                                    @endif
+                                            <p style="color: green">{{ $registro['d6'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d6'] }}</p>
+                                        @endif
                                     </td>
                                     <td>
                                         @if ($registro['d7'] == 'Cumple')
@@ -437,10 +437,10 @@
                                     </td>
                                     <td>
                                         @if ($registro['d8'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d8'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d8'] }}</p>
-                                        @endif
+                                        <p style="color: green">{{ $registro['d8'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d8'] }}</p>
+                                    @endif
                                     </td>
                                     <td>
                                         @if ($registro['d9'] == 'Cumple')
@@ -451,17 +451,17 @@
                                     </td>
                                     <td>
                                         @if ($registro['d10'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d10'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d10'] }}</p>
-                                        @endif
+                                        <p style="color: green">{{ $registro['d10'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d10'] }}</p>
+                                    @endif
                                     </td>
                                     <td>
                                         @if ($registro['d11'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d11'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d11'] }}</p>
-                                    @endif
+                                            <p style="color: green">{{ $registro['d11'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d11'] }}</p>
+                                        @endif
                                     </td>
                                     <td>
                                         @if ($registro['d12'] == 'Cumple')
@@ -479,10 +479,10 @@
                                     </td>
                                     <td>
                                         @if ($registro['d14'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d14'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d14'] }}</p>
-                                    @endif
+                                            <p style="color: green">{{ $registro['d14'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d14'] }}</p>
+                                        @endif
                                     </td>
                                     <td>
                                         @if ($registro['d15'] == 'Cumple')
@@ -528,471 +528,9 @@
                                     </td>
                                     <td>
                                         @if ($registro['d21'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d21']}}</p>
+                                            <p style="color: green">{{ $registro['d21'] }}</p>
                                         @else
-                                            <p style="color: red">{{ $registro['d21']}}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d22'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d22'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d22'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d23'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d23'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d23'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d24'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d24'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d24'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d25'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d25'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d25'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d26'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d26'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d26'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d27'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d27'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d27'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d28'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d28'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d28'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d29'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d29'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d29'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d30'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d30'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d30'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d31'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d31'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d31'] }}</p>
-                                        @endif
-                                    </td>
-                                </tr>
-                            @endif
-                        @endforeach
-                        <tr>
-                            <th colspan="33" class="table-secondary">
-                                <p align="center">Inicio de turno / Cambio de modelo / Set up #1</p>
-                            </th>
-                        </tr>
-                        @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
-                                $registro->partetabla == '#1')
-                                <tr>
-                                    <td>{{ $registro->criterio }}</td>
-                                    <td>
-                                        @if ($registro['d1'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d1'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d1'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d2'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d2'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d2'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d3'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d3'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d3'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d4'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d4'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d4'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d5'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d5'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d5'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d6'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d6'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d6'] }}</p>
-                                    @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d7'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d7'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d7'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d8'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d8'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d8'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d9'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d9'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d9'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d10'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d10'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d10'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d11'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d11'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d11'] }}</p>
-                                    @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d12'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d12'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d12'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d13'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d13'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d13'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d14'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d14'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d14'] }}</p>
-                                    @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d15'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d15'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d15'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d16'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d16'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d16'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d17'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d17'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d17'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d18'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d18'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d18'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d19'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d19'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d19'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d20'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d20'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d20'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d21'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d21']}}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d21']}}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d22'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d22'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d22'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d23'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d23'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d23'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d24'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d24'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d24'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d25'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d25'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d25'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d26'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d26'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d26'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d27'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d27'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d27'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d28'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d28'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d28'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d29'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d29'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d29'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d30'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d30'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d30'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d31'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d31'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d31'] }}</p>
-                                        @endif
-                                    </td>
-                                </tr>
-                            @endif
-                        @endforeach
-                        <tr>
-                            <th colspan="33" class="table-secondary">
-                                <p align="center">Inicio de turno / Cambio de modelo / Set up #2</p>
-                            </th>
-                        </tr>
-                        @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
-                                $registro->partetabla == '#2')
-                                <tr>
-                                    <td>{{ $registro->criterio }}</td>
-                                    <td>
-                                        @if ($registro['d1'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d1'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d1'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d2'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d2'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d2'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d3'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d3'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d3'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d4'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d4'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d4'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d5'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d5'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d5'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d6'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d6'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d6'] }}</p>
-                                    @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d7'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d7'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d7'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d8'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d8'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d8'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d9'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d9'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d9'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d10'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d10'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d10'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d11'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d11'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d11'] }}</p>
-                                    @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d12'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d12'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d12'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d13'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d13'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d13'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d14'] == 'Cumple')
-                                        <p style="color: green">{{ $registro['d14'] }}</p>
-                                    @else
-                                        <p style="color: red">{{ $registro['d14'] }}</p>
-                                    @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d15'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d15'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d15'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d16'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d16'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d16'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d17'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d17'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d17'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d18'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d18'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d18'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d19'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d19'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d19'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d20'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d20'] }}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d20'] }}</p>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($registro['d21'] == 'Cumple')
-                                            <p style="color: green">{{ $registro['d21']}}</p>
-                                        @else
-                                            <p style="color: red">{{ $registro['d21']}}</p>
+                                            <p style="color: red">{{ $registro['d21'] }}</p>
                                         @endif
                                     </td>
                                     <td>
@@ -1072,5 +610,4 @@
             </table>
         </div>
 </body>
-
 </html>

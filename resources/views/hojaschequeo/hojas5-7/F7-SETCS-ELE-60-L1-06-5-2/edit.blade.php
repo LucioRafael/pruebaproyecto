@@ -17,7 +17,7 @@
     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/F7-SETCS-ELE-60-L1-06-5-1-1/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-60-L1-06-5-2-1/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -37,15 +37,12 @@
         <label for="" id="txt1" class="form-label">Parte</label>
         <select id="partetabla" name="partetabla" class="form-control" tabindex="1" value="{{$registro->partetabla}}">
             <option value="{{$registro->partetabla}}">{{$registro->partetabla}}</option>
-            <option value="INICIO">Inicio de turno</option>
-            <option value="AJUSTES">Ajuste mantenimiento</option>
-            <option value="#1">Set up #1</option>
-            <option value="#2">Set up #2</option>
+            <option value="#3">Set up #3</option>
         </select>
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-60-L1-06-5-1-1" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-60-L1-06-5-2-1" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

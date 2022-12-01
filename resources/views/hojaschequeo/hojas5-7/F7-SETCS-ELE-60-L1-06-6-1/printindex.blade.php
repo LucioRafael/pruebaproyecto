@@ -151,7 +151,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == 'INICIO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -382,7 +382,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == 'AJUSTES')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -613,7 +613,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == '#1')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -844,7 +844,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-6-1-1' &&
                                 $registro->partetabla == '#2')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

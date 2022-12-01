@@ -17,7 +17,7 @@
     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="{{route('update2SETCS606511',$datoshoja->id)}}" method="POST">
+<form action="{{route('update2SETCS6081',$datoshoja->id)}}" method="POST">
     <div class="table table-responsive">
         <table class="table table-success table-bordered">
             <thead>
@@ -75,7 +75,7 @@
     @csrf
     @method('PUT')
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a href="/F7-SETCS-ELE-60-L1-06-5-1-1" class="btn btn-danger">Cancelar</a>
+    <a href="/F7-SETCS-ELE-60-L1-08-1" class="btn btn-danger">Cancelar</a>
 </form>
 </body>
 </html>

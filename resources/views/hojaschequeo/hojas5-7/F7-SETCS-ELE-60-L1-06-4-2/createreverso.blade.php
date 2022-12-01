@@ -22,7 +22,7 @@
             <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
         </div>
     </nav>
-    <form action="/reversoSETCS606321" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS606421" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         <div class="container">
             <div class="mb-3">

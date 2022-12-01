@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Reverso;
 use PDF;
-class Reversosetcs606421Controller extends Controller
+class Reversosetcs606621Controller extends Controller
 {
-                       /**
+                               /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -15,7 +15,7 @@ class Reversosetcs606421Controller extends Controller
     public function index()
     {
         $reversos = Reverso::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-2.indexreverso')
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-6-2.indexreverso')
         ->with('reversos',$reversos);
     }
 
@@ -26,7 +26,7 @@ class Reversosetcs606421Controller extends Controller
      */
     public function create()
     {
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-2.createreverso');
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-6-2.createreverso');
     }
 
     /**
@@ -52,7 +52,7 @@ class Reversosetcs606421Controller extends Controller
         $reversos->turno = $request->get('turno');
         $reversos->documentoid = $request->get('documentoid');
         $reversos->save();
-        return redirect('/reversoSETCS606421');
+        return redirect('/reversoSETCS606621');
     }
     /**
      * Show the form for editing the specified resource.
@@ -63,7 +63,7 @@ class Reversosetcs606421Controller extends Controller
     public function edit($id)
     {
         $reverso = Reverso::find($id);
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-2.editreverso')->with('reverso',$reverso);
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-6-2.editreverso')->with('reverso',$reverso);
     }
 
     /**
@@ -86,7 +86,7 @@ class Reversosetcs606421Controller extends Controller
         $reverso->nombre = $request->get('nombre');
         $reverso->causa = $request->get('causa');
         $reverso->save();
-        return redirect('/reversoSETCS606421');
+        return redirect('/reversoSETCS606621');
     }
 
     /**
@@ -99,14 +99,14 @@ class Reversosetcs606421Controller extends Controller
     {
         $reverso = Reverso::find($id);
         $reverso->delete();
-        return redirect('/reversoSETCS606421');
+        return redirect('/reversoSETCS606621');
     }
     public function pdfReverso()
     {
         $reversos = Reverso::all();
         view()-> share('reversos',$reversos);
-        $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-4-2.printreverso');
+        $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-60-L1-06-6-2.printreverso');
         $pdf->setPaper('b4','landscape');
-        return $pdf-> download('Reverso-F7-SETCS-ELE-60-L1-06-4-2-1.pdf');
+        return $pdf-> download('Reverso-F7-SETCS-ELE-60-L1-06-6-2-1.pdf');
     }
 }

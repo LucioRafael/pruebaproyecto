@@ -104,9 +104,9 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS606421',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS606521',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-4-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-5-2-1' &&
                                 $registro->partetabla == '#3')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>

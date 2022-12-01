@@ -22,22 +22,21 @@
             <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
         </div>
     </nav>
-    <form action="/reversoSETCS606511/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS6081" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
-        @method('PUT')
         <div class="container">
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Fecha y hora</label>
-                <input type="datetime-local" name="fechahora" id="fechahora" class="form-control" tabindex="1" value="{{$reverso->fechahora}}">
+                <input type="datetime-local" name="fechahora" id="fechahora" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Descripcion de la falla</label>
-                <input type="text" name="falla" id="falla" class="form-control" tabindex="1" value="{{$reverso->falla}}">
+                <input type="text" name="falla" id="falla" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">¿Se paro el proceso?</label>
                 <select name="proceso" id="proceso" class="form-control" tabindex="1">
-                    <option value="{{$reverso->proceso}}">{{$reverso->proceso}}</option>
+                    <option value="">--Seleccionar--</option>
                     <option value="SI">SI</option>
                     <option value="NO">NO</option>
                 </select>
@@ -45,42 +44,42 @@
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Si es no, explique porque y quien lo
                     autoriza</label>
-                <input type="text" name="porque" id="porque" class="form-control" tabindex="1" value="{{$reverso->porque}}">
+                <input type="text" name="porque" id="porque" class="form-control" tabindex="1" value="-">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Muestreo de confirmacion</label>
-                <input type="text" name="confirmacion" id="confirmacion" class="form-control" tabindex="1" value="{{$reverso->confirmacion}}">
+                <input type="text" name="confirmacion" id="confirmacion" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Disposicion del material
                     construido</label>
-                <input type="text" name="dispocision" id="dispocision" class="form-control" tabindex="1" value="{{$reverso->dispocision}}">
+                <input type="text" name="dispocision" id="dispocision" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Cantidad</label>
-                <input type="text" name="Cantidad" id="Cantidad" class="form-control" tabindex="1" value="{{$reverso->Cantidad}}">
+                <input type="text" name="Cantidad" id="Cantidad" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Nombre</label>
-                <input type="text" name="nombre" id="nombre" class="form-control" tabindex="1" value="{{$reverso->nombre}}">
+                <input type="text" name="nombre" id="nombre" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Causa raiz asignable</label>
-                <input type="text" name="causa" id="causa" class="form-control" tabindex="1" value="{{$reverso->causa}}">
+                <input type="text" name="causa" id="causa" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Accion correctiva</label>
-                <input type="text" name="accion" id="accion" class="form-control" tabindex="1" value="{{$reverso->accion}}">
+                <input type="text" name="accion" id="accion" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">Responsable (Supv. de
                     produccion)</label>
-                <input type="text" name="responsable" id="responsable" class="form-control" tabindex="1" value="{{$reverso->responsable}}">
+                <input type="text" name="responsable" id="responsable" class="form-control" tabindex="1">
             </div>
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
                 <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1"
-                    hidden value="F7-SETCS-ELE-60-L1-06-5-1-1">
+                    hidden value="F7-SETCS-ELE-60-L1-08-1">
             </div>
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
@@ -89,7 +88,7 @@
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS606511" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS6081" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>
