@@ -107,6 +107,6 @@ class Reversosetcs201Controller extends Controller
         view()-> share('reversos',$reversos);
         $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-2.printreverso');
         $pdf->setPaper('b4','landscape');
-        return $pdf-> download('Reverso-F7-SETCS-ELE-20-L1-01-1-2.pdf');
+        return $pdf-> download('Reverso-F7-SETCS-ELE-20-L1-01-2-1.pdf');
     }
 }

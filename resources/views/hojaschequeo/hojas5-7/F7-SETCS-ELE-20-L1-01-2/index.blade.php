@@ -178,7 +178,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-2-1' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -401,8 +401,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-20-L1-01-1-2.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-20-L1-01-1-2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-20-L1-01-2-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-20-L1-01-2-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -417,7 +417,7 @@
         </div>
                     <a href="{{route('checkSETCS201')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-20-L1-01-1-2/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="F7-SETCS-ELE-20-L1-01-2-1/create" class="btn btn-success">Añadir criterio</a>
                     <a href="{{route('pdfprintSETCS201')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
                     <a href="/reversoSETCS201" class="btn btn-secondary">Reverso</a>                    

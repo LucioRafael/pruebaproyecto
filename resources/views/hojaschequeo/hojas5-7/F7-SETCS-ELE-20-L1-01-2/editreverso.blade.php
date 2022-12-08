@@ -80,7 +80,7 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
                 <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1"
-                    hidden value="F7-SETCS-ELE-20-L1-01-1-2">
+                    hidden value="F7-SETCS-ELE-20-L1-01-2-1">
             </div>
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>

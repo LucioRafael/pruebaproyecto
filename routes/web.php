@@ -164,7 +164,7 @@ Route::get('/printindexSETCS20',[Datoshojasetcs20Controller::class,'printindex']
 Route::get('/printreversoSETCS20',[Reversosetcs20Controller::class,'printreverso'])->name('printreversoSETCS20');
 Route::get('/pdfReversoSETCS20',[Reversosetcs20Controller::class,'pdfReverso'])->name('pdfReversoSETCS20');
 //Rutas F7-SETCS-ELE-20-L1-01-2
-Route::resource('F7-SETCS-ELE-20-L1-01-1-2', 'App\Http\Controllers\Datoshojasetcs201Controller');
+Route::resource('F7-SETCS-ELE-20-L1-01-2-1', 'App\Http\Controllers\Datoshojasetcs201Controller');
 Route::resource('reversoSETCS201', 'App\Http\Controllers\Reversosetcs201Controller');
 Route::get('/checkSETCS201',[Datoshojasetcs201Controller::class,'check'])->name('checkSETCS201');
 Route::put('/finalcheckSETCS201/{id}',[Datoshojasetcs201Controller::class,'finalcheck'])->name('finalcheckSETCS201');

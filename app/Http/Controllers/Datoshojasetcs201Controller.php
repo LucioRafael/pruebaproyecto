@@ -112,7 +112,7 @@ class Datoshojasetcs201Controller extends Controller
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
         $registros->save();
-        return redirect ('/F7-SETCS-ELE-20-L1-01-1-2');
+        return redirect ('/F7-SETCS-ELE-20-L1-01-2-1');
     }
 
     /**
@@ -186,7 +186,7 @@ class Datoshojasetcs201Controller extends Controller
                 $registro->save();
             }
         }
-        return redirect ('/F7-SETCS-ELE-20-L1-01-1-2');    
+        return redirect ('/F7-SETCS-ELE-20-L1-01-2-1');    
     }
     /**
      * Update the specified resource in storage.
@@ -203,7 +203,7 @@ class Datoshojasetcs201Controller extends Controller
         $registro->documentoid = $request->get('documentoid');
         $registro->partetabla = $request->get('partetabla');
         $registro->save();
-        return redirect ('/F7-SETCS-ELE-20-L1-01-1-2');
+        return redirect ('/F7-SETCS-ELE-20-L1-01-2-1');
     }
 
     public function update2(Request $request, $id)
@@ -229,7 +229,7 @@ class Datoshojasetcs201Controller extends Controller
         $datoshojas->mes = $request ->get('mes');
         $datoshojas->año = $request ->get('año');
         $datoshojas->save();
-        return redirect ('/F7-SETCS-ELE-20-L1-01-1-2');
+        return redirect ('/F7-SETCS-ELE-20-L1-01-2-1');
     }
 
     /**
@@ -242,7 +242,7 @@ class Datoshojasetcs201Controller extends Controller
     {
         $registro = Registro::find($id);
         $registro->delete();
-        return redirect('/F7-SETCS-ELE-20-L1-01-1-2');
+        return redirect('/F7-SETCS-ELE-20-L1-01-2-1');
     }
     public function pdfprint()
     {
@@ -252,6 +252,6 @@ class Datoshojasetcs201Controller extends Controller
         view()-> share('registros',$registros);
         $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-2.printindex');
         $pdf->setPaper('b3','landscape');
-        return $pdf-> download('F7-SETCS-ELE-20-L1-01-1-2.pdf');
+        return $pdf-> download('F7-SETCS-ELE-20-L1-01-2-1.pdf');
     }
 }

@@ -75,7 +75,7 @@
     @csrf
     @method('PUT')
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a href="/F7-SETCS-ELE-20-L1-01-1-2" class="btn btn-danger">Cancelar</a>
+    <a href="/F7-SETCS-ELE-20-L1-01-2-1" class="btn btn-danger">Cancelar</a>
 </form>
 </body>
 </html>
