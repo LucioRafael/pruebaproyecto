@@ -1139,7 +1139,7 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{routeSETCS40212('checkSETCS606111')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS606111')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
                     <a href="F7-SETCS-ELE-60-L1-06-1-1-1/create" class="btn btn-success">Añadir criterio</a>
                     <a href="{{route('pdfprintSETCS606111')}}" class="btn btn-danger">Guardar PDF</a>
