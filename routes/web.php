@@ -114,6 +114,8 @@ use App\Http\Controllers\Reversotpm18011Controller;
 use App\Http\Controllers\Datoshojastpm18011Controller;
 use App\Exports\UsersExport;
 use Maatwebsite\Excel\Facades\Excel;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -134,7 +136,7 @@ Route::view('/turnos',"login.turnos")->middleware('auth')->name('turnos');
 
 //Rutas de los turnos
 Route::middleware(['auth'])->group(function () {
-Route::resource('Turno1','App\Http\Controllers\Turno57Controller');    
+Route::resource('Turno1','App\Http\Controllers\Turno57Controller');     
 Route::resource('Turno2','App\Http\Controllers\Turno68Controller');  
 Route::resource('Turno3','App\Http\Controllers\Turno3Controller'); 
 });
@@ -757,7 +759,36 @@ Route::get('/pdfprintTPM18011',[Datoshojastpm18011Controller::class,'pdfprint'])
 Route::get('/printindexTPM18011',[Datoshojastpm18011Controller::class,'printindex'])->name('printindexTPM18011');
 Route::get('/printreversoTPM18011',[Reversotpm18011Controller::class,'printreverso'])->name('printreversoTPM18011');
 Route::get('/pdfReversoTPM18011',[Reversotpm18011Controller::class,'pdfReverso'])->name('pdfReversoTPM18011');
+
+
+
+
+//TURNO 2
+
+//Rutas F7-SETCS-ELE-CR-L1-01
+Route::resource('F7-SETCS-ELE-CR-L1-01-68', 'App\Http\Controllers\Turno_2\DatoshojaControllerT2');
+Route::resource('reversoT2', 'App\Http\Controllers\Turno_2\ReversoController00');
+Route::get('/checkT2',[DatoshojaControllerT2::class,'check'])->name('check');
+Route::put('/finalcheckT2/{id}',[DatoshojaControllerT2::class,'finalcheck'])->name('finalcheck');
+Route::get('/edit2T2/{id}',[DatoshojaControllerT2::class,'edit2'])->name('edit2');
+Route::put('/update2T2/{id}',[DatoshojaControllerT2::class,'update2'])->name('update2');
+Route::get('/pdfprintT2',[DatoshojaControllerT2::class,'pdfprint'])->name('pdfprint');
+Route::get('/printindexT2',[DatoshojaControllerT2::class,'printindex'])->name('printindex');
+Route::get('/printreversoT2',[ReversoController00T2::class,'printreverso'])->name('printreverso');
+Route::get('/pdfprintReversoF7SETCSELECRL1011T2',[ReversoController00T2::class,'pdfprintReversoF7SETCSELECRL1011'])->name('pdfprintReversoF7SETCSELECRL1011');
+//Rutas F7-SETCS-ELE-20-L1-01-1
+Route::resource('F7-SETCS-ELE-20-L1-01-1-1T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs20Controller');
+Route::resource('reversoSETCS20T2', 'App\Http\Controllers\Tuno_2\Reversosetcs20Controller');
+Route::get('/checkSETCS20T2',[Datoshojasetcs20Controller::class,'check'])->name('checkSETCS20');
+Route::put('/finalcheckSETCS20T2/{id}',[Datoshojasetcs20Controller::class,'finalcheck'])->name('finalcheckSETCS20');
+Route::get('/edit2SETCS20T2/{id}',[Datoshojasetcs20Controller::class,'edit2'])->name('edit2SETCS20');
+Route::put('/update2SETCS20T2/{id}',[Datoshojasetcs20Controller::class,'update2'])->name('update2SETCS20');
+Route::get('/pdfprintSETCS20T2',[Datoshojasetcs20Controller::class,'pdfprint'])->name('pdfprintSETCS20');
+Route::get('/printindexSETCS20T2',[Datoshojasetcs20Controller::class,'printindex'])->name('printindexSETCS20');
+Route::get('/printreversoSETCS20T2',[Reversosetcs20Controller::class,'printreverso'])->name('printreversoSETCS20');
+Route::get('/pdfReversoSETCS20T2',[Reversosetcs20Controller::class,'pdfReverso'])->name('pdfReversoSETCS20');
 });
+
 
 //Rutas para el login
 Route::view('/',"login.login")->name('login');

@@ -23,16 +23,22 @@
             <td>{{$turno68->Numero}}</td>
             <td>
                 <form action="{{route('Turno2.destroy',$turno68->id)}}" method="POST">
+                @role('Admin')
                 <a href="Turno2/{{$turno68->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                @endrole
                 @csrf
                 @method('DELETE')
                 <a href="{{$turno68->Ruta}}" class="btn btn-success">Mostrar</a>
-                <button type="submit" class="btn btn-danger">Eliminar</button>    
+                @role('Admin')
+                <button type="submit" class="btn btn-danger">Eliminar</button>  
+                @endrole
                 </form>         
             </td>
         </tr>  
         @endforeach
     </tbody>
 </table>
+@role('Admin')
 <a href="Turno2/create" class="btn btn-primary">Crear</a>
+@endrole
 @endsection
