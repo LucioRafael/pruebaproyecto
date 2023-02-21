@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-20-L1-01-1 T2</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css')}}" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -19,9 +19,13 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <div>
-                <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                <a href="Turno2" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
                 </div>
             </div>
         </nav>
@@ -84,7 +88,7 @@
                             <th>accion</th>
                             <th>
                             @role('Admin')
-                            <a href="/edit2SETCS20112/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            <a href="/edit2SETCS20T2/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
                             @endrole                                
                             </th>
                             <th colspan="30"></th>
@@ -177,8 +181,8 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-2' &&
+                            @if ($registro->turno == '2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -401,8 +405,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-20-L1-01-1-2.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-20-L1-01-1-2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-20-L1-01-1T2.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-20-L1-01-1T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -415,11 +419,11 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{route('checkSETCS20112')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS20T2')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-20-L1-01-1-2/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintSETCS20112')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-SETCS-ELE-20-L1-01-1T2/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS20T2')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoSETCS20112" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS20T2" class="btn btn-secondary">Reverso</a>                    
 </body>
 </html>

@@ -110,37 +110,37 @@
                         <th>31</th>
                     </tr>
                     <tr>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -150,7 +150,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-TPM-ELE-100-L1-01-1' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <tr>
@@ -381,7 +381,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-TPM-ELE-100-L1-01-1' &&
                                 $registro->partetabla == 'ABAJO')
                                 <tr>

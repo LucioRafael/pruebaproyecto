@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-160-L1-01-T2</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css')}}" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
                 <div>
-                <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
+                <a href="Turno2" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
                 </div>
             </div>
@@ -84,7 +84,7 @@
                             <th>accion</th>
                             <th>
                             @role('Admin')
-                            <a href="/edit2SETCS16011/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            <a href="/edit2SETCS16012/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
                             @endrole                                
                             </th>
                             <th colspan="30"></th>
@@ -134,37 +134,37 @@
                         @endrole
                     </tr>
                     <tr>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
                         @role('Admin')
                         <th>...</th>
                         @endrole
@@ -177,7 +177,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-160-L1-01-1' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <tr>
@@ -401,8 +401,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-160-L1-01-1.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-160-L1-01-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-160-L1-01-T2.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-160-L1-01-T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -451,37 +451,37 @@
                                 @endrole
                             </tr>
                             <tr>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
-                                <th>1 o 2</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
+                                <th>2 o 3</th>
                                 @role('Admin')
                                 <th>...</th>
                                 @endrole
@@ -493,7 +493,7 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-160-L1-01-1' &&
                                 $registro->partetabla == 'ABAJO')
                                 <tr>
@@ -717,8 +717,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-160-L1-01-1.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-160-L1-01-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-160-L1-01-T2.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-160-L1-01-T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -731,11 +731,11 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{route('checkSETCS16011')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS16012')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-160-L1-01-1/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintSETCS16011')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-SETCS-ELE-160-L1-01-T2/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS16012')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoSETCS16011" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS16012" class="btn btn-secondary">Reverso</a>                    
 </body>
 </html>

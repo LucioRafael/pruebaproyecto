@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-CR-L1-01  T1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -17,9 +17,15 @@
     </script>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <img src="../images/R.png" alt="" id="logoborg">
-            <h4 style="padding-right: 200px">Registro</h4>
-            <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth                    
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>            
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+            @endauth                       
+            </div>
         </div>
     </nav>
     <form action="/reverso" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">

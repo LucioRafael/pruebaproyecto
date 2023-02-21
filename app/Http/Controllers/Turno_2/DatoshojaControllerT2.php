@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Turno_2;
 use Illuminate\Http\Request;
 use PDF;
 use App\Models\Datoshoja;
@@ -8,7 +8,7 @@ use App\Models\option;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
-class DatoshojaControllerT2 extends Controller
+class DatoshojaControllert2 extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +18,7 @@ class DatoshojaControllerT2 extends Controller
     public function index()
     {
         $registros = Registro::all();
-        $datoshojas = Datoshoja::all();
+        $datoshojas = Datoshoja::all(); 
         return view('hojaschequeo.hojas6-8.F7-SETCS-ELE-CR-L1-01.index')
         ->with('registros',$registros)
         ->with('datoshojas',$datoshojas);
@@ -250,6 +250,6 @@ class DatoshojaControllerT2 extends Controller
         view()-> share('registros',$registros);
         $pdf = PDF::loadView('hojaschequeo.hojas6-8.F7-SETCS-ELE-CR-L1-01.printindex');
         $pdf->setPaper('b3','landscape');
-        return $pdf-> download('F7-SETCS-ELE-CR-L1-01-1.pdf');
+        return $pdf-> download('F7-SETCS-ELE-CR-L1-01-1T2.pdf');
     }
 }

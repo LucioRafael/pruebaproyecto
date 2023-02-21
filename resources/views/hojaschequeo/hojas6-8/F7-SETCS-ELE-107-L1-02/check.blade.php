@@ -64,37 +64,37 @@
                         <th>31</th>
                     </tr>
                     <tr>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -104,8 +104,8 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS10721',$registro->id)}}" method="POST">                            
-                            @if ($registro->turno == '1' &&
+                        <form action="{{route('finalcheckSETCS10722',$registro->id)}}" method="POST">                            
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-107-L1-02-1' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">

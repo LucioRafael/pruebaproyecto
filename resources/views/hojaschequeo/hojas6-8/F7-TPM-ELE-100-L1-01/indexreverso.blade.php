@@ -18,7 +18,7 @@
                 <div class="container-fluid">
                     <img src="/images/R.png" alt="" id="logoborg">
                     <div>
-                    <a href="F7-TPM-ELE-100-L1-01-1" class="btn btn-info" style="color: white">Volver</a>
+                    <a href="F7-TPM-ELE-100-L1-01-T2" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>
 
@@ -49,7 +49,7 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-TPM-ELE-100-L1-01-1" && $reverso->turno == "1")
+                @if ($reverso->documentoid == "F7-TPM-ELE-100-L1-01-1" && $reverso->turno == "2")
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
@@ -63,8 +63,8 @@
                     <td>{{$reverso->accion}}</td>
                     <td>{{$reverso->responsable}}</td>
                     <td>
-                        <form action="{{route('reversoTPM10011.destroy',$reverso->id)}}" method="POST">
-                        <a href="reversoTPM10011/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                        <form action="{{route('reversoTPM10012.destroy',$reverso->id)}}" method="POST">
+                        <a href="reversoTPM10012/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Eliminar</button>    
@@ -75,9 +75,9 @@
                 @endforeach
             </tbody>
         </table>
-        <a href="/reversoTPM10011/create" class="btn btn-primary">Añadir campo</a>
+        <a href="/reversoTPM10012/create" class="btn btn-primary">Añadir campo</a>
         @role('Admin')
-        <a href="{{route('pdfReversoTPM10011')}}" class="btn btn-danger">Guardar PDF</a>
+        <a href="{{route('pdfReversoTPM10012')}}" class="btn btn-danger">Guardar PDF</a>
         @endrole
     </body>
 </html>

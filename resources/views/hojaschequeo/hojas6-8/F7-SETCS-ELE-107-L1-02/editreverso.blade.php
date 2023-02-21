@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-107-L1-02-T2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -22,7 +22,7 @@
             <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
         </div>
     </nav>
-    <form action="/reversoSETCS10721/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS10722/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         @method('PUT')
         <div class="container">
@@ -85,11 +85,11 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
                 <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden
-                    value="1">
+                    value="2">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS10721" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS10722" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>

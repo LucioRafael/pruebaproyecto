@@ -17,12 +17,18 @@
     </script>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <img src="../images/R.png" alt="" id="logoborg">
-            <h4 style="padding-right: 200px">Registro</h4>
-            <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth                    
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>        
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+            @endauth                       
+            </div>
         </div>
     </nav>
-    <form action="/reversoSETCS2032" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS2031T2" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         <div class="container">
             <div class="mb-3">
@@ -79,16 +85,16 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
                 <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1"
-                    hidden value="F7-SETCS-ELE-20-L1-03-2">
+                    hidden value="F7-SETCS-ELE-20-L1-03-1-2">
             </div>
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
                 <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden
-                    value="1">
+                    value="2">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS2032" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS2031T2" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-CR-L1-01  T1</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css')}}" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -16,12 +16,16 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
     <div>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light">           
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <div>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
                 <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
                 </div>
             </div>
         </nav>
@@ -905,6 +909,8 @@
                     <a href="F7-SETCS-ELE-CR-L1-01-57/create" class="btn btn-success">Añadir criterio</a>
                     <a href="{{route('pdfprint')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reverso" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reverso" class="btn btn-secondary">Reverso</a>    
+                    
+                    
 </body>
 </html>

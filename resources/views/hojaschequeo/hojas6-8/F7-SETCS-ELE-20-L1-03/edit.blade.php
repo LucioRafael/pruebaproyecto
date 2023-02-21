@@ -11,13 +11,19 @@
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <img src="/images/R.png" alt="" id="logoborg">
-    <h4 style="padding-right: 200px">Registro</h4>
-    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
-  </div>
+    <div class="container-fluid">
+        <img src="/images/R.png" alt="" id="logoborg">
+        <h3>Registro</h3>
+        <div>                    
+        @auth                    
+        <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+        auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>        
+        <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+        @endauth                       
+        </div>
+    </div>
 </nav>
-<form action="/F7-SETCS-ELE-20-L1-03-2/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-20-L1-03-1T2/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -42,7 +48,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-20-L1-03-2" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-20-L1-03-1T2" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-20-L1-01-2 T2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -19,7 +19,14 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
+                <div>                    
+                @auth
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ??
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                <a href="F7-SETCS-ELE-20-L1-01-2T2" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth
+                </div>
             </div>
         </nav>
         <br>
@@ -104,8 +111,8 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS20122',$registro->id)}}" method="POST">                            
-                            @if ($registro->turno == '1' &&
+                        <form action="{{route('finalcheckSETCS201T2',$registro->id)}}" method="POST">                            
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">

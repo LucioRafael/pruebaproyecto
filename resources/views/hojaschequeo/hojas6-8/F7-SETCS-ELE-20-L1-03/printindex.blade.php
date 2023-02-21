@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-20-L1-03 T2</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css')}}" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -150,8 +150,8 @@
                             </th>
                         </tr>
                         @foreach ($registros as $registro)
-                            @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2' &&
+                            @if ($registro->turno == '2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

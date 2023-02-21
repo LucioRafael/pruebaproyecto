@@ -17,11 +17,14 @@
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
                     <img src="/images/R.png" alt="" id="logoborg">
+                    @auth
                     <div>
-                    <a href="F7-SETCS-ELE-20-L1-03-2" class="btn btn-info" style="color: white">Volver</a>
+                    <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                        auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                    <a href="F7-SETCS-ELE-20-L1-03-1T2" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>
-
+                    @endauth
                 </div>
             </nav>
             <br>
@@ -49,7 +52,7 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-SETCS-ELE-20-L1-03-2" && $reverso->turno == "1")
+                @if ($reverso->documentoid == "F7-SETCS-ELE-20-L1-03-1-2" && $reverso->turno == "2")
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
@@ -63,8 +66,8 @@
                     <td>{{$reverso->accion}}</td>
                     <td>{{$reverso->responsable}}</td>
                     <td>
-                        <form action="{{route('reversoSETCS2032.destroy',$reverso->id)}}" method="POST">
-                        <a href="reversoSETCS2032/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                        <form action="{{route('reversoSETCS2031T2.destroy',$reverso->id)}}" method="POST">
+                        <a href="reversoSETCS2031T2/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Eliminar</button>    
@@ -75,9 +78,9 @@
                 @endforeach
             </tbody>
         </table>
-        <a href="/reversoSETCS2032/create" class="btn btn-primary">Añadir campo</a>
+        <a href="/reversoSETCS2031T2/create" class="btn btn-primary">Añadir campo</a>
         @role('Admin')
-        <a href="{{route('pdfReversoSETCS2032')}}" class="btn btn-danger">Guardar PDF</a>
+        <a href="{{route('pdfReversoSETCS2031T2')}}" class="btn btn-danger">Guardar PDF</a>
         @endrole
     </body>
 </html>

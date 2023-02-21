@@ -19,7 +19,14 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                <a href="F7-SETCS-ELE-20-L1-01-2-1" class="btn btn-info" id="b3">Volver</a> 
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
+                </div>
             </div>
         </nav>
         <br>

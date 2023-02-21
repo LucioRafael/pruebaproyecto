@@ -17,7 +17,7 @@
     <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/F7-TPM-ELE-100-L1-01-1"id="loginreg" method="POST">
+<form action="/F7-TPM-ELE-100-L1-01-T2"id="loginreg" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -150,7 +150,7 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>Turno</label>
-        <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden value="1">
+        <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden value="2">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
@@ -165,7 +165,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-TPM-ELE-100-L1-01-1" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-TPM-ELE-100-L1-01-T2" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

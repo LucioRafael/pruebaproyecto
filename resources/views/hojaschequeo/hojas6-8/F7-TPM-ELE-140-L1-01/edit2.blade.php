@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-TPM-ELE-140-L1-01-T2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet" >
 </head>
@@ -17,7 +17,7 @@
     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="{{route('update2TPM14011',$datoshoja->id)}}" method="POST">
+<form action="{{route('update2TPM14012',$datoshoja->id)}}" method="POST">
     <div class="table table-responsive">
         <table class="table table-success table-bordered">
             <thead>
@@ -75,7 +75,7 @@
     @csrf
     @method('PUT')
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a href="/F7-TPM-ELE-140-L1-01-1" class="btn btn-danger">Cancelar</a>
+    <a href="/F7-TPM-ELE-140-L1-01-T2" class="btn btn-danger">Cancelar</a>
 </form>
 </body>
 </html>

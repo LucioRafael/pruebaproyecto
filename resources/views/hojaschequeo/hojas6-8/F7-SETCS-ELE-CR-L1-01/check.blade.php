@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-CR-L1-01  T2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -19,7 +19,14 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                <a href="F7-SETCS-ELE-CR-L1-01-68" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
+                </div>
             </div>
         </nav>
         <br>
@@ -64,37 +71,37 @@
                         <th>31</th>
                     </tr>
                     <tr>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
-                        <th>1</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
+                        <th>2</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -104,8 +111,8 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheck',$registro->id)}}" method="POST">                            
-                            @if ($registro->turno == '1' &&
+                        <form action="{{route('finalcheckT2',$registro->id)}}" method="POST">                            
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -398,7 +405,7 @@
                         </th>                              
                         </tr>
                         @foreach ($registros as $key=>$registro)                          
-                            @if ($registro->turno == '1' &&
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -694,7 +701,7 @@
                         </th>                           
                         </tr>
                         @foreach ($registros as $key=>$registro)                          
-                            @if ($registro->turno == '1' &&
+                            @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">

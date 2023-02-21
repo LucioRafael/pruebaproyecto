@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-180-L1-01-T2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -22,7 +22,7 @@
             <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
         </div>
     </nav>
-    <form action="/reversoSETCS18011/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS18012/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         @method('PUT')
         <div class="container">
@@ -37,7 +37,6 @@
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">¿Se paro el proceso?</label>
                 <select name="proceso" id="proceso" class="form-control" tabindex="1">
-                    <option value="{{$reverso->proceso}}">{{$reverso->proceso}}</option>
                     <option value="SI">SI</option>
                     <option value="NO">NO</option>
                 </select>
@@ -85,11 +84,11 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
                 <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden
-                    value="1">
+                    value="2">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS18011" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS18012" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>
