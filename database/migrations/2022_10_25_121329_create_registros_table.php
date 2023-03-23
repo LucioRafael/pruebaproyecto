@@ -50,6 +50,9 @@ return new class extends Migration
             $table->string('turno');
             $table->string('documentoid');
             $table->string('partetabla');
+            $table->string('tipo');
+            $table->string('n1');
+            $table->string('n2');
             $table->timestamps();
         });
     }

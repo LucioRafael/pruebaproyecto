@@ -16,14 +16,20 @@ class Datoshojasetcs20Controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $registros = Registro::all();
+        //$registros = Registro::all();        
+        //return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-1.index')
+        //->with('registros',$registros)
+        //->with('datoshojas',$datoshojas);
         $datoshojas = Datoshoja::all();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-1.index')
-        ->with('registros',$registros)
-        ->with('datoshojas',$datoshojas);
+        $registros = Registro::whereMonth('created_at', now()->month)
+        ->whereYear('created_at', now()->year)
+        ->get();
+
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-1.index', compact('registros'))->with('datoshojas',$datoshojas);
     }
+
     public function printindex()
     {
         $registros = Registro::all();
@@ -110,6 +116,10 @@ class Datoshojasetcs20Controller extends Controller
         $registros->turno = $request->get('turno');
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
+        $registros->tipo = $request->get('tipo');
+        $registros->n1 = $request->get('n1');
+        $registros->n2 = $request->get('n2');
+        $registros->mes = $request->get('mes');
         $registros->save();
         return redirect ('/F7-SETCS-ELE-20-L1-01-1-1');
     }
@@ -201,6 +211,10 @@ class Datoshojasetcs20Controller extends Controller
         $registro->turno = $request->get('turno');
         $registro->documentoid = $request->get('documentoid');
         $registro->partetabla = $request->get('partetabla');
+        $registro->tipo = $request->get('tipo');
+        $registro->n1 = $request->get('n1');
+        $registro->n2 = $request->get('n2');
+        $registro->mes = $request->get('mes');
         $registro->save();
         return redirect ('/F7-SETCS-ELE-20-L1-01-1-1');
     }

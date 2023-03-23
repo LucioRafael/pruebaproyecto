@@ -168,6 +168,22 @@
             <option value="AL INICIO DE TURNO">AL INICIO DE TURNO</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">Parte</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1">
+            <option value="cumple">CUMPLE-NO CUMPLE</option>
+            <option value="rango">RANGO</option>
+            <option value="texto">TEXTO</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="n1" id="n1" class="form-control" tabindex="1" value="00">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="n2" id="n2" class="form-control" tabindex="1" value="00">
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/F7-SETCS-ELE-20-L1-01-1-1" class="btn btn-danger">Cancelar</a>
