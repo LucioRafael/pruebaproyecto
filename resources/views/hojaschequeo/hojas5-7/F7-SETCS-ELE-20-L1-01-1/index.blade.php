@@ -422,7 +422,7 @@
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'rango')
                                 <tr>
-                                    <td>{{ $registro->criterio }}, {{ $registro->n1 }}, {{ $registro->n2 }}</td>
+                                    <td>{{ $registro->criterio }}</td>
                                     <td>
                                         @if ($registro['d1'] >= $registro['n1'] && $registro['d1'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d1'] }}</p>
@@ -515,126 +515,126 @@
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d1'] >= '{{$registro->n2}}' && $registro['d1'] <= '{{$registro->n2}}')
+                                        @if ($registro['d14'] >= $registro['n1'] && $registro['d14'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d14'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d14'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d15'] == 'Cumple')
+                                        @if ($registro['d15'] >= $registro['n1'] && $registro['d15'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d15'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d15'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d16'] == 'Cumple')
+                                        @if ($registro['d16'] >= $registro['n1'] && $registro['d16'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d16'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d16'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d17'] == 'Cumple')
+                                        @if ($registro['d17'] >= $registro['n1'] && $registro['d17'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d17'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d17'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d18'] == 'Cumple')
+                                        @if ($registro['d18'] >= $registro['n1'] && $registro['d18'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d18'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d18'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d19'] == 'Cumple')
+                                        @if ($registro['d19'] >= $registro['n1'] && $registro['d19'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d19'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d19'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d20'] == 'Cumple')
+                                        @if ($registro['d20'] >= $registro['n1'] && $registro['d20'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d20'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d20'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d21'] == 'Cumple')
+                                        @if ($registro['d21'] >= $registro['n1'] && $registro['d21'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d21'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d21'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d22'] == 'Cumple')
+                                        @if ($registro['d22'] >= $registro['n1'] && $registro['d22'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d22'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d22'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d23'] == 'Cumple')
+                                        @if ($registro['d23'] >= $registro['n1'] && $registro['d23'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d23'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d23'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d24'] == 'Cumple')
+                                        @if ($registro['d24'] >= $registro['n1'] && $registro['d24'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d24'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d24'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d25'] == 'Cumple')
+                                        @if ($registro['d25'] >= $registro['n1'] && $registro['d25'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d25'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d25'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d26'] == 'Cumple')
+                                        @if ($registro['d26'] >= $registro['n1'] && $registro['d26'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d26'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d26'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d27'] == 'Cumple')
+                                        @if ($registro['d27'] >= $registro['n1'] && $registro['d27'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d27'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d27'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d28'] == 'Cumple')
+                                        @if ($registro['d28'] >= $registro['n1'] && $registro['d28'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d28'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d28'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d29'] == 'Cumple')
+                                        @if ($registro['d29'] >= $registro['n1'] && $registro['d29'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d29'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d29'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d30'] == 'Cumple')
+                                        @if ($registro['d30'] >= $registro['n1'] && $registro['d30'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d30'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d30'] }}</p>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($registro['d31'] == 'Cumple')
+                                        @if ($registro['d31'] >= $registro['n1'] && $registro['d31'] <= $registro['n2'])
                                             <p style="color: green">{{ $registro['d31'] }}</p>
                                         @else
                                             <p style="color: red">{{ $registro['d31'] }}</p>

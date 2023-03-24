@@ -14,8 +14,8 @@
     <div class="container-fluid">
         <img src="/images/R.png" alt="" id="logoborg">
         <h3>Registro</h3>
-        <div>                    
-        @auth                    
+        <div>               
+        @auth
         <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
         <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
@@ -48,7 +48,7 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1  class="form-label">tipo</label>
-        <select id="tipo" name="tipo" class="form-control" tabindex="1" value="{{$registro->partetabla}}">
+        <select id="tipo" name="tipo" class="form-control" tabindex="1" value="{{$registro->tipo}}">
             <option value="{{$registro->tipo}}">{{$registro->tipo}}</option>
             <option value="cumple">Cumple</option>
             <option value="rango">rango</option>
@@ -62,6 +62,10 @@
     <div class="mb-3">
         <label for="" id=txt1  class="form-label">N2</label>
         <input type="number" step="0.01" name="n2" id="n2" class="form-control" tabindex="1" value="{{$registro->n2}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label" hidden>MES</label>
+        <input type="text" name="mes" id="mes" class="form-control" tabindex="1" value="{{$registro->mes}}" hidden>
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>

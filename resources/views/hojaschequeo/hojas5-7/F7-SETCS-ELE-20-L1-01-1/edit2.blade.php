@@ -15,7 +15,7 @@
         <img src="/images/R.png" alt="" id="logoborg">
         <h3>Editar Encabezado</h3>
         <div>                    
-        @auth                    
+        @auth              
         <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
         <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
@@ -72,7 +72,7 @@
                         <tr>
                             <th colspan="3" style="text-align: end">Mes:</th>
                             <th colspan="1">
-                                <select id="mes" name="mes" class="form-control" tabindex="1" value="{{$datoshoja->mes}}">
+                                <select id="mes" name="mes" tabindex="1" value="{{$datoshoja->mes}}">
                                 <option value="{{$datoshoja->mes}}">{{$datoshoja->mes}}</option>
                                 <option value="ENERO">ENERO</option>
                                 <option value="FEBRERO">FEBRERO</option>

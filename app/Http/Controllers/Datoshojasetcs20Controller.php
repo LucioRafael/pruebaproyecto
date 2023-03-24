@@ -23,10 +23,9 @@ class Datoshojasetcs20Controller extends Controller
         //->with('registros',$registros)
         //->with('datoshojas',$datoshojas);
         $datoshojas = Datoshoja::all();
-        $registros = Registro::whereMonth('created_at', now()->month)
-        ->whereYear('created_at', now()->year)
+        $nombre_variable = 'ABRIL';
+        $registros = Registro::where('mes', '=', $nombre_variable)
         ->get();
-
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-1.index', compact('registros'))->with('datoshojas',$datoshojas);
     }
 

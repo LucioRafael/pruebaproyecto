@@ -48,6 +48,27 @@
             <option value="NOTA">NOTA</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label">tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1" value="{{$registro->tipo}}">
+            <option value="{{$registro->tipo}}">{{$registro->tipo}}</option>
+            <option value="cumple">Cumple</option>
+            <option value="rango">rango</option>
+            <option value="texto">texto</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label">N1</label>
+        <input type="number" step="0.01" name="n1" id="n1" class="form-control" tabindex="1" value="{{$registro->n1}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label">N2</label>
+        <input type="number" step="0.01" name="n2" id="n2" class="form-control" tabindex="1" value="{{$registro->n2}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label" hidden>MES</label>
+        <input type="text" name="mes" id="mes" class="form-control" tabindex="1" value="{{$registro->mes}}" hidden>
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/F7-SETCS-ELE-CR-L1-01-57" class="btn btn-danger">Cancelar</a>
