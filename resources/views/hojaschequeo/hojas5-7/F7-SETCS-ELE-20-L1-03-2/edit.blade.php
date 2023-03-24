@@ -11,19 +11,19 @@
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
-<div class="container-fluid">
-        <img src="/images/R.png" alt="" id="logoborg">
-        <h3>Registro</h3>
-        <div>                    
-        @auth                    
-        <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-        auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>        
-        <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
-        @endauth                       
+  <div class="container-fluid">
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth                    
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+            @endauth                       
+            </div>
         </div>
-    </div>
 </nav>
-<form action="/F7-SETCS-ELE-40-L1-01-1-2/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-20-L1-03-2/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -43,8 +43,7 @@
         <label for="" id="txt1" class="form-label">Parte</label>
         <select id="partetabla" name="partetabla" class="form-control" tabindex="1" value="{{$registro->partetabla}}">
             <option value="{{$registro->partetabla}}">{{$registro->partetabla}}</option>
-            <option value="ARRIBA">ARRIBA</option>
-            <option value="ABAJO">ABAJO</option>
+            <option value="AL INICIO DE TURNO">AL INICIO DE TURNO</option>
         </select>
     </div>
     <div class="mb-3">
@@ -70,7 +69,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-40-L1-01-1-2" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-20-L1-03-2" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

@@ -9,26 +9,10 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link href="/css/app.css" rel="stylesheet">
     </head>
-    <body id="vistas">
+    <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
         </script>
-        <div>
-            <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                    <img src="/images/R.png" alt="" id="logoborg">
-                    <div>
-                    @auth 
-                    <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-                            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                    <a href="F7-SETCS-ELE-20-L1-03-1" class="btn btn-info" style="color: white">Volver</a>
-                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
-                    @endauth                        
-                    </div>
-                </div>
-            </nav>
-            <br>
-        </div>
         <table class="table table-success table-bordered table-striped mt-4">
             <thead>
                 <tr>
@@ -40,7 +24,6 @@
                     <th scope="col" rowspan="2">Causa raiz asignable</th>
                     <th scope="col" rowspan="2">Accion correctiva</th>
                     <th scope="col">Responsable</th>
-                    <th scope="col" rowspan="2">Acciones</th>
                 </tr>
                 <tr>
                     <th scope="col">Muestreo de confirmacion</th>
@@ -52,7 +35,7 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-SETCS-ELE-20-L1-03-1" && $reverso->turno == "1")
+                @if ($reverso->documentoid == "F7-SETCS-ELE-20-L1-03-2" && $reverso->turno == "1")
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
@@ -65,22 +48,10 @@
                     <td>{{$reverso->causa}}</td>
                     <td>{{$reverso->accion}}</td>
                     <td>{{$reverso->responsable}}</td>
-                    <td>
-                        <form action="{{route('reversoSETCS2031.destroy',$reverso->id)}}" method="POST">
-                        <a href="reversoSETCS2031/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Eliminar</button>    
-                        </form>         
-                    </td>
                 </tr>                      
                 @endif
                 @endforeach
             </tbody>
         </table>
-        <a href="/reversoSETCS2031/create" class="btn btn-primary">Añadir campo</a>
-        @role('Admin')
-        <a href="{{route('pdfReversoSETCS2031')}}" class="btn btn-danger">Guardar PDF</a>
-        @endrole
     </body>
 </html>

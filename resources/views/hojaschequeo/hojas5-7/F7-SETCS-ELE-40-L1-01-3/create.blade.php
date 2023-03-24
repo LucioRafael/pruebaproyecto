@@ -11,11 +11,17 @@
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <img src="../images/R.png" alt="" id="logoborg">
-    <h4 style="padding-right: 200px">Registro</h4>
-    <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
-  </div>
+    <div class="container-fluid">
+        <img src="/images/R.png" alt="" id="logoborg">
+        <h3>Registro</h3>
+        <div>                    
+        @auth                    
+        <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+        auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>        
+        <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+        @endauth                       
+        </div>
+    </div>
 </nav>
 <form action="/F7-SETCS-ELE-40-L1-01-1-3"id="loginreg" method="POST">
     @csrf
@@ -161,6 +167,39 @@
         <select id="partetabla" name="partetabla" class="form-control" tabindex="1">
             <option value="ARRIBA">ARRIBA</option>
             <option value="ABAJO">ABAJO</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">Tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1">
+            <option value="cumple">CUMPLE-NO CUMPLE</option>
+            <option value="rango">RANGO</option>
+            <option value="texto">TEXTO</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="n1" id="n1" class="form-control" tabindex="1" value="00">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="n2" id="n2" class="form-control" tabindex="1" value="00">
+    </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">Mes</label>
+        <select id="mes" name="mes" class="form-control" tabindex="1">
+            <option value="ENERO">ENERO</option>
+            <option value="FEBRERO">FEBRERO</option>
+            <option value="MARZO">MARZO</option>
+            <option value="ABRIL">ABRIL</option>
+            <option value="MAYO">MAYO</option>
+            <option value="JUNIO">JUNIO</option>
+            <option value="JULIO">JULIO</option>
+            <option value="AGOSTO">AGOSTO</option>
+            <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+            <option value="OCTUBRE">OCTUBRE</option>
+            <option value="NOVIEMBRE">NOVIEMBRE</option>
+            <option value="DICIEMBRE">DICIEMBRE</option>
         </select>
     </div>
     <div>

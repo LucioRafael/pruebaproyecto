@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-SETCS-ELE-20-L1-01-1  T1</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -17,13 +17,13 @@
     </script>
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+        <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
                 <div>                    
                 @auth                    
                 <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                 auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>                
-                <a href="F7-SETCS-ELE-20-L1-01-1-1" class="btn btn-info" style="color: white">Volver</a>
+                <a href="F7-SETCS-ELE-20-L1-03-2" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
                 @endauth                       
                 </div>
@@ -111,9 +111,9 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS20',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS2031C2',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'cumple')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -400,7 +400,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'rango')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -502,7 +502,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'texto')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -603,12 +603,11 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach  
-                        <tr>                             
+                        @endforeach                            
                     </tbody>
                             @csrf
                             @method('PUT')
-                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>          
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>            
                         </form>                     
             </table>
 
