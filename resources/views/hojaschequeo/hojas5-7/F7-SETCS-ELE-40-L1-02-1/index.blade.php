@@ -17,11 +17,15 @@
     </script>
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+        <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <div>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
                 <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
                 </div>
             </div>
         </nav>
@@ -180,7 +184,8 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1' &&
-                                $registro->partetabla == '6:00')
+                                $registro->partetabla == '6:00' &&
+                                $registro->tipo == 'cumple')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -421,7 +426,8 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1' &&
-                                $registro->partetabla == 'CAMBIO1')
+                                $registro->partetabla == 'CAMBIO1' &&
+                                $registro->tipo == 'cumple')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -662,7 +668,8 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1' &&
-                                $registro->partetabla == 'CAMBIO2')
+                                $registro->partetabla == 'CAMBIO2' &&
+                                $registro->tipo == 'cumple')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -903,6 +910,6 @@
                     <a href="F7-SETCS-ELE-40-L1-02-1-1/create" class="btn btn-success">Añadir criterio</a>
                     <a href="{{route('pdfprintSETCS40211')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reverso40211" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS40211" class="btn btn-secondary">Reverso</a>                    
 </body>
 </html>

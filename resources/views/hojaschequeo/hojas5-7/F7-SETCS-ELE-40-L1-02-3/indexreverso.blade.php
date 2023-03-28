@@ -15,14 +15,17 @@
         </script>
         <div>
             <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <img src="/images/R.png" alt="" id="logoborg">
-                    <div>
-                    <a href="F7-SETCS-ELE-40-L1-02-1-3" class="btn btn-info" style="color: white">Volver</a>
-                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
-                    </div>
-
-                </div>
+            <div class="container-fluid">
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth                    
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+            @endauth                       
+            </div>
+        </div>
             </nav>
             <br>
         </div>

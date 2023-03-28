@@ -16,12 +16,17 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
     <div>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+        <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>                
+                <a href="F7-SETCS-ELE-60-L1-06-5-2-1" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
+                </div>
             </div>
-        </nav>
         <br>
     </div>
     <div class="table-responsive">

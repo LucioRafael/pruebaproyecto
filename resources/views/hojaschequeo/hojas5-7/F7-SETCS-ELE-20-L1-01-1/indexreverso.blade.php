@@ -20,7 +20,7 @@
                     <div>
                     @auth 
                     <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-                            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                    auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
                     @endauth
                     <a href="F7-SETCS-ELE-20-L1-01-1-1" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    

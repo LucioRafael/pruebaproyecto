@@ -11,11 +11,17 @@
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <img src="/images/R.png" alt="" id="logoborg">
-    <h4 style="padding-right: 200px">Registro</h4>
-    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
-  </div>
+        <div class="container-fluid">
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth                    
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+            @endauth                       
+            </div>
+        </div>
 </nav>
 <form action="/F7-SETCS-ELE-60-L1-06-5-1-1/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
@@ -42,6 +48,27 @@
             <option value="#1">Set up #1</option>
             <option value="#2">Set up #2</option>
         </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label">tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1" value="{{$registro->tipo}}">
+            <option value="{{$registro->tipo}}">{{$registro->tipo}}</option>
+            <option value="cumple">Cumple</option>
+            <option value="rango">rango</option>
+            <option value="texto">texto</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label">N1</label>
+        <input type="number" step="0.01" name="n1" id="n1" class="form-control" tabindex="1" value="{{$registro->n1}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label">N2</label>
+        <input type="number" step="0.01" name="n2" id="n2" class="form-control" tabindex="1" value="{{$registro->n2}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1  class="form-label" hidden>MES</label>
+        <input type="text" name="mes" id="mes" class="form-control" tabindex="1" value="{{$registro->mes}}" hidden>
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>

@@ -114,7 +114,8 @@
                         <form action="{{route('finalcheckSETCS40211',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1' &&
-                                $registro->partetabla == '6:00')
+                                $registro->partetabla == '6:00' &&
+                                $registro->tipo == 'cumple')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -407,7 +408,8 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1' &&
-                                $registro->partetabla == 'CAMBIO1')
+                                $registro->partetabla == 'CAMBIO1' &&
+                                $registro->tipo == 'cumple')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -701,7 +703,8 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1' &&
-                                $registro->partetabla == 'CAMBIO2')
+                                $registro->partetabla == 'CAMBIO2' &&
+                                $registro->tipo == 'cumple')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
