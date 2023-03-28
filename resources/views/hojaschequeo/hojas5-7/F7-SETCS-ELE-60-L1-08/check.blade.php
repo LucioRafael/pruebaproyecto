@@ -17,9 +17,16 @@
     </script>
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+        <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>                
+                <a href="F7-SETCS-ELE-60-L1-08-1" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+                @endauth                       
+                </div>
             </div>
         </nav>
         <br>
@@ -391,7 +398,7 @@
                             @csrf
                             @method('PUT')
                             <button type="submit" class="btn btn-primary">Guardar Cambios</button>            
-                        </form>                     
+               
             </table>
             <table class="table table-success table-bordered">
                 <thead>
@@ -754,10 +761,7 @@
                                 </tr>
                             @endif
                         @endforeach  
-                    </tbody>
-                            @csrf
-                            @method('PUT')
-                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>            
+                    </tbody>          
                         </form>                     
             </table>
         </div>
