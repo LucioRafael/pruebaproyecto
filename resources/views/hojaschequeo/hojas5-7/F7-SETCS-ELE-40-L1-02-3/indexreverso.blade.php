@@ -15,6 +15,7 @@
         </script>
         <div>
             <nav class="navbar navbar-expand-lg bg-light">
+<<<<<<< HEAD
                 <div class="container-fluid">
                     <img src="/images/R.png" alt="" id="logoborg">
                     <div>
@@ -27,6 +28,19 @@
                     </div>
 
                 </div>
+=======
+            <div class="container-fluid">
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth                    
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+            @endauth                       
+            </div>
+        </div>
+>>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
             </nav>
             <br>
         </div>

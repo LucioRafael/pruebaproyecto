@@ -112,8 +112,14 @@ class Datoshojasetcs2031Controllert3 extends Controller
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
         $registros->tipo = $request->get('tipo');
+<<<<<<< HEAD
         $registros->valor1 = $request->get('valor1');
         $registros->valor2 = $request->get('valor2');
+=======
+        $registros->n1 = $request->get('n1');
+        $registros->n2 = $request->get('n2');
+        $registros->mes = $request->get('mes');
+>>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
         $registros->save();
         return redirect ('/F7-SETCS-ELE-20-L1-03-1T3');
     }
@@ -206,8 +212,14 @@ class Datoshojasetcs2031Controllert3 extends Controller
         $registro->documentoid = $request->get('documentoid');
         $registro->partetabla = $request->get('partetabla');
         $registro->tipo = $request->get('tipo');
+<<<<<<< HEAD
         $registro->valor1 = $request->get('valor1');
         $registro->valor2 = $request->get('valor2');
+=======
+        $registro->n1 = $request->get('n1');
+        $registro->n2 = $request->get('n2');
+        $registro->mes = $request->get('mes');
+>>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
         $registro->save();
         return redirect ('/F7-SETCS-ELE-20-L1-03-1T3');
     }

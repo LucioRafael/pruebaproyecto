@@ -11,6 +11,7 @@
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
+<<<<<<< HEAD
     <div class="container-fluid">
         <img src="/images/R.png" alt="" id="logoborg">
         <h3>EDITAR ENCABEZADO</h3>
@@ -20,6 +21,17 @@
         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
         @endauth
         <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
+=======
+<div class="container-fluid">
+        <img src="/images/R.png" alt="" id="logoborg">
+        <h3>Editar Encabezado</h3>
+        <div>                    
+        @auth              
+        <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+        auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+        <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
+        @endauth                       
+>>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
         </div>
     </div>
 </nav>
@@ -71,7 +83,23 @@
                         </tr>
                         <tr>
                             <th colspan="3" style="text-align: end">Mes:</th>
-                            <th colspan="1"><input type="text" name="mes" id="mes" value="{{$datoshoja->mes}}"></th>
+                            <th colspan="1">
+                            <select id="mes" name="mes" tabindex="1" value="{{$datoshoja->mes}}">
+                                <option value="{{$datoshoja->mes}}">{{$datoshoja->mes}}</option>
+                                <option value="ENERO">ENERO</option>
+                                <option value="FEBRERO">FEBRERO</option>
+                                <option value="MARZO">MARZO</option>
+                                <option value="ABRIL">ABRIL</option>
+                                <option value="MAYO">MAYO</option>
+                                <option value="JUNIO">JUNIO</option>
+                                <option value="JULIO">JULIO</option>
+                                <option value="AGOSTO">AGOSTO</option>
+                                <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+                                <option value="OCTUBRE">OCTUBRE</option>
+                                <option value="NOVIEMBRE">NOVIEMBRE</option>
+                                <option value="DICIEMBRE">DICIEMBRE</option>
+                                </select>
+                            </th>
                             <th colspan="3" style="text-align: end">Año:</th>
                             <th colspan="3"><input type="text" name="año" id="año" value="{{$datoshoja->año}}"></th>
                         </tr>

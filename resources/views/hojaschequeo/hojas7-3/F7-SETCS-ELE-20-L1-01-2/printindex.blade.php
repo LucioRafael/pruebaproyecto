@@ -151,7 +151,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'cumple')
                                 <tr>

@@ -197,6 +197,28 @@ Route::get('/pdfprintSETCS201',[Datoshojasetcs201Controller::class,'pdfprint'])-
 Route::get('/printindexSETCS201',[Datoshojasetcs201Controller::class,'printindex'])->name('printindexSETCS201');
 Route::get('/printreversoSETCS201',[Reversosetcs201Controller::class,'printreverso'])->name('printreversoSETCS201');
 Route::get('/pdfReversoSETCS201',[Reversosetcs201Controller::class,'pdfReverso'])->name('pdfReversoSETCS201');
+//Rutas F7-SETCS-ELE-20-L1-01-3
+Route::resource('F7-SETCS-ELE-20-L1-01-2-1C3', 'App\Http\Controllers\Datoshojasetcs201ControllerC3');
+Route::resource('reversoSETCS201C3', 'App\Http\Controllers\Reversosetcs201ControllerC3');
+Route::get('/checkSETCS201C3',[App\Http\Controllers\Datoshojasetcs201ControllerC3::class,'check'])->name('checkSETCS201C3');
+Route::put('/finalcheckSETCS201C3/{id}',[App\Http\Controllers\Datoshojasetcs201ControllerC3::class,'finalcheck'])->name('finalcheckSETCS201C3');
+Route::get('/edit2SETCS201C3/{id}',[App\Http\Controllers\Datoshojasetcs201ControllerC3::class,'edit2'])->name('edit2SETCS201C3');
+Route::put('/update2SETCS201C3/{id}',[App\Http\Controllers\Datoshojasetcs201ControllerC3::class,'update2'])->name('update2SETCS201C3');
+Route::get('/pdfprintSETCS201C3',[App\Http\Controllers\Datoshojasetcs201ControllerC3::class,'pdfprint'])->name('pdfprintSETCS201C3');
+Route::get('/printindexSETCS201C3',[App\Http\Controllers\Datoshojasetcs201ControllerC3::class,'printindex'])->name('printindexSETCS201C3');
+Route::get('/printreversoSETCS201C3',[App\Http\Controllers\Reversosetcs201ControllerC3::class,'printreverso'])->name('printreversoSETCS201C3');
+Route::get('/pdfReversoSETCS201C3',[App\Http\Controllers\Reversosetcs201ControllerC3::class,'pdfReverso'])->name('pdfReversoSETCS201C3');
+//Rutas F7-SETCS-ELE-20-L1-01-4
+Route::resource('F7-SETCS-ELE-20-L1-01-2-1C4', 'App\Http\Controllers\Datoshojasetcs201ControllerC4');
+Route::resource('reversoSETCS201C4', 'App\Http\Controllers\Reversosetcs201ControllerC4');
+Route::get('/checkSETCS201C4',[App\Http\Controllers\Datoshojasetcs201ControllerC4::class,'check'])->name('checkSETCS201C4');
+Route::put('/finalcheckSETCS201C4/{id}',[App\Http\Controllers\Datoshojasetcs201ControllerC4::class,'finalcheck'])->name('finalcheckSETCS201C4');
+Route::get('/edit2SETCS201C4/{id}',[App\Http\Controllers\Datoshojasetcs201ControllerC4::class,'edit2'])->name('edit2SETCS201C4');
+Route::put('/update2SETCS201C4/{id}',[App\Http\Controllers\Datoshojasetcs201ControllerC4::class,'update2'])->name('update2SETCS201C4');
+Route::get('/pdfprintSETCS201C4',[App\Http\Controllers\Datoshojasetcs201ControllerC4::class,'pdfprint'])->name('pdfprintSETCS201C4');
+Route::get('/printindexSETCS201C4',[App\Http\Controllers\Datoshojasetcs201ControllerC4::class,'printindex'])->name('printindexSETCS201C4');
+Route::get('/printreversoSETCS201C4',[App\Http\Controllers\Reversosetcs201ControllerC4::class,'printreverso'])->name('printreversoSETCS201C4');
+Route::get('/pdfReversoSETCS201C4',[App\Http\Controllers\Reversosetcs201ControllerC4::class,'pdfReverso'])->name('pdfReversoSETCS201C4');
 //Rutas F7-SETCS-ELE-20-L1-03
 Route::resource('F7-SETCS-ELE-20-L1-03-1', 'App\Http\Controllers\Datoshojasetcs2031Controller');
 Route::resource('reversoSETCS2031', 'App\Http\Controllers\Reversosetcs2031Controller');
@@ -208,6 +230,17 @@ Route::get('/pdfprintSETCS2031',[Datoshojasetcs2031Controller::class,'pdfprint']
 Route::get('/printindexSETCS2031',[Datoshojasetcs2031Controller::class,'printindex'])->name('printindexSETCS2031');
 Route::get('/printreversoSETCS2031',[Reversosetcs2031Controller::class,'printreverso'])->name('printreversoSETCS2031');
 Route::get('/pdfReversoSETCS2031',[Reversosetcs2031Controller::class,'pdfReverso'])->name('pdfReversoSETCS2031');
+//Rutas F7-SETCS-ELE-20-L1-03-2
+Route::resource('F7-SETCS-ELE-20-L1-03-2', 'App\Http\Controllers\Datoshojasetcs2031ControllerC2');
+Route::resource('reversoSETCS2031C2', 'App\Http\Controllers\Reversosetcs2031ControllerC2');
+Route::get('/checkSETCS2031C2',[App\Http\Controllers\Datoshojasetcs2031ControllerC2::class,'check'])->name('checkSETCS2031C2');
+Route::put('/finalcheckSETCS2031C2/{id}',[App\Http\Controllers\Datoshojasetcs2031ControllerC2::class,'finalcheck'])->name('finalcheckSETCS2031C2');
+Route::get('/edit2SETCS2031C2/{id}',[App\Http\Controllers\Datoshojasetcs2031ControllerC2::class,'edit2'])->name('edit2SETCS2031C2');
+Route::put('/update2SETCS2031C2/{id}',[App\Http\Controllers\Datoshojasetcs2031ControllerC2::class,'update2'])->name('update2SETCS2031C2');
+Route::get('/pdfprintSETCS2031C2',[App\Http\Controllers\Datoshojasetcs2031ControllerC2::class,'pdfprint'])->name('pdfprintSETCS2031C2');
+Route::get('/printindexSETCS2031C2',[App\Http\Controllers\Datoshojasetcs2031ControllerC2::class,'printindex'])->name('printindexSETCS2031C2');
+Route::get('/printreversoSETCS2031C2',[App\Http\Controllers\Reversosetcs2031ControllerC2::class,'printreverso'])->name('printreversoSETCS2031C2');
+Route::get('/pdfReversoSETCS2031C2',[App\Http\Controllers\Reversosetcs2031ControllerC2::class,'pdfReverso'])->name('pdfReversoSETCS2031C2');
 //Rutas F7-SETCS-ELE-40-L1-01-1
 Route::resource('F7-SETCS-ELE-40-L1-01-1-1', 'App\Http\Controllers\Datoshojasetcs40111Controller');
 Route::resource('reversoSETCS40111', 'App\Http\Controllers\Reversosetcs40111Controller');
