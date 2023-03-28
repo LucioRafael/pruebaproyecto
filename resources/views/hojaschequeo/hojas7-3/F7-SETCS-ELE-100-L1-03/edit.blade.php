@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-SETCS-ELE-100-L1-03-T2</title>
+    <title>F7-SETCS-ELE-100-L1-03-T3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet" >
 </head>
@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-100-L1-03-T2/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-100-L1-03-T3/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -46,9 +46,23 @@
             <option value="ABAJO">MANTENIMIENTO/CAMBIO DE MODELO</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label" hidden>Tipo</label>
+        <input type="text" name="tipo" id="tipo" class="form-control" tabindex="1" value="{{$registro->tipo}}" hidden>
+    </div>
+    @if($registro->tipo == 'rango')
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1" value="{{$registro->valor1}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1" value="{{$registro->valor2}}">
+    </div>
+    @endif
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-100-L1-03-T2" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-100-L1-03-T3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

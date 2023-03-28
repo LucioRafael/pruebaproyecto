@@ -18,6 +18,9 @@
                 <div class="container-fluid">
                     <img src="/images/R.png" alt="" id="logoborg">
                     <div>
+                        @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth(
                     <a href="F7-SETCS-ELE-60-L1-06-2-2-1" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>

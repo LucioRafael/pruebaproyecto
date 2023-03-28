@@ -19,9 +19,13 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <div>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                @endauth
                 <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
                 </div>
             </div>
         </nav>
@@ -173,7 +177,7 @@
                     <tbody>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-120-L1-01-5-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-120-L1-01-5' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Turno_3;
+namespace App\Http\Controllers\Turno_2;
 
 use Illuminate\Http\Request;
 use App\Models\Reverso;
 use PDF;
-class Reversotpm120111Controllert3 extends Controller
+class Reversotpm120111Controllert2 extends Controller
 {
                                /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class Reversotpm120111Controllert3 extends Controller
     public function index()
     {
         $reversos = Reverso::all();
-        return view('hojaschequeo.hojas7-3.F7-TPM-ELE-120-L1-01-1.indexreverso')
+        return view('hojaschequeo.hojas6-8.F7-TPM-ELE-120-L1-01-1.indexreverso')
         ->with('reversos',$reversos);
     }
 
@@ -26,7 +26,7 @@ class Reversotpm120111Controllert3 extends Controller
      */
     public function create()
     {
-        return view('hojaschequeo.hojas7-3.F7-TPM-ELE-120-L1-01-1.createreverso');
+        return view('hojaschequeo.hojas6-8.F7-TPM-ELE-120-L1-01-1.createreverso');
     }
 
     /**
@@ -52,7 +52,7 @@ class Reversotpm120111Controllert3 extends Controller
         $reversos->turno = $request->get('turno');
         $reversos->documentoid = $request->get('documentoid');
         $reversos->save();
-        return redirect('/reversoTPM120113');
+        return redirect('/reversoTPM120112');
     }
     /**
      * Show the form for editing the specified resource.
@@ -63,7 +63,7 @@ class Reversotpm120111Controllert3 extends Controller
     public function edit($id)
     {
         $reverso = Reverso::find($id);
-        return view('hojaschequeo.hojas7-3.F7-TPM-ELE-120-L1-01-1.editreverso')->with('reverso',$reverso);
+        return view('hojaschequeo.hojas6-8.F7-TPM-ELE-120-L1-01-1.editreverso')->with('reverso',$reverso);
     }
 
     /**
@@ -86,7 +86,7 @@ class Reversotpm120111Controllert3 extends Controller
         $reverso->nombre = $request->get('nombre');
         $reverso->causa = $request->get('causa');
         $reverso->save();
-        return redirect('/reversoTPM120113');
+        return redirect('/reversoTPM120112');
     }
 
     /**
@@ -99,14 +99,14 @@ class Reversotpm120111Controllert3 extends Controller
     {
         $reverso = Reverso::find($id);
         $reverso->delete();
-        return redirect('/reversoTPM120113');
+        return redirect('/reversoTPM120112');
     }
     public function pdfReverso()
     {
         $reversos = Reverso::all();
         view()-> share('reversos',$reversos);
-        $pdf = PDF::loadView('hojaschequeo.hojas7-3.F7-TPM-ELE-120-L1-01-1.printreverso');
+        $pdf = PDF::loadView('hojaschequeo.hojas6-8.F7-TPM-ELE-120-L1-01-1.printreverso');
         $pdf->setPaper('b4','landscape');
-        return $pdf-> download('Reverso-F7-TPM-ELE-120-L1-01-T3.pdf');
+        return $pdf-> download('Reverso-F7-TPM-ELE-120-L1-01-T2.pdf');
     }
 }

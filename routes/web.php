@@ -151,6 +151,16 @@ Route::resource('Turno1','App\Http\Controllers\Turno57Controller');
 Route::resource('Turno2','App\Http\Controllers\Turno68Controller');  
 Route::resource('Turno3','App\Http\Controllers\Turno3Controller'); 
 });
+//Rutas de las fechas
+//Route::middleware(['auth'])->group(function () {
+    //Route::resource('Turno1/{ano}','App\Http\Controllers\Turno57Controller');     
+    //Route::resource('Turno2/{ano}','App\Http\Controllers\Turno68Controller');  
+    //Route::resource('Turno3/{ano}','App\Http\Controllers\Turno3Controller');
+    //Route::resource('Turno1/{ano}/{mes}','App\Http\Controllers\Turno57Controller');     
+    //Route::resource('Turno2/{ano}/{mes}','App\Http\Controllers\Turno68Controller');  
+    //Route::resource('Turno3/{ano}/{mes}','App\Http\Controllers\Turno3Controller'); 
+    //});
+    
 
 //Rutas de hojas de chequeo 1
 Route::middleware(['auth',])->group(function () {
@@ -243,8 +253,8 @@ Route::get('/printindexSETCS40114',[Datoshojasetcs40114Controller::class,'printi
 Route::get('/printreversoSETCS40114',[Reversosetcs40114Controller::class,'printreverso'])->name('printreversoSETCS40114');
 Route::get('/pdfReversoSETCS40114',[Reversosetcs40114Controller::class,'pdfReverso'])->name('pdfReversoSETCS40114');
 //Rutas F7-SETCS-ELE-40-L1-01-5
-Route::resource('F7-SETCS-ELE-40-L1-01-1-5', 'App\Http\Controllers\Datoshojasetcs40114Controller');
-Route::resource('reversoSETCS40115', 'App\Http\Controllers\Reversosetcs40114Controller');
+Route::resource('F7-SETCS-ELE-40-L1-01-1-5', 'App\Http\Controllers\Datoshojasetcs40115Controller');
+Route::resource('reversoSETCS40115', 'App\Http\Controllers\Reversosetcs40115Controller');
 Route::get('/checkSETCS40115',[Datoshojasetcs40115Controller::class,'check'])->name('checkSETCS40115');
 Route::put('/finalcheckSETCS40115/{id}',[Datoshojasetcs40115Controller::class,'finalcheck'])->name('finalcheckSETCS40115');
 Route::get('/edit2SETCS40115/{id}',[Datoshojasetcs40115Controller::class,'edit2'])->name('edit2SETCS40115');
@@ -509,14 +519,14 @@ Route::get('/pdfReversoSETCS10031',[Reversosetcs10031Controller::class,'pdfRever
 //Rutas F7-SETCS-ELE-103-L1-01
 Route::resource('F7-SETCS-ELE-103-L1-01-1', 'App\Http\Controllers\Datoshojasetcs10311Controller');
 Route::resource('reversoSETCS10311', 'App\Http\Controllers\Reversosetcs10311Controller');
-Route::get('/checkSETCS10311',[Datoshojasetcs10311Controller::class,'check'])->name('checkSETCS10311');
-Route::put('/finalcheckSETCS10311/{id}',[Datoshojasetcs10311Controller::class,'finalcheck'])->name('finalcheckSETCS10311');
-Route::get('/edit2SETCS10311/{id}',[Datoshojasetcs10311Controller::class,'edit2'])->name('edit2SETCS10311');
-Route::put('/update2SETCS10311/{id}',[Datoshojasetcs10311Controller::class,'update2'])->name('update2SETCS10311');
-Route::get('/pdfprintSETCS10311',[Datoshojasetcs10311Controller::class,'pdfprint'])->name('pdfprintSETCS10311');
-Route::get('/printindexSETCS10311',[Datoshojasetcs10311Controller::class,'printindex'])->name('printindexSETCS10311');
-Route::get('/printreversoSETCS10311',[Reversosetcs10311Controller::class,'printreverso'])->name('printreversoSETCS10311');
-Route::get('/pdfReversoSETCS10311',[Reversosetcs10311Controller::class,'pdfReverso'])->name('pdfReversoSETCS10311');
+Route::get('/checkSETCS10311',[App\Http\Controllers\Datoshojasetcs10311Controller::class,'check'])->name('checkSETCS10311');
+Route::put('/finalcheckSETCS10311/{id}',[App\Http\Controllers\Datoshojasetcs10311Controller::class,'finalcheck'])->name('finalcheckSETCS10311');
+Route::get('/edit2SETCS10311/{id}',[App\Http\Controllers\Datoshojasetcs10311Controller::class,'edit2'])->name('edit2SETCS10311');
+Route::put('/update2SETCS10311/{id}',[App\Http\Controllers\Datoshojasetcs10311Controller::class,'update2'])->name('update2SETCS10311');
+Route::get('/pdfprintSETCS10311',[App\Http\Controllers\Datoshojasetcs10311Controller::class,'pdfprint'])->name('pdfprintSETCS10311');
+Route::get('/printindexSETCS10311',[App\Http\Controllers\Datoshojasetcs10311Controller::class,'printindex'])->name('printindexSETCS10311');
+Route::get('/printreversoSETCS10311',[App\Http\Controllers\Reversosetcs10311Controller::class,'printreverso'])->name('printreversoSETCS10311');
+Route::get('/pdfReversoSETCS10311',[App\Http\Controllers\Reversosetcs10311Controller::class,'pdfReverso'])->name('pdfReversoSETCS10311');
 //Rutas F7-SETCS-ELE-107-L1-01-1
 Route::resource('F7-SETCS-ELE-107-L1-01-1-1', 'App\Http\Controllers\Datoshojasetcs107111Controller');
 Route::resource('reversoSETCS107111', 'App\Http\Controllers\Reversosetcs107111Controller');
@@ -542,14 +552,14 @@ Route::get('/pdfReversoSETCS107121',[Reversosetcs107121Controller::class,'pdfRev
 //Rutas F7-SETCS-ELE-107-L1-01-3
 Route::resource('F7-SETCS-ELE-107-L1-01-3-1', 'App\Http\Controllers\Datoshojasetcs107131Controller');
 Route::resource('reversoSETCS107131', 'App\Http\Controllers\Reversosetcs107131Controller');
-Route::get('/checkSETCS107131',[Datoshojasetcs107131Controller::class,'check'])->name('checkSETCS107131');
-Route::put('/finalcheckSETCS107131/{id}',[Datoshojasetcs107131Controller::class,'finalcheck'])->name('finalcheckSETCS107131');
-Route::get('/edit2SETCS107131/{id}',[Datoshojasetcs107131Controller::class,'edit2'])->name('edit2SETCS107131');
-Route::put('/update2SETCS107131/{id}',[Datoshojasetcs107131Controller::class,'update2'])->name('update2SETCS107131');
-Route::get('/pdfprintSETCS107131',[Datoshojasetcs107131Controller::class,'pdfprint'])->name('pdfprintSETCS107131');
-Route::get('/printindexSETCS107131',[Datoshojasetcs107131Controller::class,'printindex'])->name('printindexSETCS107131');
-Route::get('/printreversoSETCS107131',[Reversosetcs107131Controller::class,'printreverso'])->name('printreversoSETCS107131');
-Route::get('/pdfReversoSETCS107131',[Reversosetcs107131Controller::class,'pdfReverso'])->name('pdfReversoSETCS107131');
+Route::get('/checkSETCS107131',[App\Http\Controllers\Datoshojasetcs107131Controller::class,'check'])->name('checkSETCS107131');
+Route::put('/finalcheckSETCS107131/{id}',[App\Http\Controllers\Datoshojasetcs107131Controller::class,'finalcheck'])->name('finalcheckSETCS107131');
+Route::get('/edit2SETCS107131/{id}',[App\Http\Controllers\Datoshojasetcs107131Controller::class,'edit2'])->name('edit2SETCS107131');
+Route::put('/update2SETCS107131/{id}',[App\Http\Controllers\Datoshojasetcs107131Controller::class,'update2'])->name('update2SETCS107131');
+Route::get('/pdfprintSETCS107131',[App\Http\Controllers\Datoshojasetcs107131Controller::class,'pdfprint'])->name('pdfprintSETCS107131');
+Route::get('/printindexSETCS107131',[App\Http\Controllers\Datoshojasetcs107131Controller::class,'printindex'])->name('printindexSETCS107131');
+Route::get('/printreversoSETCS107131',[App\Http\Controllers\Reversosetcs107131Controller::class,'printreverso'])->name('printreversoSETCS107131');
+Route::get('/pdfReversoSETCS107131',[App\Http\Controllers\Reversosetcs107131Controller::class,'pdfReverso'])->name('pdfReversoSETCS107131');
 //Rutas F7-SETCS-ELE-107-L1-02
 Route::resource('F7-SETCS-ELE-107-L1-02-1', 'App\Http\Controllers\Datoshojasetcs10721Controller');
 Route::resource('reversoSETCS10721', 'App\Http\Controllers\Reversosetcs10721Controller');
@@ -641,14 +651,14 @@ Route::get('/pdfReversoSETCS140121',[Reversosetcs140121Controller::class,'pdfRev
 //Rutas F7-SETCS-ELE-140-L1-01-3
 Route::resource('F7-SETCS-ELE-140-L1-01-3-1', 'App\Http\Controllers\Datoshojasetcs140131Controller');
 Route::resource('reversoSETCS140131', 'App\Http\Controllers\Reversosetcs140131Controller');
-Route::get('/checkSETCS140131',[Datoshojasetcs140131Controller::class,'check'])->name('checkSETCS140131');
-Route::put('/finalcheckSETCS140131/{id}',[Datoshojasetcs140131Controller::class,'finalcheck'])->name('finalcheckSETCS140131');
-Route::get('/edit2SETCS140131/{id}',[Datoshojasetcs140131Controller::class,'edit2'])->name('edit2SETCS140131');
-Route::put('/update2SETCS140131/{id}',[Datoshojasetcs140131Controller::class,'update2'])->name('update2SETCS140131');
-Route::get('/pdfprintSETCS140131',[Datoshojasetcs140131Controller::class,'pdfprint'])->name('pdfprintSETCS140131');
-Route::get('/printindexSETCS140131',[Datoshojasetcs140131Controller::class,'printindex'])->name('printindexSETCS140131');
-Route::get('/printreversoSETCS140131',[Reversosetcs140131Controller::class,'printreverso'])->name('printreversoSETCS140131');
-Route::get('/pdfReversoSETCS140131',[Reversosetcs140131Controller::class,'pdfReverso'])->name('pdfReversoSETCS140131');
+Route::get('/checkSETCS140131',[App\Http\Controllers\Datoshojasetcs140131Controller::class,'check'])->name('checkSETCS140131');
+Route::put('/finalcheckSETCS140131/{id}',[App\Http\Controllers\Datoshojasetcs140131Controller::class,'finalcheck'])->name('finalcheckSETCS140131');
+Route::get('/edit2SETCS140131/{id}',[App\Http\Controllers\Datoshojasetcs140131Controller::class,'edit2'])->name('edit2SETCS140131');
+Route::put('/update2SETCS140131/{id}',[App\Http\Controllers\Datoshojasetcs140131Controller::class,'update2'])->name('update2SETCS140131');
+Route::get('/pdfprintSETCS140131',[App\Http\Controllers\Datoshojasetcs140131Controller::class,'pdfprint'])->name('pdfprintSETCS140131');
+Route::get('/printindexSETCS140131',[App\Http\Controllers\Datoshojasetcs140131Controller::class,'printindex'])->name('printindexSETCS140131');
+Route::get('/printreversoSETCS140131',[App\Http\Controllers\Reversosetcs140131Controller::class,'printreverso'])->name('printreversoSETCS140131');
+Route::get('/pdfReversoSETCS140131',[App\Http\Controllers\Reversosetcs140131Controller::class,'pdfReverso'])->name('pdfReversoSETCS140131');
 //Rutas F7-SETCS-ELE-160-L1-01
 Route::resource('F7-SETCS-ELE-160-L1-01-1', 'App\Http\Controllers\Datoshojasetcs16011Controller');
 Route::resource('reversoSETCS16011', 'App\Http\Controllers\Reversosetcs16011Controller');
@@ -660,6 +670,17 @@ Route::get('/pdfprintSETCS16011',[Datoshojasetcs16011Controller::class,'pdfprint
 Route::get('/printindexSETCS16011',[Datoshojasetcs16011Controller::class,'printindex'])->name('printindexSETCS16011');
 Route::get('/printreversoSETCS16011',[Reversosetcs16011Controller::class,'printreverso'])->name('printreversoSETCS16011');
 Route::get('/pdfReversoSETCS16011',[Reversosetcs16011Controller::class,'pdfReverso'])->name('pdfReversoSETCS16011');
+//Rutas F7-SETCS-ELE-160-L1-01-C2
+Route::resource('F7-SETCS-ELE-160-L1-01-2', 'App\Http\Controllers\Datoshojasetcs16011C2Controller');
+Route::resource('reversoSETCS16011C2', 'App\Http\Controllers\Reversosetcs16011C2Controller');
+Route::get('/checkSETCS16011C2',[App\Http\Controllers\Datoshojasetcs16011C2Controller::class,'check'])->name('checkSETCS16011C2');
+Route::put('/finalcheckSETCS16011C2/{id}',[App\Http\Controllers\Datoshojasetcs16011C2Controller::class,'finalcheck'])->name('finalcheckSETCS16011C2');
+Route::get('/edit2SETCS16011C2/{id}',[App\Http\Controllers\Datoshojasetcs16011C2Controller::class,'edit2'])->name('edit2SETCS16011C2');
+Route::put('/update2SETCS16011C2/{id}',[App\Http\Controllers\Datoshojasetcs16011C2Controller::class,'update2'])->name('update2SETCS16011C2');
+Route::get('/pdfprintSETCS16011C2',[App\Http\Controllers\Datoshojasetcs16011C2Controller::class,'pdfprint'])->name('pdfprintSETCS16011C2');
+Route::get('/printindexSETCS16011C2',[App\Http\Controllers\Datoshojasetcs16011C2Controller::class,'printindex'])->name('printindexSETCS16011C2');
+Route::get('/printreversoSETCS16011C2',[App\Http\Controllers\Reversosetcs16011C2Controller::class,'printreverso'])->name('printreversoSETCS16011C2');
+Route::get('/pdfReversoSETCS16011C2',[App\Http\Controllers\Reversosetcs16011C2Controller::class,'pdfReverso'])->name('pdfReversoSETCS16011C2');
 //Rutas F7-SETCS-ELE-180-L1-01
 Route::resource('F7-SETCS-ELE-180-L1-01-1', 'App\Http\Controllers\Datoshojasetcs18011Controller');
 Route::resource('reversoSETCS18011', 'App\Http\Controllers\Reversosetcs18011Controller');
@@ -808,6 +829,17 @@ Route::get('/pdfprintSETCS201T2',[App\Http\Controllers\Turno_2\Datoshojasetcs201
 Route::get('/printindexSETCS201T2',[App\Http\Controllers\Turno_2\Datoshojasetcs201Controllert2::class,'printindex'])->name('printindexSETCS201T2');
 Route::get('/printreversoSETCS201T2',[App\Http\Controllers\Turno_2\Reversosetcs201Controllert2::class,'printreverso'])->name('printreversoSETCS201T2');
 Route::get('/pdfReversoSETCS201T2',[App\Http\Controllers\Turno_2\Reversosetcs201Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS201T2');
+//Rutas F7-SETCS-ELE-20-L1-01-3
+Route::resource('F7-SETCS-ELE-20-L1-01-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs201C3ControllerT2');
+Route::resource('reversoSETCS201T2C3', 'App\Http\Controllers\Turno_2\Reversosetcs201C3ControllerT2');
+Route::get('/checkSETCS201T2C3',[App\Http\Controllers\Turno_2\Datoshojasetcs201C3Controllert2::class,'check'])->name('checkSETCS201T2C3');
+Route::put('/finalcheckSETCS201T2C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs201C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS201T2C3');
+Route::get('/edit2SETCS201T2C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs201C3Controllert2::class,'edit2'])->name('edit2SETCS201T2C3');
+Route::put('/update2SETCS201T2C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs201C3Controllert2::class,'update2'])->name('update2SETCS201T2C3');
+Route::get('/pdfprintSETCS201T2C3',[App\Http\Controllers\Turno_2\Datoshojasetcs201C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS201T2C3');
+Route::get('/printindexSETCS201T2C3',[App\Http\Controllers\Turno_2\Datoshojasetcs201C3Controllert2::class,'printindex'])->name('printindexSETCS201T2C3');
+Route::get('/printreversoSETCS201T2C3',[App\Http\Controllers\Turno_2\Reversosetcs201C3Controllert2::class,'printreverso'])->name('printreversoSETCS201T2C3');
+Route::get('/pdfReversoSETCS201T2C3',[App\Http\Controllers\Turno_2\Reversosetcs201C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS201T2C3');
 //Rutas F7-SETCS-ELE-20-L1-03
 Route::resource('F7-SETCS-ELE-20-L1-03-1T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs2031ControllerT2');
 Route::resource('reversoSETCS2031T2', 'App\Http\Controllers\Turno_2\Reversosetcs2031ControllerT2');
@@ -819,6 +851,17 @@ Route::get('/pdfprintSETCS2031T2',[App\Http\Controllers\Turno_2\Datoshojasetcs20
 Route::get('/printindexSETCS2031T2',[App\Http\Controllers\Turno_2\Datoshojasetcs2031Controllert2::class,'printindex'])->name('printindexSETCS2031T2');
 Route::get('/printreversoSETCS2031T2',[App\Http\Controllers\Turno_2\Reversosetcs2031Controllert2::class,'printreverso'])->name('printreversoSETCS2031T2');
 Route::get('/pdfReversoSETCS2031T2',[App\Http\Controllers\Turno_2\Reversosetcs2031Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS2031T2');
+//Rutas F7-SETCS-ELE-20-L1-03-2
+Route::resource('F7-SETCS-ELE-20-L1-03-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs2031C3ControllerT2');
+Route::resource('reversoSETCS2031T2C3', 'App\Http\Controllers\Turno_2\Reversosetcs2031C3ControllerT2');
+Route::get('/checkSETCS2031T2C3',[App\Http\Controllers\Turno_2\Datoshojasetcs2031C3Controllert2::class,'check'])->name('checkSETCS2031T2C3');
+Route::put('/finalcheckSETCS2031T2C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs2031C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS2031T2C3');
+Route::get('/edit2SETCS2031T2C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs2031C3Controllert2::class,'edit2'])->name('edit2SETCS2031T2C3');
+Route::put('/update2SETCS2031T2C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs2031C3Controllert2::class,'update2'])->name('update2SETCS2031T2C3');
+Route::get('/pdfprintSETCS2031T2C3',[App\Http\Controllers\Turno_2\Datoshojasetcs2031C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS2031T2C3');
+Route::get('/printindexSETCS2031T2C3',[App\Http\Controllers\Turno_2\Datoshojasetcs2031C3Controllert2::class,'printindex'])->name('printindexSETCS2031T2C3');
+Route::get('/printreversoSETCS2031T2C3',[App\Http\Controllers\Turno_2\Reversosetcs2031C3Controllert2::class,'printreverso'])->name('printreversoSETCS2031T2C3');
+Route::get('/pdfReversoSETCS2031T2C3',[App\Http\Controllers\Turno_2\Reversosetcs2031C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS2031T2C3');
 //Rutas F7-SETCS-ELE-40-L1-01-1
 Route::resource('F7-SETCS-ELE-40-L1-01-1T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs40111ControllerT2');
 Route::resource('reversoSETCS40111T2', 'App\Http\Controllers\Turno_2\Reversosetcs40111ControllerT2');
@@ -852,6 +895,17 @@ Route::get('/pdfprintSETCS40123',[App\Http\Controllers\Turno_2\Datoshojasetcs401
 Route::get('/printindexSETCS40123',[App\Http\Controllers\Turno_2\Datoshojasetcs40113Controllert2::class,'printindex'])->name('printindexSETCS40123');
 Route::get('/printreversoSETCS40123',[App\Http\Controllers\Turno_2\Reversosetcs40113Controllert2::class,'printreverso'])->name('printreversoSETCS40123');
 Route::get('/pdfReversoSETCS40123',[App\Http\Controllers\Turno_2\Reversosetcs40113Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS40123');
+//Rutas F7-SETCS-ELE-40-L1-01-4
+Route::resource('F7-SETCS-ELE-40-L1-01-4T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs40113C4ControllerT2');
+Route::resource('reversoSETCS40123C4', 'App\Http\Controllers\Turno_2\Reversosetcs40113C4ControllerT2');
+Route::get('/checkSETCS40123C4',[App\Http\Controllers\Turno_2\Datoshojasetcs40113C4Controllert2::class,'check'])->name('checkSETCS40123C4');
+Route::put('/finalcheckSETCS40123C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40113C4Controllert2::class,'finalcheck'])->name('finalcheckSETCS40123C4');
+Route::get('/edit2SETCS40123C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40113C4Controllert2::class,'edit2'])->name('edit2SETCS40123C4');
+Route::put('/update2SETCS40123C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40113C4Controllert2::class,'update2'])->name('update2SETCS40123C4');
+Route::get('/pdfprintSETCS40123C4',[App\Http\Controllers\Turno_2\Datoshojasetcs40113C4Controllert2::class,'pdfprint'])->name('pdfprintSETCS40123C4');
+Route::get('/printindexSETCS40123C4',[App\Http\Controllers\Turno_2\Datoshojasetcs40113C4Controllert2::class,'printindex'])->name('printindexSETCS40123C4');
+Route::get('/printreversoSETCS40123C4',[App\Http\Controllers\Turno_2\Reversosetcs40113C4Controllert2::class,'printreverso'])->name('printreversoSETCS40123C4');
+Route::get('/pdfReversoSETCS40123C4',[App\Http\Controllers\Turno_2\Reversosetcs40113C4Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS40123C4');
 //Rutas F7-SETCS-ELE-40-L1-02-T2
 Route::resource('F7-SETCS-ELE-40-L1-02-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs40211ControllerT2');
 Route::resource('reversoSETCS40221', 'App\Http\Controllers\Turno_2\Reversosetcs40211ControllerT2');
@@ -863,6 +917,39 @@ Route::get('/pdfprintSETCS40221',[App\Http\Controllers\Turno_2\Datoshojasetcs402
 Route::get('/printindexSETCS40221',[App\Http\Controllers\Turno_2\Datoshojasetcs40211Controllert2::class,'printindex'])->name('printindexSETCS40221');
 Route::get('/printreversoSETCS40221',[App\Http\Controllers\Turno_2\Reversosetcs40211Controllert2::class,'printreverso'])->name('printreversoSETCS40221');
 Route::get('/pdfReversoSETCS40221',[App\Http\Controllers\Turno_2\Reversosetcs40211Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS40221');
+//Rutas F7-SETCS-ELE-40-L1-02-2T2
+Route::resource('F7-SETCS-ELE-40-L1-02-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs40211C2ControllerT2');
+Route::resource('reversoSETCS40221C2', 'App\Http\Controllers\Turno_2\Reversosetcs40211C2ControllerT2');
+Route::get('/checkSETCS40221C2',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C2Controllert2::class,'check'])->name('checkSETCS40221C2');
+Route::put('/finalcheckSETCS40221C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS40221C2');
+Route::get('/edit2SETCS40221C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C2Controllert2::class,'edit2'])->name('edit2SETCS40221C2');
+Route::put('/update2SETCS40221C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C2Controllert2::class,'update2'])->name('update2SETCS40221C2');
+Route::get('/pdfprintSETCS40221C2',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS40221C2');
+Route::get('/printindexSETCS40221C2',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C2Controllert2::class,'printindex'])->name('printindexSETCS40221C2');
+Route::get('/printreversoSETCS40221C2',[App\Http\Controllers\Turno_2\Reversosetcs40211C2Controllert2::class,'printreverso'])->name('printreversoSETCS40221C2');
+Route::get('/pdfReversoSETCS40221C2',[App\Http\Controllers\Turno_2\Reversosetcs40211C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS40221C2');
+//Rutas F7-SETCS-ELE-40-L1-02-3T2
+Route::resource('F7-SETCS-ELE-40-L1-02-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs40211C3ControllerT2');
+Route::resource('reversoSETCS40221C3', 'App\Http\Controllers\Turno_2\Reversosetcs40211C3ControllerT2');
+Route::get('/checkSETCS40221C3',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C3Controllert2::class,'check'])->name('checkSETCS40221C3');
+Route::put('/finalcheckSETCS40221C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS40221C3');
+Route::get('/edit2SETCS40221C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C3Controllert2::class,'edit2'])->name('edit2SETCS40221C3');
+Route::put('/update2SETCS40221C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C3Controllert2::class,'update2'])->name('update2SETCS40221C3');
+Route::get('/pdfprintSETCS40221C3',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS40221C3');
+Route::get('/printindexSETCS40221C3',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C3Controllert2::class,'printindex'])->name('printindexSETCS40221C3');
+Route::get('/printreversoSETCS40221C3',[App\Http\Controllers\Turno_2\Reversosetcs40211C3Controllert2::class,'printreverso'])->name('printreversoSETCS40221C3');
+Route::get('/pdfReversoSETCS40221C3',[App\Http\Controllers\Turno_2\Reversosetcs40211C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS40221C3');
+//Rutas F7-SETCS-ELE-40-L1-02-4T2
+Route::resource('F7-SETCS-ELE-40-L1-02-4T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs40211C4ControllerT2');
+Route::resource('reversoSETCS40221C4', 'App\Http\Controllers\Turno_2\Reversosetcs40211C4ControllerT2');
+Route::get('/checkSETCS40221C4',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C4Controllert2::class,'check'])->name('checkSETCS40221C4');
+Route::put('/finalcheckSETCS40221C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C4Controllert2::class,'finalcheck'])->name('finalcheckSETCS40221C4');
+Route::get('/edit2SETCS40221C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C4Controllert2::class,'edit2'])->name('edit2SETCS40221C4');
+Route::put('/update2SETCS40221C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C4Controllert2::class,'update2'])->name('update2SETCS40221C4');
+Route::get('/pdfprintSETCS40221C4',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C4Controllert2::class,'pdfprint'])->name('pdfprintSETCS40221C4');
+Route::get('/printindexSETCS40221C4',[App\Http\Controllers\Turno_2\Datoshojasetcs40211C4Controllert2::class,'printindex'])->name('printindexSETCS40221C4');
+Route::get('/printreversoSETCS40221C4',[App\Http\Controllers\Turno_2\Reversosetcs40211C4Controllert2::class,'printreverso'])->name('printreversoSETCS40221C4');
+Route::get('/pdfReversoSETCS40221C4',[App\Http\Controllers\Turno_2\Reversosetcs40211C4Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS40221C4');
 //Rutas F7-SETCS-ELE-60-L1-06-T2
 Route::resource('F7-SETCS-ELE-60-L1-06-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111ControllerT2');
 Route::resource('reversoSETCS606112', 'App\Http\Controllers\Turno_2\Reversosetcs606111ControllerT2');
@@ -874,6 +961,72 @@ Route::get('/pdfprintSETCS606112',[App\Http\Controllers\Turno_2\Datoshojasetcs60
 Route::get('/printindexSETCS606112',[App\Http\Controllers\Turno_2\Datoshojasetcs606111Controllert2::class,'printindex'])->name('printindexSETCS606112');
 Route::get('/printreversoSETCS606112',[App\Http\Controllers\Turno_2\Reversosetcs606111Controllert2::class,'printreverso'])->name('printreversoSETCS606112');
 Route::get('/pdfReversoSETCS606112',[App\Http\Controllers\Turno_2\Reversosetcs606111Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112');
+//Rutas F7-SETCS-ELE-60-L1-06-2T2
+Route::resource('F7-SETCS-ELE-60-L1-06-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111C2ControllerT2');
+Route::resource('reversoSETCS606112C2', 'App\Http\Controllers\Turno_2\Reversosetcs606111C2ControllerT2');
+Route::get('/checkSETCS606112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C2Controllert2::class,'check'])->name('checkSETCS606112C2');
+Route::put('/finalcheckSETCS606112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS606112C2');
+Route::get('/edit2SETCS606112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C2Controllert2::class,'edit2'])->name('edit2SETCS606112C2');
+Route::put('/update2SETCS606112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C2Controllert2::class,'update2'])->name('update2SETCS606112C2');
+Route::get('/pdfprintSETCS606112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS606112C2');
+Route::get('/printindexSETCS606112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C2Controllert2::class,'printindex'])->name('printindexSETCS606112C2');
+Route::get('/printreversoSETCS606112C2',[App\Http\Controllers\Turno_2\Reversosetcs606111C2Controllert2::class,'printreverso'])->name('printreversoSETCS606112C2');
+Route::get('/pdfReversoSETCS606112C2',[App\Http\Controllers\Turno_2\Reversosetcs606111C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112C2');
+//Rutas F7-SETCS-ELE-60-L1-06-3T2
+Route::resource('F7-SETCS-ELE-60-L1-06-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111C3ControllerT2');
+Route::resource('reversoSETCS606112C3', 'App\Http\Controllers\Turno_2\Reversosetcs606111C3ControllerT2');
+Route::get('/checkSETCS606112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C3Controllert2::class,'check'])->name('checkSETCS606112C3');
+Route::put('/finalcheckSETCS606112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS606112C3');
+Route::get('/edit2SETCS606112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C3Controllert2::class,'edit2'])->name('edit2SETCS606112C3');
+Route::put('/update2SETCS606112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C3Controllert2::class,'update2'])->name('update2SETCS606112C3');
+Route::get('/pdfprintSETCS606112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS606112C3');
+Route::get('/printindexSETCS606112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C3ontrollert2::class,'printindex'])->name('printindexSETCS606112C3');
+Route::get('/printreversoSETCS606112C3',[App\Http\Controllers\Turno_2\Reversosetcs606111C3Controllert2::class,'printreverso'])->name('printreversoSETCS606112C3');
+Route::get('/pdfReversoSETCS606112C3',[App\Http\Controllers\Turno_2\Reversosetcs606111C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112C3');
+//Rutas F7-SETCS-ELE-60-L1-06-4T2
+Route::resource('F7-SETCS-ELE-60-L1-06-4T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111C4ControllerT2');
+Route::resource('reversoSETCS606112C4', 'App\Http\Controllers\Turno_2\Reversosetcs606111C4ControllerT2');
+Route::get('/checkSETCS606112C4',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C4Controllert2::class,'check'])->name('checkSETCS606112C4');
+Route::put('/finalcheckSETCS606112C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C4Controllert2::class,'finalcheck'])->name('finalcheckSETCS606112C4');
+Route::get('/edit2SETCS606112C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C4Controllert2::class,'edit2'])->name('edit2SETCS606112C4');
+Route::put('/update2SETCS606112C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C4Controllert2::class,'update2'])->name('update2SETCS606112C4');
+Route::get('/pdfprintSETCS606112C4',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C4Controllert2::class,'pdfprint'])->name('pdfprintSETCS606112C4');
+Route::get('/printindexSETCS606112C4',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C4Controllert2::class,'printindex'])->name('printindexSETCS606112C4');
+Route::get('/printreversoSETCS606112C4',[App\Http\Controllers\Turno_2\Reversosetcs606111C4Controllert2::class,'printreverso'])->name('printreversoSETCS606112C4');
+Route::get('/pdfReversoSETCS606112C4',[App\Http\Controllers\Turno_2\Reversosetcs606111C4Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112C4');
+//Rutas F7-SETCS-ELE-60-L1-06-5T2
+Route::resource('F7-SETCS-ELE-60-L1-06-5T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111C5ControllerT2');
+Route::resource('reversoSETCS606112C5', 'App\Http\Controllers\Turno_2\Reversosetcs606111C5ControllerT2');
+Route::get('/checkSETCS606112C5',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C5Controllert2::class,'check'])->name('checkSETCS606112C5');
+Route::put('/finalcheckSETCS606112C5/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C5Controllert2::class,'finalcheck'])->name('finalcheckSETCS606112C5');
+Route::get('/edit2SETCS606112C5/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C5Controllert2::class,'edit2'])->name('edit2SETCS606112C5');
+Route::put('/update2SETCS606112C5/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C5Controllert2::class,'update2'])->name('update2SETCS606112C5');
+Route::get('/pdfprintSETCS606112C5',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C5Controllert2::class,'pdfprint'])->name('pdfprintSETCS606112C5');
+Route::get('/printindexSETCS606112C5',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C5Controllert2::class,'printindex'])->name('printindexSETCS606112C5');
+Route::get('/printreversoSETCS606112C5',[App\Http\Controllers\Turno_2\Reversosetcs606111C5Controllert2::class,'printreverso'])->name('printreversoSETCS606112C5');
+Route::get('/pdfReversoSETCS606112C5',[App\Http\Controllers\Turno_2\Reversosetcs606111C5Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112C5');
+//Rutas F7-SETCS-ELE-60-L1-06-6T2
+Route::resource('F7-SETCS-ELE-60-L1-06-6T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111C6ControllerT2');
+Route::resource('reversoSETCS606112C6', 'App\Http\Controllers\Turno_2\Reversosetcs606111C6ControllerT2');
+Route::get('/checkSETCS606112C6',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C6Controllert2::class,'check'])->name('checkSETCS606112C6');
+Route::put('/finalcheckSETCS606112C6/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C6Controllert2::class,'finalcheck'])->name('finalcheckSETCS606112C6');
+Route::get('/edit2SETCS606112C6/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C6Controllert2::class,'edit2'])->name('edit2SETCS606112C6');
+Route::put('/update2SETCS606112C6/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C6Controllert2::class,'update2'])->name('update2SETCS606112C6');
+Route::get('/pdfprintSETCS606112C6',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C6Controllert2::class,'pdfprint'])->name('pdfprintSETCS606112C6');
+Route::get('/printindexSETCS606112C6',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C6Controllert2::class,'printindex'])->name('printindexSETCS606112C6');
+Route::get('/printreversoSETCS606112C6',[App\Http\Controllers\Turno_2\Reversosetcs606111C6Controllert2::class,'printreverso'])->name('printreversoSETCS606112C6');
+Route::get('/pdfReversoSETCS606112C6',[App\Http\Controllers\Turno_2\Reversosetcs606111C6Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112C6');
+//Rutas F7-SETCS-ELE-60-L1-06-7T2
+Route::resource('F7-SETCS-ELE-60-L1-06-7T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs606111C7ControllerT2');
+Route::resource('reversoSETCS606112C7', 'App\Http\Controllers\Turno_2\Reversosetcs606111C7ControllerT2');
+Route::get('/checkSETCS606112C7',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C7Controllert2::class,'check'])->name('checkSETCS606112C7');
+Route::put('/finalcheckSETCS606112C7/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C7Controllert2::class,'finalcheck'])->name('finalcheckSETCS606112C7');
+Route::get('/edit2SETCS606112C7/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C7Controllert2::class,'edit2'])->name('edit2SETCS606112C7');
+Route::put('/update2SETCS606112C7/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C7Controllert2::class,'update2'])->name('update2SETCS606112C7');
+Route::get('/pdfprintSETCS606112C7',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C7Controllert2::class,'pdfprint'])->name('pdfprintSETCS606112C7');
+Route::get('/printindexSETCS606112C7',[App\Http\Controllers\Turno_2\Datoshojasetcs606111C7Controllert2::class,'printindex'])->name('printindexSETCS606112C7');
+Route::get('/printreversoSETCS606112C7',[App\Http\Controllers\Turno_2\Reversosetcs606111C7Controllert2::class,'printreverso'])->name('printreversoSETCS606112C7');
+Route::get('/pdfReversoSETCS606112C7',[App\Http\Controllers\Turno_2\Reversosetcs606111C7Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS606112C7');
 //Rutas F7-SETCS-ELE-60-L1-08-T2
 Route::resource('F7-SETCS-ELE-60-L1-08-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs6082ControllerT2');
 Route::resource('reversoSETCS6082', 'App\Http\Controllers\Turno_2\Reversosetcs6082ControllerT2');
@@ -896,6 +1049,28 @@ Route::get('/pdfprintSETCS100112',[App\Http\Controllers\Turno_2\Datoshojasetcs10
 Route::get('/printindexSETCS100112',[App\Http\Controllers\Turno_2\Datoshojasetcs100111Controllert2::class,'printindex'])->name('printindexSETCS100112');
 Route::get('/printreversoSETCS100112',[App\Http\Controllers\Turno_2\Reversosetcs100111Controllert2::class,'printreverso'])->name('printreversoSETCS100112');
 Route::get('/pdfReversoSETCS100112',[App\Http\Controllers\Turno_2\Reversosetcs100111Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS100112');
+//Rutas F7-SETCS-ELE-100-L1-01-2T2
+Route::resource('F7-SETCS-ELE-100-L1-01-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs100111C2ControllerT2');
+Route::resource('reversoSETCS100112C2', 'App\Http\Controllers\Turno_2\Reversosetcs100111C2ControllerT2');
+Route::get('/checkSETCS100112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C2Controllert2::class,'check'])->name('checkSETCS100112C2');
+Route::put('/finalcheckSETCS100112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS100112C2');
+Route::get('/edit2SETCS100112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C2Controllert2::class,'edit2'])->name('edit2SETCS100112C2');
+Route::put('/update2SETCS100112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C2Controllert2::class,'update2'])->name('update2SETCS100112C2');
+Route::get('/pdfprintSETCS100112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS100112C2');
+Route::get('/printindexSETCS100112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C2Controllert2::class,'printindex'])->name('printindexSETCS100112C2');
+Route::get('/printreversoSETCS100112C2',[App\Http\Controllers\Turno_2\Reversosetcs100111C2Controllert2::class,'printreverso'])->name('printreversoSETCS100112C2');
+Route::get('/pdfReversoSETCS100112C2',[App\Http\Controllers\Turno_2\Reversosetcs100111C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS100112C2');
+//Rutas F7-SETCS-ELE-100-L1-01-3T2
+Route::resource('F7-SETCS-ELE-100-L1-01-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs100111C3ControllerT2');
+Route::resource('reversoSETCS100112C3', 'App\Http\Controllers\Turno_2\Reversosetcs100111C3ControllerT2');
+Route::get('/checkSETCS100112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C3Controllert2::class,'check'])->name('checkSETCS100112C3');
+Route::put('/finalcheckSETCS100112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS100112C3');
+Route::get('/edit2SETCS100112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C3Controllert2::class,'edit2'])->name('edit2SETCS100112C3');
+Route::put('/update2SETCS100112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C3Controllert2::class,'update2'])->name('update2SETCS100112C3');
+Route::get('/pdfprintSETCS100112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS100112C3');
+Route::get('/printindexSETCS100112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs100111C3Controllert2::class,'printindex'])->name('printindexSETCS100112C3');
+Route::get('/printreversoSETCS100112C3',[App\Http\Controllers\Turno_2\Reversosetcs100111C3Controllert2::class,'printreverso'])->name('printreversoSETCS100112C3');
+Route::get('/pdfReversoSETCS100112C3',[App\Http\Controllers\Turno_2\Reversosetcs100111C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS100112C3');
 //Rutas F7-SETCS-ELE-100-L1-02-T2
 Route::resource('F7-SETCS-ELE-100-L1-02-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs10021ControllerT2');
 Route::resource('reversoSETCS10022', 'App\Http\Controllers\Turno_2\Reversosetcs10021ControllerT2');
@@ -940,6 +1115,28 @@ Route::get('/pdfprintSETCS107112',[App\Http\Controllers\Turno_2\Datoshojasetcs10
 Route::get('/printindexSETCS107112',[App\Http\Controllers\Turno_2\Datoshojasetcs107111Controllert2::class,'printindex'])->name('printindexSETCS107112');
 Route::get('/printreversoSETCS107112',[App\Http\Controllers\Turno_2\Reversosetcs107111Controllert2::class,'printreverso'])->name('printreversoSETCS107112');
 Route::get('/pdfReversoSETCS107112',[App\Http\Controllers\Turno_2\Reversosetcs107111Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS107112');
+//Rutas F7-SETCS-ELE-107-L1-01-2T2
+Route::resource('F7-SETCS-ELE-107-L1-01-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs107111C2ControllerT2');
+Route::resource('reversoSETCS107112C2', 'App\Http\Controllers\Turno_2\Reversosetcs107111C2ControllerT2');
+Route::get('/checkSETCS107112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C2Controllert2::class,'check'])->name('checkSETCS107112C2');
+Route::put('/finalcheckSETCS107112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS107112C2');
+Route::get('/edit2SETCS107112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C2Controllert2::class,'edit2'])->name('edit2SETCS107112C2');
+Route::put('/update2SETCS107112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C2Controllert2::class,'update2'])->name('update2SETCS107112C2');
+Route::get('/pdfprintSETCS107112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS107112C2');
+Route::get('/printindexSETCS107112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C2Controllert2::class,'printindex'])->name('printindexSETCS107112C2');
+Route::get('/printreversoSETCS107112C2',[App\Http\Controllers\Turno_2\Reversosetcs107111C2Controllert2::class,'printreverso'])->name('printreversoSETCS107112C2');
+Route::get('/pdfReversoSETCS107112C2',[App\Http\Controllers\Turno_2\Reversosetcs107111C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS107112C2');
+//Rutas F7-SETCS-ELE-107-L1-01-3T2
+Route::resource('F7-SETCS-ELE-107-L1-01-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs107111C3ControllerT2');
+Route::resource('reversoSETCS107112C3', 'App\Http\Controllers\Turno_2\Reversosetcs107111C3ControllerT2');
+Route::get('/checkSETCS107112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C3Controllert2::class,'check'])->name('checkSETCS107112C3');
+Route::put('/finalcheckSETCS107112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS107112C3');
+Route::get('/edit2SETCS107112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C3Controllert2::class,'edit2'])->name('edit2SETCS107112C3');
+Route::put('/update2SETCS107112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C3Controllert2::class,'update2'])->name('update2SETCS107112C3');
+Route::get('/pdfprintSETCS107112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS107112C3');
+Route::get('/printindexSETCS107112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs107111C3Controllert2::class,'printindex'])->name('printindexSETCS107112C3');
+Route::get('/printreversoSETCS107112C3',[App\Http\Controllers\Turno_2\Reversosetcs107111C3Controllert2::class,'printreverso'])->name('printreversoSETCS107112C3');
+Route::get('/pdfReversoSETCS107112C3',[App\Http\Controllers\Turno_2\Reversosetcs107111C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS107112C3');
 //Rutas F7-SETCS-ELE-107-L1-02-T2
 Route::resource('F7-SETCS-ELE-107-L1-02-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs10721ControllerT2');
 Route::resource('reversoSETCS10722', 'App\Http\Controllers\Turno_2\Reversosetcs10721ControllerT2');
@@ -962,6 +1159,39 @@ Route::get('/pdfprintSETCS120112',[App\Http\Controllers\Turno_2\Datoshojasetcs12
 Route::get('/printindexSETCS120112',[App\Http\Controllers\Turno_2\Datoshojasetcs120111Controllert2::class,'printindex'])->name('printindexSETCS120112');
 Route::get('/printreversoSETCS120112',[App\Http\Controllers\Turno_2\Reversosetcs120111Controllert2::class,'printreverso'])->name('printreversoSETCS120112');
 Route::get('/pdfReversoSETCS120112',[App\Http\Controllers\Turno_2\Reversosetcs120111Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS120112');
+//Rutas F7-SETCS-ELE-120-L1-01-2T2
+Route::resource('F7-SETCS-ELE-120-L1-01-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs120111C2ControllerT2');
+Route::resource('reversoSETCS120112C2', 'App\Http\Controllers\Turno_2\Reversosetcs120111C2ControllerT2');
+Route::get('/checkSETCS120112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C2Controllert2::class,'check'])->name('checkSETCS120112C2');
+Route::put('/finalcheckSETCS120112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS120112C2');
+Route::get('/edit2SETCS120112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C2Controllert2::class,'edit2'])->name('edit2SETCS120112C2');
+Route::put('/update2SETCS120112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C2Controllert2::class,'update2'])->name('update2SETCS120112C2');
+Route::get('/pdfprintSETCS120112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS120112C2');
+Route::get('/printindexSETCS120112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C2Controllert2::class,'printindex'])->name('printindexSETCS120112C2');
+Route::get('/printreversoSETCS120112C2',[App\Http\Controllers\Turno_2\Reversosetcs120111C2Controllert2::class,'printreverso'])->name('printreversoSETCS120112C2');
+Route::get('/pdfReversoSETCS120112C2',[App\Http\Controllers\Turno_2\Reversosetcs120111C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS120112C2');
+//Rutas F7-SETCS-ELE-120-L1-01-3T2
+Route::resource('F7-SETCS-ELE-120-L1-01-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs120111C3ControllerT2');
+Route::resource('reversoSETCS120112C3', 'App\Http\Controllers\Turno_2\Reversosetcs120111C3ControllerT2');
+Route::get('/checkSETCS120112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C3Controllert2::class,'check'])->name('checkSETCS120112C3');
+Route::put('/finalcheckSETCS120112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS120112C3');
+Route::get('/edit2SETCS120112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C3Controllert2::class,'edit2'])->name('edit2SETCS120112C3');
+Route::put('/update2SETCS120112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C3Controllert2::class,'update2'])->name('update2SETCS120112C3');
+Route::get('/pdfprintSETCS120112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS120112C3');
+Route::get('/printindexSETCS120112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C3Controllert2::class,'printindex'])->name('printindexSETCS120112C3');
+Route::get('/printreversoSETCS120112C3',[App\Http\Controllers\Turno_2\Reversosetcs120111C3Controllert2::class,'printreverso'])->name('printreversoSETCS120112C3');
+Route::get('/pdfReversoSETCS120112C3',[App\Http\Controllers\Turno_2\Reversosetcs120111C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS120112C3');
+//Rutas F7-SETCS-ELE-120-L1-01-4T2
+Route::resource('F7-SETCS-ELE-120-L1-01-4T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs120111C4ControllerT2');
+Route::resource('reversoSETCS120112C4', 'App\Http\Controllers\Turno_2\Reversosetcs120111C4ControllerT2');
+Route::get('/checkSETCS120112C4',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C4Controllert2::class,'check'])->name('checkSETCS120112C4');
+Route::put('/finalcheckSETCS120112C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C4Controllert2::class,'finalcheck'])->name('finalcheckSETCS120112C4');
+Route::get('/edit2SETCS120112C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C4Controllert2::class,'edit2'])->name('edit2SETCS120112C4');
+Route::put('/update2SETCS120112C4/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C4Controllert2::class,'update2'])->name('update2SETCS120112C4');
+Route::get('/pdfprintSETCS120112C4',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C4Controllert2::class,'pdfprint'])->name('pdfprintSETCS120112C4');
+Route::get('/printindexSETCS120112C4',[App\Http\Controllers\Turno_2\Datoshojasetcs120111C4Controllert2::class,'printindex'])->name('printindexSETCS120112C4');
+Route::get('/printreversoSETCS120112C4',[App\Http\Controllers\Turno_2\Reversosetcs120111C4Controllert2::class,'printreverso'])->name('printreversoSETCS120112C4');
+Route::get('/pdfReversoSETCS120112C4',[App\Http\Controllers\Turno_2\Reversosetcs120111C4Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS120112C4');
 //Rutas F7-SETCS-ELE-140-L1-01-T2
 Route::resource('F7-SETCS-ELE-140-L1-01-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs140111ControllerT2');
 Route::resource('reversoSETCS140112', 'App\Http\Controllers\Turno_2\Reversosetcs140111ControllerT2');
@@ -973,6 +1203,28 @@ Route::get('/pdfprintSETCS140112',[App\Http\Controllers\Turno_2\Datoshojasetcs14
 Route::get('/printindexSETCS140112',[App\Http\Controllers\Turno_2\Datoshojasetcs1440111Controllert2::class,'printindex'])->name('printindexSETCS140112');
 Route::get('/printreversoSETCS140112',[App\Http\Controllers\Turno_2\Reversosetcs140111Controllert2::class,'printreverso'])->name('printreversoSETCS140112');
 Route::get('/pdfReversoSETCS140112',[App\Http\Controllers\Turno_2\Reversosetcs140111Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS140112');
+//Rutas F7-SETCS-ELE-140-L1-01-2T2
+Route::resource('F7-SETCS-ELE-140-L1-01-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs140111C2ControllerT2');
+Route::resource('reversoSETCS140112C2', 'App\Http\Controllers\Turno_2\Reversosetcs140111C2ControllerT2');
+Route::get('/checkSETCS140112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C2Controllert2::class,'check'])->name('checkSETCS140112C2');
+Route::put('/finalcheckSETCS140112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS140112C2');
+Route::get('/edit2SETCS140112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C2Controllert2::class,'edit2'])->name('edit2SETCS140112C2');
+Route::put('/update2SETCS140112C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C2Controllert2::class,'update2'])->name('update2SETCS140112C2');
+Route::get('/pdfprintSETCS140112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS140112C2');
+Route::get('/printindexSETCS140112C2',[App\Http\Controllers\Turno_2\Datoshojasetcs1440111C2Controllert2::class,'printindex'])->name('printindexSETCS140112C2');
+Route::get('/printreversoSETCS140112C2',[App\Http\Controllers\Turno_2\Reversosetcs140111C2Controllert2::class,'printreverso'])->name('printreversoSETCS140112C2');
+Route::get('/pdfReversoSETCS140112C2',[App\Http\Controllers\Turno_2\Reversosetcs140111C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS140112C2');
+//Rutas F7-SETCS-ELE-140-L1-01-3T2
+Route::resource('F7-SETCS-ELE-140-L1-01-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs140111C3ControllerT2');
+Route::resource('reversoSETCS140112C3', 'App\Http\Controllers\Turno_2\Reversosetcs140111C3ControllerT2');
+Route::get('/checkSETCS140112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C3Controllert2::class,'check'])->name('checkSETCS140112C3');
+Route::put('/finalcheckSETCS140112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS140112C3');
+Route::get('/edit2SETCS140112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C3Controllert2::class,'edit2'])->name('edit2SETCS140112C3');
+Route::put('/update2SETCS140112C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C3Controllert2::class,'update2'])->name('update2SETCS140112C3');
+Route::get('/pdfprintSETCS140112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs140111C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS140112C3');
+Route::get('/printindexSETCS140112C3',[App\Http\Controllers\Turno_2\Datoshojasetcs1440111C3Controllert2::class,'printindex'])->name('printindexSETCS140112C3');
+Route::get('/printreversoSETCS140112C3',[App\Http\Controllers\Turno_2\Reversosetcs140111C3Controllert2::class,'printreverso'])->name('printreversoSETCS140112C3');
+Route::get('/pdfReversoSETCS140112C3',[App\Http\Controllers\Turno_2\Reversosetcs140111C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS140112C3');
 //Rutas F7-SETCS-ELE-160-L1-01-T2
 Route::resource('F7-SETCS-ELE-160-L1-01-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs16011ControllerT2');
 Route::resource('reversoSETCS16012', 'App\Http\Controllers\Turno_2\Reversosetcs16011ControllerT2');
@@ -984,6 +1236,28 @@ Route::get('/pdfprintSETCS16012',[App\Http\Controllers\Turno_2\Datoshojasetcs160
 Route::get('/printindexSETCS16012',[App\Http\Controllers\Turno_2\Datoshojasetcs16011Controllert2::class,'printindex'])->name('printindexSETCS16012');
 Route::get('/printreversoSETCS16012',[App\Http\Controllers\Turno_2\Reversosetcs16011Controllert2::class,'printreverso'])->name('printreversoSETCS16012');
 Route::get('/pdfReversoSETCS16012',[App\Http\Controllers\Turno_2\Reversosetcs16011Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS16012');
+//Rutas F7-SETCS-ELE-160-L1-01-2T2
+Route::resource('F7-SETCS-ELE-160-L1-01-2T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs16011C2ControllerT2');
+Route::resource('reversoSETCS16012C2', 'App\Http\Controllers\Turno_2\Reversosetcs16011C2ControllerT2');
+Route::get('/checkSETCS16012C2',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C2Controllert2::class,'check'])->name('checkSETCS16012C2');
+Route::put('/finalcheckSETCS16012C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C2Controllert2::class,'finalcheck'])->name('finalcheckSETCS16012C2');
+Route::get('/edit2SETCS16012C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C2Controllert2::class,'edit2'])->name('edit2SETCS16012C2');
+Route::put('/update2SETCS16012C2/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C2Controllert2::class,'update2'])->name('update2SETCS16012C2');
+Route::get('/pdfprintSETCS16012C2',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C2Controllert2::class,'pdfprint'])->name('pdfprintSETCS16012C2');
+Route::get('/printindexSETCS16012C2',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C2Controllert2::class,'printindex'])->name('printindexSETCS16012C2');
+Route::get('/printreversoSETCS16012C2',[App\Http\Controllers\Turno_2\Reversosetcs16011C2Controllert2::class,'printreverso'])->name('printreversoSETCS16012C2');
+Route::get('/pdfReversoSETCS16012C2',[App\Http\Controllers\Turno_2\Reversosetcs16011C2Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS16012C2');
+//Rutas F7-SETCS-ELE-160-L1-01-3T2
+Route::resource('F7-SETCS-ELE-160-L1-01-3T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs16011C3ControllerT2');
+Route::resource('reversoSETCS16012C3', 'App\Http\Controllers\Turno_2\Reversosetcs16011C3ControllerT2');
+Route::get('/checkSETCS16012C3',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C3Controllert2::class,'check'])->name('checkSETCS16012C3');
+Route::put('/finalcheckSETCS16012C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C3Controllert2::class,'finalcheck'])->name('finalcheckSETCS16012C3');
+Route::get('/edit2SETCS16012C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C3Controllert2::class,'edit2'])->name('edit2SETCS16012C3');
+Route::put('/update2SETCS16012C3/{id}',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C3Controllert2::class,'update2'])->name('update2SETCS16012C3');
+Route::get('/pdfprintSETCS16012C3',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C3Controllert2::class,'pdfprint'])->name('pdfprintSETCS16012C3');
+Route::get('/printindexSETCS16012C3',[App\Http\Controllers\Turno_2\Datoshojasetcs16011C3Controllert2::class,'printindex'])->name('printindexSETCS16012C3');
+Route::get('/printreversoSETCS16012C3',[App\Http\Controllers\Turno_2\Reversosetcs16011C3Controllert2::class,'printreverso'])->name('printreversoSETCS16012C3');
+Route::get('/pdfReversoSETCS16012C3',[App\Http\Controllers\Turno_2\Reversosetcs16011C3Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS16012C3');
 //Rutas F7-SETCS-ELE-180-L1-01-T2
 Route::resource('F7-SETCS-ELE-180-L1-01-T2', 'App\Http\Controllers\Turno_2\Datoshojasetcs18011ControllerT2');
 Route::resource('reversoSETCS18012', 'App\Http\Controllers\Turno_2\Reversosetcs18011ControllerT2');
@@ -1108,6 +1382,39 @@ Route::get('/pdfprintSETCS20T3',[App\Http\Controllers\Turno_3\Datoshojasetcs20Co
 Route::get('/printindexSETCS20T3',[App\Http\Controllers\Turno_3\Datoshojasetcs20Controllert3::class,'printindex'])->name('printindexSETCS20T3');
 Route::get('/printreversoSETCS20T3',[App\Http\Controllers\Turno_3\Reversosetcs20Controllert3::class,'printreverso'])->name('printreversoSETCS20T3');
 Route::get('/pdfReversoSETCS20T3',[App\Http\Controllers\Turno_3\Reversosetcs20Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS20T3');
+//Rutas F7-SETCS-ELE-20-L1-01-2
+Route::resource('F7-SETCS-ELE-20-L1-01-2T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs20C2ControllerT3');
+Route::resource('reversoSETCS20T3C2', 'App\Http\Controllers\Turno_3\Reversosetcs20C2ControllerT3');
+Route::get('/checkSETCS20T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs20C2Controllert3::class,'check'])->name('checkSETCS20T3C2');
+Route::put('/finalcheckSETCS20T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C2Controllert3::class,'finalcheck'])->name('finalcheckSETCS20T3C2');
+Route::get('/edit2SETCS20T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C2Controllert3::class,'edit2'])->name('edit2SETCS20T3C2');
+Route::put('/update2SETCS20T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C2Controllert3::class,'update2'])->name('update2SETCS20T3C2');
+Route::get('/pdfprintSETCS20T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs20C2Controllert3::class,'pdfprint'])->name('pdfprintSETCS20T3C2');
+Route::get('/printindexSETCS20T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs20C2Controllert3::class,'printindex'])->name('printindexSETCS20T3C2');
+Route::get('/printreversoSETCS20T3C2',[App\Http\Controllers\Turno_3\Reversosetcs20C2Controllert3::class,'printreverso'])->name('printreversoSETCS20T3C2');
+Route::get('/pdfReversoSETCS20T3C2',[App\Http\Controllers\Turno_3\Reversosetcs20C2Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS20T3C2');
+//Rutas F7-SETCS-ELE-20-L1-01-3
+Route::resource('F7-SETCS-ELE-20-L1-01-3T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs20C3ControllerT3');
+Route::resource('reversoSETCS20T3C3', 'App\Http\Controllers\Turno_3\Reversosetcs20C3ControllerT3');
+Route::get('/checkSETCS20T3C3',[App\Http\Controllers\Turno_3\Datoshojasetcs20C3Controllert3::class,'check'])->name('checkSETCS20T3C3');
+Route::put('/finalcheckSETCS20T3C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C3Controllert3::class,'finalcheck'])->name('finalcheckSETCS20T3C3');
+Route::get('/edit2SETCS20T3C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C3Controllert3::class,'edit2'])->name('edit2SETCS20T3C3');
+Route::put('/update2SETCS20T3C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C3Controllert3::class,'update2'])->name('update2SETCS20T3C3');
+Route::get('/pdfprintSETCS20T3C3',[App\Http\Controllers\Turno_3\Datoshojasetcs20C3Controllert3::class,'pdfprint'])->name('pdfprintSETCS20T3C3');
+Route::get('/printindexSETCS20T3C3',[App\Http\Controllers\Turno_3\Datoshojasetcs20C3Controllert3::class,'printindex'])->name('printindexSETCS20T3C3');
+Route::get('/printreversoSETCS20T3C3',[App\Http\Controllers\Turno_3\Reversosetcs20C3Controllert3::class,'printreverso'])->name('printreversoSETCS20T3C3');
+Route::get('/pdfReversoSETCS20T3C3',[App\Http\Controllers\Turno_3\Reversosetcs20C3Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS20T3C3');
+//Rutas F7-SETCS-ELE-20-L1-01-4
+Route::resource('F7-SETCS-ELE-20-L1-01-4T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs20C4ControllerT3');
+Route::resource('reversoSETCS20T3C4', 'App\Http\Controllers\Turno_3\Reversosetcs20C4ControllerT3');
+Route::get('/checkSETCS20T3C4',[App\Http\Controllers\Turno_3\Datoshojasetcs20C4Controllert3::class,'check'])->name('checkSETCS20T3C4');
+Route::put('/finalcheckSETCS20T3C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C4Controllert3::class,'finalcheck'])->name('finalcheckSETCS20T3C4');
+Route::get('/edit2SETCS20T3C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C4Controllert3::class,'edit2'])->name('edit2SETCS20T3C4');
+Route::put('/update2SETCS20T3C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs20C4Controllert3::class,'update2'])->name('update2SETCS20T3C4');
+Route::get('/pdfprintSETCS20T3C4',[App\Http\Controllers\Turno_3\Datoshojasetcs20C4Controllert3::class,'pdfprint'])->name('pdfprintSETCS20T3C4');
+Route::get('/printindexSETCS20T3C4',[App\Http\Controllers\Turno_3\Datoshojasetcs20C4Controllert3::class,'printindex'])->name('printindexSETCS20T3C4');
+Route::get('/printreversoSETCS20T3C4',[App\Http\Controllers\Turno_3\Reversosetcs20C4Controllert3::class,'printreverso'])->name('printreversoSETCS20T3C4');
+Route::get('/pdfReversoSETCS20T3C4',[App\Http\Controllers\Turno_3\Reversosetcs20C4Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS20T3C4');
 //Rutas F7-SETCS-ELE-20-L1-03
 Route::resource('F7-SETCS-ELE-20-L1-03-1T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs2031ControllerT3');
 Route::resource('reversoSETCS2031T3', 'App\Http\Controllers\Turno_3\Reversosetcs2031ControllerT3');
@@ -1119,6 +1426,17 @@ Route::get('/pdfprintSETCS2031T3',[App\Http\Controllers\Turno_3\Datoshojasetcs20
 Route::get('/printindexSETCS2031T3',[App\Http\Controllers\Turno_3\Datoshojasetcs2031Controllert3::class,'printindex'])->name('printindexSETCS2031T3');
 Route::get('/printreversoSETCS2031T3',[App\Http\Controllers\Turno_3\Reversosetcs2031Controllert3::class,'printreverso'])->name('printreversoSETCS2031T3');
 Route::get('/pdfReversoSETCS2031T3',[App\Http\Controllers\Turno_3\Reversosetcs2031Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS2031T3');
+//Rutas F7-SETCS-ELE-20-L1-03-2
+Route::resource('F7-SETCS-ELE-20-L1-03-2T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs2031C2ControllerT3');
+Route::resource('reversoSETCS2031T3C2', 'App\Http\Controllers\Turno_3\Reversosetcs2031C2ControllerT3');
+Route::get('/checkSETCS2031T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs2031C2Controllert3::class,'check'])->name('checkSETCS2031T3C2');
+Route::put('/finalcheckSETCS2031T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs2031C2Controllert3::class,'finalcheck'])->name('finalcheckSETCS2031T3C2');
+Route::get('/edit2SETCS2031T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs2031C2Controllert3::class,'edit2'])->name('edit2SETCS2031T3C2');
+Route::put('/update2SETCS2031T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs2031C2Controllert3::class,'update2'])->name('update2SETCS2031T3C2');
+Route::get('/pdfprintSETCS2031T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs2031C2Controllert3::class,'pdfprint'])->name('pdfprintSETCS2031T3C2');
+Route::get('/printindexSETCS2031T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs2031C2Controllert3::class,'printindex'])->name('printindexSETCS2031T3C2');
+Route::get('/printreversoSETCS2031T3C2',[App\Http\Controllers\Turno_3\Reversosetcs2031C2Controllert3::class,'printreverso'])->name('printreversoSETCS2031T3C2');
+Route::get('/pdfReversoSETCS2031T3C2',[App\Http\Controllers\Turno_3\Reversosetcs2031C2Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS2031T3C2');
 //Rutas F7-SETCS-ELE-40-L1-01
 Route::resource('F7-SETCS-ELE-40-L1-01-1T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40111ControllerT3');
 Route::resource('reversoSETCS40111T3', 'App\Http\Controllers\Turno_3\Reversosetcs40111ControllerT3');
@@ -1130,6 +1448,39 @@ Route::get('/pdfprintSETCS40111T3',[App\Http\Controllers\Turno_3\Datoshojasetcs4
 Route::get('/printindexSETCS40111T3',[App\Http\Controllers\Turno_3\Datoshojasetcs40111Controllert3::class,'printindex'])->name('printindexSETCS40111T3');
 Route::get('/printreversoSETCS40111T3',[App\Http\Controllers\Turno_3\Reversosetcs40111Controllert3::class,'printreverso'])->name('printreversoSETCS40111T3');
 Route::get('/pdfReversoSETCS40111T3',[App\Http\Controllers\Turno_3\Reversosetcs40111Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40111T3');
+//Rutas F7-SETCS-ELE-40-L1-01-2
+Route::resource('F7-SETCS-ELE-40-L1-01-2T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40111C2ControllerT3');
+Route::resource('reversoSETCS40111T3C2', 'App\Http\Controllers\Turno_3\Reversosetcs40111C2ControllerT3');
+Route::get('/checkSETCS40111T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C2Controllert3::class,'check'])->name('checkSETCS40111T3C2');
+Route::put('/finalcheckSETCS40111T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C2Controllert3::class,'finalcheck'])->name('finalcheckSETCS40111T3C2');
+Route::get('/edit2SETCS40111T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C2Controllert3::class,'edit2'])->name('edit2SETCS40111T3C2');
+Route::put('/update2SETCS40111T3C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C2Controllert3::class,'update2'])->name('update2SETCS40111T3C2');
+Route::get('/pdfprintSETCS40111T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C2Controllert3::class,'pdfprint'])->name('pdfprintSETCS40111T3C2');
+Route::get('/printindexSETCS40111T3C2',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C2Controllert3::class,'printindex'])->name('printindexSETCS40111T3C2');
+Route::get('/printreversoSETCS40111T3C2',[App\Http\Controllers\Turno_3\Reversosetcs40111C2Controllert3::class,'printreverso'])->name('printreversoSETCS40111T3C2');
+Route::get('/pdfReversoSETCS40111T3C2',[App\Http\Controllers\Turno_3\Reversosetcs40111C2Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40111T3C2');
+//Rutas F7-SETCS-ELE-40-L1-01-3
+Route::resource('F7-SETCS-ELE-40-L1-01-3T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40111C3ControllerT3');
+Route::resource('reversoSETCS40111T3C3', 'App\Http\Controllers\Turno_3\Reversosetcs40111C3ControllerT3');
+Route::get('/checkSETCS40111T3C3',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C3Controllert3::class,'check'])->name('checkSETCS40111T3C3');
+Route::put('/finalcheckSETCS40111T3C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C3Controllert3::class,'finalcheck'])->name('finalcheckSETCS40111T3C3');
+Route::get('/edit2SETCS40111T3C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C3Controllert3::class,'edit2'])->name('edit2SETCS40111T3C3');
+Route::put('/update2SETCS40111T3C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C3Controllert3::class,'update2'])->name('update2SETCS40111T3C3');
+Route::get('/pdfprintSETCS40111T3C3',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C3Controllert3::class,'pdfprint'])->name('pdfprintSETCS40111T3C3');
+Route::get('/printindexSETCS40111T3C3',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C3Controllert3::class,'printindex'])->name('printindexSETCS40111T3C3');
+Route::get('/printreversoSETCS40111T3C3',[App\Http\Controllers\Turno_3\Reversosetcs40111C3Controllert3::class,'printreverso'])->name('printreversoSETCS40111T3C3');
+Route::get('/pdfReversoSETCS40111T3C3',[App\Http\Controllers\Turno_3\Reversosetcs40111C3Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40111T3C3');
+//Rutas F7-SETCS-ELE-40-L1-01-4
+Route::resource('F7-SETCS-ELE-40-L1-01-4T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40111C4ControllerT3');
+Route::resource('reversoSETCS40111T3C4', 'App\Http\Controllers\Turno_3\Reversosetcs40111C4ControllerT3');
+Route::get('/checkSETCS40111T3C4',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C4Controllert3::class,'check'])->name('checkSETCS40111T3C4');
+Route::put('/finalcheckSETCS40111T3C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C4Controllert3::class,'finalcheck'])->name('finalcheckSETCS40111T3C4');
+Route::get('/edit2SETCS40111T3C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C4Controllert3::class,'edit2'])->name('edit2SETCS40111T3C4');
+Route::put('/update2SETCS40111T3C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C4Controllert3::class,'update2'])->name('update2SETCS40111T3C4');
+Route::get('/pdfprintSETCS40111T3C4',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C4Controllert3::class,'pdfprint'])->name('pdfprintSETCS40111T3C4');
+Route::get('/printindexSETCS40111T3C4',[App\Http\Controllers\Turno_3\Datoshojasetcs40111C4Controllert3::class,'printindex'])->name('printindexSETCS40111T3C4');
+Route::get('/printreversoSETCS40111T3C4',[App\Http\Controllers\Turno_3\Reversosetcs40111C4Controllert3::class,'printreverso'])->name('printreversoSETCS40111T3C4');
+Route::get('/pdfReversoSETCS40111T3C4',[App\Http\Controllers\Turno_3\Reversosetcs40111C4Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40111T3C4');
 //Rutas F7-SETCS-ELE-40-L1-02
 Route::resource('F7-SETCS-ELE-40-L1-02-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40211ControllerT3');
 Route::resource('reversoSETCS40223', 'App\Http\Controllers\Turno_3\Reversosetcs40211ControllerT3');
@@ -1141,7 +1492,62 @@ Route::get('/pdfprintSETCS40223',[App\Http\Controllers\Turno_3\Datoshojasetcs402
 Route::get('/printindexSETCS40223',[App\Http\Controllers\Turno_3\Datoshojasetcs40211Controllert3::class,'printindex'])->name('printindexSETCS40223');
 Route::get('/printreversoSETCS40223',[App\Http\Controllers\Turno_3\Reversosetcs40211Controllert3::class,'printreverso'])->name('printreversoSETCS40223');
 Route::get('/pdfReversoSETCS40223',[App\Http\Controllers\Turno_3\Reversosetcs40211Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40223');
-//Rutas F7-SETCS-ELE-60-L1-06-T2
+//Rutas F7-SETCS-ELE-40-L1-02-2
+Route::resource('F7-SETCS-ELE-40-L1-02-2T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40211C2ControllerT3');
+Route::resource('reversoSETCS40223C2', 'App\Http\Controllers\Turno_3\Reversosetcs40211C2ControllerT3');
+Route::get('/checkSETCS40223C2',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C2Controllert3::class,'check'])->name('checkSETCS40223C2');
+Route::put('/finalcheckSETCS40223C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C2Controllert3::class,'finalcheck'])->name('finalcheckSETCS40223C2');
+Route::get('/edit2SETCS40223C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C2Controllert3::class,'edit2'])->name('edit2SETCS40223C2');
+Route::put('/update2SETCS40223C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C2Controllert3::class,'update2'])->name('update2SETCS40223C2');
+Route::get('/pdfprintSETCS40223C2',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C2Controllert3::class,'pdfprint'])->name('pdfprintSETCS40223C2');
+Route::get('/printindexSETCS40223C2',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C2Controllert3::class,'printindex'])->name('printindexSETCS40223C2');
+Route::get('/printreversoSETCS40223C2',[App\Http\Controllers\Turno_3\Reversosetcs40211C2Controllert3::class,'printreverso'])->name('printreversoSETCS40223C2');
+Route::get('/pdfReversoSETCS40223C2',[App\Http\Controllers\Turno_3\Reversosetcs40211C2Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40223C2');
+//Rutas F7-SETCS-ELE-40-L1-02-3
+Route::resource('F7-SETCS-ELE-40-L1-02-3T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40211C3ControllerT3');
+Route::resource('reversoSETCS40223C3', 'App\Http\Controllers\Turno_3\Reversosetcs40211C3ControllerT3');
+Route::get('/checkSETCS40223C3',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C3Controllert3::class,'check'])->name('checkSETCS40223C3');
+Route::put('/finalcheckSETCS40223C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C3Controllert3::class,'finalcheck'])->name('finalcheckSETCS40223C3');
+Route::get('/edit2SETCS40223C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C3Controllert3::class,'edit2'])->name('edit2SETCS40223C3');
+Route::put('/update2SETCS40223C3/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C3Controllert3::class,'update2'])->name('update2SETCS40223C3');
+Route::get('/pdfprintSETCS40223C3',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C3Controllert3::class,'pdfprint'])->name('pdfprintSETCS40223C3');
+Route::get('/printindexSETCS40223C3',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C3Controllert3::class,'printindex'])->name('printindexSETCS40223C3');
+Route::get('/printreversoSETCS40223C3',[App\Http\Controllers\Turno_3\Reversosetcs40211C3Controllert3::class,'printreverso'])->name('printreversoSETCS40223C3');
+Route::get('/pdfReversoSETCS40223C3',[App\Http\Controllers\Turno_3\Reversosetcs40211C3Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40223C3');
+//Rutas F7-SETCS-ELE-40-L1-02-4
+Route::resource('F7-SETCS-ELE-40-L1-02-4T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40211C4ControllerT3');
+Route::resource('reversoSETCS40223C4', 'App\Http\Controllers\Turno_3\Reversosetcs40211C4ControllerT3');
+Route::get('/checkSETCS40223C4',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C4Controllert3::class,'check'])->name('checkSETCS40223C4');
+Route::put('/finalcheckSETCS40223C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C4Controllert3::class,'finalcheck'])->name('finalcheckSETCS40223C4');
+Route::get('/edit2SETCS40223C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C4Controllert3::class,'edit2'])->name('edit2SETCS40223C4');
+Route::put('/update2SETCS40223C4/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C4Controllert3::class,'update2'])->name('update2SETCS40223C4');
+Route::get('/pdfprintSETCS40223C4',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C4Controllert3::class,'pdfprint'])->name('pdfprintSETCS40223C4');
+Route::get('/printindexSETCS40223C4',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C4Controllert3::class,'printindex'])->name('printindexSETCS40223C4');
+Route::get('/printreversoSETCS40223C4',[App\Http\Controllers\Turno_3\Reversosetcs40211C4Controllert3::class,'printreverso'])->name('printreversoSETCS40223C4');
+Route::get('/pdfReversoSETCS40223C4',[App\Http\Controllers\Turno_3\Reversosetcs40211C4Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40223C4');
+//Rutas F7-SETCS-ELE-40-L1-02-5
+Route::resource('F7-SETCS-ELE-40-L1-02-5T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs40211C5ControllerT3');
+Route::resource('reversoSETCS40223C5', 'App\Http\Controllers\Turno_3\Reversosetcs40211C5ControllerT3');
+Route::get('/checkSETCS40223C5',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C5Controllert3::class,'check'])->name('checkSETCS40223C5');
+Route::put('/finalcheckSETCS40223C5/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C5Controllert3::class,'finalcheck'])->name('finalcheckSETCS40223C5');
+Route::get('/edit2SETCS40223C5/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C5Controllert3::class,'edit2'])->name('edit2SETCS40223C5');
+Route::put('/update2SETCS40223C5/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C5Controllert3::class,'update2'])->name('update2SETCS40223C5');
+Route::get('/pdfprintSETCS40223C5',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C5Controllert3::class,'pdfprint'])->name('pdfprintSETCS40223C5');
+Route::get('/printindexSETCS40223C5',[App\Http\Controllers\Turno_3\Datoshojasetcs40211C5Controllert3::class,'printindex'])->name('printindexSETCS40223C5');
+Route::get('/printreversoSETCS40223C5',[App\Http\Controllers\Turno_3\Reversosetcs40211C5Controllert3::class,'printreverso'])->name('printreversoSETCS40223C5');
+Route::get('/pdfReversoSETCS40223C5',[App\Http\Controllers\Turno_3\Reversosetcs40211C5Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS40223C5');
+//Rutas F7-SETCS-ELE-60-L1-01-T3
+Route::resource('F7-SETCS-ELE-60-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs606111H1ControllerT3');
+Route::resource('reversoSETCS606113H1', 'App\Http\Controllers\Turno_3\Reversosetcs606111H1ControllerT3');
+Route::get('/checkSETCS606113H1',[App\Http\Controllers\Turno_3\Datoshojasetcs606111H1Controllert3::class,'check'])->name('checkSETCS606113H1');
+Route::put('/finalcheckSETCS606113H1/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs606111H1Controllert3::class,'finalcheck'])->name('finalcheckSETCS606113H1');
+Route::get('/edit2SETCS606113H1/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs606111H1Controllert3::class,'edit2'])->name('edit2SETCS606113H1');
+Route::put('/update2SETCS606113H1/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs606111H1Controllert3::class,'update2'])->name('update2SETCS606113H1');
+Route::get('/pdfprintSETCS606113H1',[App\Http\Controllers\Turno_3\Datoshojasetcs606111H1Controllert3::class,'pdfprint'])->name('pdfprintSETCS606113H1');
+Route::get('/printindexSETCS606113H1',[App\Http\Controllers\Turno_3\Datoshojasetcs606111H1Controllert3::class,'printindex'])->name('printindexSETCS606113H1');
+Route::get('/printreversoSETCS606113H1',[App\Http\Controllers\Turno_3\Reversosetcs606111H1Controllert3::class,'printreverso'])->name('printreversoSETCS606113H1');
+Route::get('/pdfReversoSETCS606113H1',[App\Http\Controllers\Turno_3\Reversosetcs606111H1Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS606113H1');
+//Rutas F7-SETCS-ELE-60-L1-06-T3
 Route::resource('F7-SETCS-ELE-60-L1-06-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerT3');
 Route::resource('reversoSETCS606113', 'App\Http\Controllers\Turno_3\Reversosetcs606111ControllerT3');
 Route::get('/checkSETCS606113',[App\Http\Controllers\Turno_3\Datoshojasetcs606111Controllert3::class,'check'])->name('checkSETCS606113');
@@ -1152,7 +1558,7 @@ Route::get('/pdfprintSETCS606113',[App\Http\Controllers\Turno_3\Datoshojasetcs60
 Route::get('/printindexSETCS606113',[App\Http\Controllers\Turno_3\Datoshojasetcs606111Controllert3::class,'printindex'])->name('printindexSETCS606113');
 Route::get('/printreversoSETCS606113',[App\Http\Controllers\Turno_3\Reversosetcs606111Controllert3::class,'printreverso'])->name('printreversoSETCS606113');
 Route::get('/pdfReversoSETCS606113',[App\Http\Controllers\Turno_3\Reversosetcs606111Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS606113');
-//Rutas F7-SETCS-ELE-60-L1-08-T2
+//Rutas F7-SETCS-ELE-60-L1-08-T3
 Route::resource('F7-SETCS-ELE-60-L1-08-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs6082ControllerT3');
 Route::resource('reversoSETCS6083', 'App\Http\Controllers\Turno_3\Reversosetcs6082ControllerT3');
 Route::get('/checkSETCS6083',[App\Http\Controllers\Turno_3\Datoshojasetcs6082Controllert3::class,'check'])->name('checkSETCS6083');
@@ -1163,29 +1569,29 @@ Route::get('/pdfprintSETCS6083',[App\Http\Controllers\Turno_3\Datoshojasetcs6082
 Route::get('/printindexSETCS6083',[App\Http\Controllers\Turno_3\Datoshojasetcs6082Controllert3::class,'printindex'])->name('printindexSETCS6083');
 Route::get('/printreversoSETCS6083',[App\Http\Controllers\Turno_3\Reversosetcs6082Controllert3::class,'printreverso'])->name('printreversoSETCS6083');
 Route::get('/pdfReversoSETCS6083',[App\Http\Controllers\Turno_3\Reversosetcs6082Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS6083');
-//Rutas F7-SETCS-ELE-100-L1-01-T2
+//Rutas F7-SETCS-ELE-100-L1-01-T3
 Route::resource('F7-SETCS-ELE-100-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs100111ControllerT3');
 Route::resource('reversoSETCS100113', 'App\Http\Controllers\Turno_3\Reversosetcs100111ControllerT3');
-Route::get('/checkSETCS100113',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert2::class,'check'])->name('checkSETCS100113');
-Route::put('/finalcheckSETCS100113/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert2::class,'finalcheck'])->name('finalcheckSETCS100113');
-Route::get('/edit2SETCS100113/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert2::class,'edit2'])->name('edit2SETCS100113');
-Route::put('/update2SETCS100113/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert2::class,'update2'])->name('update2SETCS100113');
-Route::get('/pdfprintSETCS100113',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert2::class,'pdfprint'])->name('pdfprintSETCS100113');
-Route::get('/printindexSETCS100113',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert2::class,'printindex'])->name('printindexSETCS100113');
-Route::get('/printreversoSETCS100113',[App\Http\Controllers\Turno_3\Reversosetcs100111Controllert2::class,'printreverso'])->name('printreversoSETCS100113');
-Route::get('/pdfReversoSETCS100113',[App\Http\Controllers\Turno_3\Reversosetcs100111Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS100113');
-//Rutas F7-SETCS-ELE-100-L1-02-T2
+Route::get('/checkSETCS100113',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert3::class,'check'])->name('checkSETCS100113');
+Route::put('/finalcheckSETCS100113/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert3::class,'finalcheck'])->name('finalcheckSETCS100113');
+Route::get('/edit2SETCS100113/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert3::class,'edit2'])->name('edit2SETCS100113');
+Route::put('/update2SETCS100113/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert3::class,'update2'])->name('update2SETCS100113');
+Route::get('/pdfprintSETCS100113',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert3::class,'pdfprint'])->name('pdfprintSETCS100113');
+Route::get('/printindexSETCS100113',[App\Http\Controllers\Turno_3\Datoshojasetcs100111Controllert3::class,'printindex'])->name('printindexSETCS100113');
+Route::get('/printreversoSETCS100113',[App\Http\Controllers\Turno_3\Reversosetcs100111Controllert3::class,'printreverso'])->name('printreversoSETCS100113');
+Route::get('/pdfReversoSETCS100113',[App\Http\Controllers\Turno_3\Reversosetcs100111Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS100113');
+//Rutas F7-SETCS-ELE-100-L1-02-T3
 Route::resource('F7-SETCS-ELE-100-L1-02-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs10021ControllerT3');
 Route::resource('reversoSETCS10023', 'App\Http\Controllers\Turno_3\Reversosetcs10021ControllerT3');
 Route::get('/checkSETCS10023',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert3::class,'check'])->name('checkSETCS10023');
-Route::put('/finalcheckSETCS10023/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert2::class,'finalcheck'])->name('finalcheckSETCS10023');
-Route::get('/edit2SETCS10023/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert2::class,'edit2'])->name('edit2SETCS10023');
-Route::put('/update2SETCS10023/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert2::class,'update2'])->name('update2SETCS10023');
-Route::get('/pdfprintSETCS10023',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert2::class,'pdfprint'])->name('pdfprintSETCS10023');
-Route::get('/printindexSETCS10023',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert2::class,'printindex'])->name('printindexSETCS10023');
-Route::get('/printreversoSETCS10023',[App\Http\Controllers\Turno_3\Reversosetcs10021Controllert2::class,'printreverso'])->name('printreversoSETCS10023');
-Route::get('/pdfReversoSETCS10023',[App\Http\Controllers\Turno_3\Reversosetcs10021Controllert2::class,'pdfReverso'])->name('pdfReversoSETCS10023');
-//Rutas F7-SETCS-ELE-100-L1-03-T2
+Route::put('/finalcheckSETCS10023/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert3::class,'finalcheck'])->name('finalcheckSETCS10023');
+Route::get('/edit2SETCS10023/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert3::class,'edit2'])->name('edit2SETCS10023');
+Route::put('/update2SETCS10023/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert3::class,'update2'])->name('update2SETCS10023');
+Route::get('/pdfprintSETCS10023',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert3::class,'pdfprint'])->name('pdfprintSETCS10023');
+Route::get('/printindexSETCS10023',[App\Http\Controllers\Turno_3\Datoshojasetcs10021Controllert3::class,'printindex'])->name('printindexSETCS10023');
+Route::get('/printreversoSETCS10023',[App\Http\Controllers\Turno_3\Reversosetcs10021Controllert3::class,'printreverso'])->name('printreversoSETCS10023');
+Route::get('/pdfReversoSETCS10023',[App\Http\Controllers\Turno_3\Reversosetcs10021Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS10023');
+//Rutas F7-SETCS-ELE-100-L1-03-T3
 Route::resource('F7-SETCS-ELE-100-L1-03-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs10031ControllerT3');
 Route::resource('reversoSETCS10033', 'App\Http\Controllers\Turno_3\Reversosetcs10031ControllerT3');
 Route::get('/checkSETCS10033',[App\Http\Controllers\Turno_3\Datoshojasetcs10031Controllert3::class,'check'])->name('checkSETCS10033');
@@ -1196,9 +1602,9 @@ Route::get('/pdfprintSETCS10033',[App\Http\Controllers\Turno_3\Datoshojasetcs100
 Route::get('/printindexSETCS10033',[App\Http\Controllers\Turno_3\Datoshojasetcs10031Controllert3::class,'printindex'])->name('printindexSETCS10033');
 Route::get('/printreversoSETCS10033',[App\Http\Controllers\Turno_3\Reversosetcs10031Controllert3::class,'printreverso'])->name('printreversoSETCS10033');
 Route::get('/pdfReversoSETCS10033',[App\Http\Controllers\Turno_3\Reversosetcs10031Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS10033');
-//Rutas F7-SETCS-ELE-103-L1-01-T2
+//Rutas F7-SETCS-ELE-103-L1-01-T3
 Route::resource('F7-SETCS-ELE-103-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs10311ControllerT3');
-Route::resource('reversoSETCS10313', 'App\Http\Controllers\Turno_3\Reversosetcs10311ControllerT2');
+Route::resource('reversoSETCS10313', 'App\Http\Controllers\Turno_3\Reversosetcs10311ControllerT3');
 Route::get('/checkSETCS10313',[App\Http\Controllers\Turno_3\Datoshojasetcs10311Controllert3::class,'check'])->name('checkSETCS10313');
 Route::put('/finalcheckSETCS10313/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10311Controllert3::class,'finalcheck'])->name('finalcheckSETCS10313');
 Route::get('/edit2SETCS10313/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs10311Controllert3::class,'edit2'])->name('edit2SETCS10313');
@@ -1207,7 +1613,7 @@ Route::get('/pdfprintSETCS10313',[App\Http\Controllers\Turno_3\Datoshojasetcs103
 Route::get('/printindexSETCS10313',[App\Http\Controllers\Turno_3\Datoshojasetcs10311Controllert3::class,'printindex'])->name('printindexSETCS10313');
 Route::get('/printreversoSETCS10313',[App\Http\Controllers\Turno_3\Reversosetcs10311Controllert3::class,'printreverso'])->name('printreversoSETCS10313');
 Route::get('/pdfReversoSETCS10313',[App\Http\Controllers\Turno_3\Reversosetcs10311Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS10313');
-//Rutas F7-SETCS-ELE-107-L1-01-T2
+//Rutas F7-SETCS-ELE-107-L1-01-T3
 Route::resource('F7-SETCS-ELE-107-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs107111ControllerT3');
 Route::resource('reversoSETCS107113', 'App\Http\Controllers\Turno_3\Reversosetcs107111ControllerT3');
 Route::get('/checkSETCS107113',[App\Http\Controllers\Turno_3\Datoshojasetcs107111Controllert3::class,'check'])->name('checkSETCS107113');
@@ -1218,7 +1624,7 @@ Route::get('/pdfprintSETCS107113',[App\Http\Controllers\Turno_3\Datoshojasetcs10
 Route::get('/printindexSETCS107113',[App\Http\Controllers\Turno_3\Datoshojasetcs107111Controllert3::class,'printindex'])->name('printindexSETCS107113');
 Route::get('/printreversoSETCS107113',[App\Http\Controllers\Turno_3\Reversosetcs107111Controllert3::class,'printreverso'])->name('printreversoSETCS107113');
 Route::get('/pdfReversoSETCS107113',[App\Http\Controllers\Turno_3\Reversosetcs107111Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS107113');
-//Rutas F7-SETCS-ELE-107-L1-02-T2
+//Rutas F7-SETCS-ELE-107-L1-02-T3
 Route::resource('F7-SETCS-ELE-107-L1-02-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs10721ControllerT3');
 Route::resource('reversoSETCS10723', 'App\Http\Controllers\Turno_3\Reversosetcs10721ControllerT3');
 Route::get('/checkSETCS10723',[App\Http\Controllers\Turno_3\Datoshojasetcs10721Controllert3::class,'check'])->name('checkSETCS10723');
@@ -1229,7 +1635,7 @@ Route::get('/pdfprintSETCS10723',[App\Http\Controllers\Turno_3\Datoshojasetcs107
 Route::get('/printindexSETCS10723',[App\Http\Controllers\Turno_3\Datoshojasetcs10721Controllert3::class,'printindex'])->name('printindexSETCS10723');
 Route::get('/printreversoSETCS10723',[App\Http\Controllers\Turno_3\Reversosetcs10721Controllert3::class,'printreverso'])->name('printreversoSETCS10723');
 Route::get('/pdfReversoSETCS10723',[App\Http\Controllers\Turno_3\Reversosetcs10721Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS10723');
-//Rutas F7-SETCS-ELE-120-L1-01-T2
+//Rutas F7-SETCS-ELE-120-L1-01-T3
 Route::resource('F7-SETCS-ELE-120-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs120111ControllerT3');
 Route::resource('reversoSETCS120113', 'App\Http\Controllers\Turno_3\Reversosetcs120111ControllerT3');
 Route::get('/checkSETCS120113',[App\Http\Controllers\Turno_3\Datoshojasetcs120111Controllert3::class,'check'])->name('checkSETCS120113');
@@ -1240,7 +1646,7 @@ Route::get('/pdfprintSETCS120113',[App\Http\Controllers\Turno_3\Datoshojasetcs12
 Route::get('/printindexSETCS120113',[App\Http\Controllers\Turno_3\Datoshojasetcs120111Controllert3::class,'printindex'])->name('printindexSETCS120113');
 Route::get('/printreversoSETCS120113',[App\Http\Controllers\Turno_3\Reversosetcs120111Controllert3::class,'printreverso'])->name('printreversoSETCS120113');
 Route::get('/pdfReversoSETCS120113',[App\Http\Controllers\Turno_3\Reversosetcs120111Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS120113');
-//Rutas F7-SETCS-ELE-140-L1-01-T2
+//Rutas F7-SETCS-ELE-140-L1-01-T3
 Route::resource('F7-SETCS-ELE-140-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs140111ControllerT3');
 Route::resource('reversoSETCS140113', 'App\Http\Controllers\Turno_3\Reversosetcs140111ControllerT3');
 Route::get('/checkSETCS140113',[App\Http\Controllers\Turno_3\Datoshojasetcs140111Controllert3::class,'check'])->name('checkSETCS140113');
@@ -1251,7 +1657,7 @@ Route::get('/pdfprintSETCS140113',[App\Http\Controllers\Turno_3\Datoshojasetcs14
 Route::get('/printindexSETCS140113',[App\Http\Controllers\Turno_3\Datoshojasetcs1440111Controllert3::class,'printindex'])->name('printindexSETCS140113');
 Route::get('/printreversoSETCS140113',[App\Http\Controllers\Turno_3\Reversosetcs140111Controllert3::class,'printreverso'])->name('printreversoSETCS140113');
 Route::get('/pdfReversoSETCS140113',[App\Http\Controllers\Turno_3\Reversosetcs140111Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS140113');
-//Rutas F7-SETCS-ELE-160-L1-01-T2
+//Rutas F7-SETCS-ELE-160-L1-01-T3
 Route::resource('F7-SETCS-ELE-160-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs16011ControllerT3');
 Route::resource('reversoSETCS16013', 'App\Http\Controllers\Turno_3\Reversosetcs16011ControllerT3');
 Route::get('/checkSETCS16013',[App\Http\Controllers\Turno_3\Datoshojasetcs16011Controllert3::class,'check'])->name('checkSETCS16013');
@@ -1262,6 +1668,17 @@ Route::get('/pdfprintSETCS16013',[App\Http\Controllers\Turno_3\Datoshojasetcs160
 Route::get('/printindexSETCS16013',[App\Http\Controllers\Turno_3\Datoshojasetcs16011Controllert3::class,'printindex'])->name('printindexSETCS16013');
 Route::get('/printreversoSETCS16013',[App\Http\Controllers\Turno_3\Reversosetcs16011Controllert3::class,'printreverso'])->name('printreversoSETCS16013');
 Route::get('/pdfReversoSETCS16013',[App\Http\Controllers\Turno_3\Reversosetcs16011Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS16013');
+//Rutas F7-SETCS-ELE-160-L1-01-2T3
+Route::resource('F7-SETCS-ELE-160-L1-01-2T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs16011C2ControllerT3');
+Route::resource('reversoSETCS16013C2', 'App\Http\Controllers\Turno_3\Reversosetcs16011C2ControllerT3');
+Route::get('/checkSETCS16013C2',[App\Http\Controllers\Turno_3\Datoshojasetcs16011C2Controllert3::class,'check'])->name('checkSETCS16013C2');
+Route::put('/finalcheckSETCS16013C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs16011C2Controllert3::class,'finalcheck'])->name('finalcheckSETCS16013C2');
+Route::get('/edit2SETCS16013C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs16011C2Controllert3::class,'edit2'])->name('edit2SETCS16013C2');
+Route::put('/update2SETCS16013C2/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs16011C2Controllert3::class,'update2'])->name('update2SETCS16013C2');
+Route::get('/pdfprintSETCS16013C2',[App\Http\Controllers\Turno_3\Datoshojasetcs16011C2Controllert3::class,'pdfprint'])->name('pdfprintSETCS16013C2');
+Route::get('/printindexSETCS16013C2',[App\Http\Controllers\Turno_3\Datoshojasetcs16011C2Controllert3::class,'printindex'])->name('printindexSETCS16013C2');
+Route::get('/printreversoSETCS16013C2',[App\Http\Controllers\Turno_3\Reversosetcs16011C2Controllert3::class,'printreverso'])->name('printreversoSETCS16013C2');
+Route::get('/pdfReversoSETCS16013C2',[App\Http\Controllers\Turno_3\Reversosetcs16011C2Controllert3::class,'pdfReverso'])->name('pdfReversoSETCS16013C2');
 //Rutas F7-SETCS-ELE-180-L1-01-T2
 Route::resource('F7-SETCS-ELE-180-L1-01-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs18011ControllerT3');
 Route::resource('reversoSETCS18013', 'App\Http\Controllers\Turno_3\Reversosetcs18011ControllerT3');

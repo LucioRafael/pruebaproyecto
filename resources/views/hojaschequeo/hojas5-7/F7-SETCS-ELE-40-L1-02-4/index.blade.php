@@ -19,9 +19,13 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <div>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                @endauth
                 <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
                 </div>
             </div>
         </nav>
@@ -898,7 +902,7 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{routeSETCS40212('checkSETCS40214')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS40214')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
                     <a href="F7-SETCS-ELE-40-L1-02-1-4/create" class="btn btn-success">Añadir criterio</a>
                     <a href="{{route('pdfprintSETCS40214')}}" class="btn btn-danger">Guardar PDF</a>

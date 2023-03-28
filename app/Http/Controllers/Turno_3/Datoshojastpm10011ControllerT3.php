@@ -111,6 +111,9 @@ class Datoshojastpm10011Controllert3 extends Controller
         $registros->turno = $request->get('turno');
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
+        $registros->tipo = $request->get('tipo');
+        $registros->valor1 = $request->get('valor1');
+        $registros->valor2 = $request->get('valor2');
         $registros->save();
         return redirect ('/F7-TPM-ELE-100-L1-01-T3');
     }
@@ -202,6 +205,9 @@ class Datoshojastpm10011Controllert3 extends Controller
         $registro->turno = $request->get('turno');
         $registro->documentoid = $request->get('documentoid');
         $registro->partetabla = $request->get('partetabla');
+        $registro->tipo = $request->get('tipo');
+        $registro->valor1 = $request->get('valor1');
+        $registro->valor2 = $request->get('valor2');
         $registro->save();
         return redirect ('/F7-TPM-ELE-100-L1-01-T3');
     }

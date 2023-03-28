@@ -169,6 +169,24 @@
             <option value="ABAJO">MANTENIMIENTO/CAMBIO DE MODELO</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">Tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1">
+            <option value="cumple">Cumple - No Cumple</option>
+            <option value="texto">TEXTO</option>
+            <option value="rango">RANGOS</option>
+        </select>        
+    </div>
+    <p style="color: white">Si Seleccionas "RANGOS" ingresa los valores del rango correspondientes, si no, solo
+    ignoralos</p>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1">
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/F7-SETCS-ELE-100-L1-01-T2" class="btn btn-danger">Cancelar</a>

@@ -17,11 +17,14 @@
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
                     <img src="/images/R.png" alt="" id="logoborg">
-                    <div>
-                    <a href="F7-SETCS-ELE-60-L1-06-1-1-1" class="btn btn-info" style="color: white">Volver</a>
-                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
+                    <h3>Registro</h3>
+                    <div>                    
+                    @auth        
+                    <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                    auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                    @endauth
+                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
                     </div>
-
                 </div>
             </nav>
             <br>

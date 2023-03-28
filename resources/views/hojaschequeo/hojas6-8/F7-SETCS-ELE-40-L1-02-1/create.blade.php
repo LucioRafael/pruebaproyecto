@@ -170,6 +170,18 @@
             <option value="CAMBIO2">CAMBIO2</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label" hidden>Tipo</label>
+        <input type="text" name="tipo" id="tipo" class="form-control" tabindex="1" hidden value="cumple">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label" hidden>V1</label>
+        <input type="text" name="valor1" id="valor1" class="form-control" tabindex="1" hidden value="0">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label" hidden>V2</label>
+        <input type="text" name="valor2" id="valor2" class="form-control" tabindex="1" hidden value="0">
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/F7-SETCS-ELE-40-L1-02-T2" class="btn btn-danger">Cancelar</a>

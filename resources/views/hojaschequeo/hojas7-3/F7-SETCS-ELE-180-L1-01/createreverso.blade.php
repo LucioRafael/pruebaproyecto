@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-180-L1-01-T3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -17,12 +17,18 @@
     </script>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <img src="../images/R.png" alt="" id="logoborg">
-            <h4 style="padding-right: 200px">Registro</h4>
-            <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
+            <img src="/images/R.png" alt="" id="logoborg">
+            <h3>Registro</h3>
+            <div>                    
+            @auth        
+            <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+            @endauth
+            <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
+            </div>
         </div>
     </nav>
-    <form action="/reversoSETCS18011" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS18013" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         <div class="container">
             <div class="mb-3">
@@ -84,11 +90,11 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
                 <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden
-                    value="1">
+                    value="3">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS18011" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS18013" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>

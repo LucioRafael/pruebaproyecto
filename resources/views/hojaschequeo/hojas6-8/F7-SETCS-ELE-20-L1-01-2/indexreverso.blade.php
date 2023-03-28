@@ -21,7 +21,7 @@
                     <div>
                     <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                    <a href="F7-SETCS-ELE-20-L1-03-1T2" class="btn btn-info" style="color: white">Volver</a>
+                    <a href="F7-SETCS-ELE-20-L1-03-2T2" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>
                     @endauth

@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-SETCS-ELE-103-L1-01-T3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet" >
 </head>
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <img src="../images/R.png" alt="" id="logoborg">
-    <h4 style="padding-right: 200px">Registro</h4>
-    <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
-  </div>
+    <div class="container-fluid">
+        <img src="/images/R.png" alt="" id="logoborg">
+        <h3>REGISTRO</h3>
+        <div>                    
+        @auth                    
+        <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+        auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>    
+        <a href="../logout" class="btn" id="b3">Cerrar sesion</a> 
+        @endauth                       
+        </div>
 </nav>
-<form action="/F7-SETCS-ELE-103-L1-01-T2"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-103-L1-01-T3"id="loginreg" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -150,7 +155,7 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>Turno</label>
-        <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden value="2">
+        <input type="text" name="turno" id="turno" class="form-control" tabindex="1" hidden value="3">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
@@ -163,9 +168,27 @@
             <option value="ABAJO">MANTENIMIENTO/CAMBIO DE MODELO</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">Tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1">
+            <option value="cumple">Cumple - No Cumple</option>
+            <option value="texto">TEXTO</option>
+            <option value="rango">RANGOS</option>
+        </select>        
+    </div>
+    <p style="color: white">Si Seleccionas "RANGOS" ingresa los valores del rango correspondientes, si no, solo
+    ignoralos</p>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1">
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-103-L1-01-T2" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-103-L1-01-T3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

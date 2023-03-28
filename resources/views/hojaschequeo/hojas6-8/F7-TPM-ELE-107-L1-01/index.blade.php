@@ -19,13 +19,52 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-                <div>
+                <div>                    
+                @auth                    
+                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
+                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
+                @endauth
                 <a href="Turno2" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
                 </div>
             </div>
         </nav>
         <br>
+    </div>
+    <div>
+        <select id="partetabla" name="partetabla" class="" tabindex="1">
+            <option value="1">Copia 1</option>
+            <option value="2">Copia 2</option>
+            <option value="3">Copia 3</option>
+            <option value="4">Copia 4</option>
+            <option value="5">Copia 5</option>
+        </select>
+        <select id="partetabla" name="partetabla" class="" tabindex="1">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="1">Junio</option>
+            <option value="2">Julio</option>
+            <option value="3">Agosto</option>
+            <option value="4">Septiembre</option>
+            <option value="5">Octubre</option>
+            <option value="5">Noviembre</option>
+            <option value="5">Diciembre</option>
+        </select>
+        <select id="partetabla" name="partetabla" class="" tabindex="1">
+            <option value="1">2023</option>
+            <option value="2">2024</option>
+            <option value="3">2025</option>
+            <option value="4">2026</option>
+            <option value="5">2027</option>
+            <option value="1">2028</option>
+            <option value="2">2029</option>
+            <option value="3">2030</option>
+            <option value="4">2031</option>
+            <option value="5">2032</option>
+        </select>
     </div>
     <div class="table-responsive">
         <table class="table table-success table-bordered">

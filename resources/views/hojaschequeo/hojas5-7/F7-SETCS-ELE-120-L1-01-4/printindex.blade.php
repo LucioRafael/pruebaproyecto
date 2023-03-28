@@ -146,7 +146,7 @@
                     <tbody>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-120-L1-01-4-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-120-L1-01-4' &&
                                 $registro->partetabla == 'ARRIBA')
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

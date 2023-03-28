@@ -42,6 +42,10 @@
             <option value="CAMBIO2">CAMBIO2</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label" hidden>Tipo</label>
+        <input type="text" name="tipo" id="tipo" class="form-control" tabindex="1" hidden value="cumple">
+    </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/F7-SETCS-ELE-40-L1-02-1-2" class="btn btn-danger">Cancelar</a>

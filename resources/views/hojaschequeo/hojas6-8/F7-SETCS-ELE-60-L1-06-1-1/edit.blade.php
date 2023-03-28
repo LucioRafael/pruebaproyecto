@@ -40,8 +40,23 @@
             <option value="AJUSTES">Ajuste mantenimiento</option>
             <option value="#1">Set up #1</option>
             <option value="#2">Set up #2</option>
+            <option value="#3">Set up #3</option>
         </select>
     </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label" hidden>Tipo</label>
+        <input type="text" name="tipo" id="tipo" class="form-control" tabindex="1" value="{{$registro->tipo}}" hidden>
+    </div>
+    @if($registro->tipo == 'rango')
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1" value="{{$registro->valor1}}">
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1" value="{{$registro->valor2}}">
+    </div>
+    @endif
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a href="/F7-SETCS-ELE-60-L1-06-T2" class="btn btn-danger">Cancelar</a>

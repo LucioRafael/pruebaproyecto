@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Reverso;
 use PDF;
-class Reversosetcs107121Controller extends Controller
+class Reversosetcs107131Controller extends Controller
 {
     /**
      * Display a listing of the resource.

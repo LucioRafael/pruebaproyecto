@@ -35,7 +35,7 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-SETCS-ELE-140-L1-01-1-1" && $reverso->turno == "1")
+                @if ($reverso->documentoid == "F7-SETCS-ELE-140-L1-01-1-1" && $reverso->turno == "3")
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
