@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Turno_3;
 use Illuminate\Http\Request;
 use App\Models\Reverso;
+use App\Models\Datoshoja;
 use PDF;
 class ReversoController00t3 extends Controller
 {

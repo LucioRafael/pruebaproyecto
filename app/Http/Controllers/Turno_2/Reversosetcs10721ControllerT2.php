@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Turno_2;
 
 use Illuminate\Http\Request;
 use App\Models\Reverso;
+use App\Models\Datoshoja;
 use PDF;
 class Reversosetcs10721Controllert2 extends Controller
 {

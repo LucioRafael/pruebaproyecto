@@ -144,8 +144,10 @@ class Datoshojasetcs40111Controller extends Controller
     public function check(Request $request)
     {
         $registros = Registro::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-40-L1-01-1.check')
-        ->with('registros',$registros);
+        ->with('registros',$registros)
+        ->with('datoshojas',$datoshojas);
     }
 
     public function finalcheck(Request $request,$id)

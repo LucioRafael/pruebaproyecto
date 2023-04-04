@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Reverso;
+use App\Models\Datoshoja;
 use PDF;
 class ReversoController00 extends Controller
 {
@@ -14,8 +15,10 @@ class ReversoController00 extends Controller
     public function index()
     {
         $reversos = Reverso::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01.indexreverso')
-        ->with('reversos',$reversos);
+        ->with('reversos',$reversos)
+        ->with('datoshojas',$datoshojas);
     }
 
     /**
@@ -50,6 +53,8 @@ class ReversoController00 extends Controller
         $reversos->responsable = $request->get('responsable');
         $reversos->turno = $request->get('turno');
         $reversos->documentoid = $request->get('documentoid');
+        $reversos->mes = $request->get('mes');
+        $reversos->año = $request->get('año');
         $reversos->save();
         return redirect('/reverso');
     }
