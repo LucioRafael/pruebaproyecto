@@ -16,7 +16,7 @@ class Datoshojasetcs20Controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
         //$registros = Registro::all();        
         //return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-1.index')
