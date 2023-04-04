@@ -16,6 +16,7 @@ class Reversosetcs100111ControllerC3t3 extends Controller
     public function index()
     {
         $reversos = Reverso::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas7-3.F7-SETCS-ELE-100-L1-01-3.indexreverso')
         ->with('reversos',$reversos);
     }

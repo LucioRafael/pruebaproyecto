@@ -16,6 +16,7 @@ class Reversotpm10711Controllert2 extends Controller
     public function index()
     {
         $reversos = Reverso::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas6-8.F7-TPM-ELE-107-L1-01.indexreverso')
         ->with('reversos',$reversos);
     }
