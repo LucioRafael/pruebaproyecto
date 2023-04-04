@@ -17,9 +17,8 @@
     </script>
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+            <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-<<<<<<< HEAD
                 <div>                
                 @auth                    
                 <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
@@ -27,15 +26,6 @@
                 @endauth
                 <a href="F7-SETCS-ELE-40-L1-02-1-2" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
-=======
-                <div>                    
-                @auth                    
-                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>                
-                <a href="F7-SETCS-ELE-40-L1-02-1-2" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
-                @endauth                       
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                 </div>
             </div>
         </nav>
@@ -124,8 +114,7 @@
                         <form action="{{route('finalcheckSETCS40212',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-2' &&
-                                $registro->partetabla == '6:00' &&
-                                $registro->tipo == 'cumple')
+                                $registro->partetabla == '6:00')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -418,8 +407,7 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-2' &&
-                                $registro->partetabla == 'CAMBIO1' &&
-                                $registro->tipo == 'cumple')
+                                $registro->partetabla == 'CAMBIO1')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -713,8 +701,7 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-2' &&
-                                $registro->partetabla == 'CAMBIO2' &&
-                                $registro->tipo == 'cumple')
+                                $registro->partetabla == 'CAMBIO2')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

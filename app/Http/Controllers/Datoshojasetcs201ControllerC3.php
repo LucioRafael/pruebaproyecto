@@ -145,6 +145,7 @@ class Datoshojasetcs201ControllerC3 extends Controller
     public function check(Request $request)
     {
         $registros = Registro::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-3.check')
         ->with('registros',$registros);
     }

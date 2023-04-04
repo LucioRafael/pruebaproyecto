@@ -23,15 +23,9 @@
                 @auth                    
                 <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                 auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-<<<<<<< HEAD
                 @endauth
                 <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
-=======
-                <a href="Turno1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
-                @endauth                       
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                 </div>
             </div>
         </nav>

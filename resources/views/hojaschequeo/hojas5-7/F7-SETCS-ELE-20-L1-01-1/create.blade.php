@@ -171,7 +171,6 @@
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Tipo</label>
         <select id="tipo" name="tipo" class="form-control" tabindex="1">
-<<<<<<< HEAD
             <option value="cumple">Cumple - No Cumple</option>
             <option value="texto">TEXTO</option>
             <option value="rango">RANGOS</option>
@@ -186,19 +185,6 @@
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">Valor2</label>
         <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1">
-=======
-            <option value="cumple">CUMPLE-NO CUMPLE</option>
-            <option value="rango">RANGO</option>
-            <option value="texto">TEXTO</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="" id=txt1 class="form-label">Valor1</label>
-        <input type="number" step="0.01" name="n1" id="n1" class="form-control" tabindex="1" value="00">
-    </div>
-    <div class="mb-3">
-        <label for="" id=txt1 class="form-label">Valor2</label>
-        <input type="number" step="0.01" name="n2" id="n2" class="form-control" tabindex="1" value="00">
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Mes</label>
@@ -216,7 +202,6 @@
             <option value="NOVIEMBRE">NOVIEMBRE</option>
             <option value="DICIEMBRE">DICIEMBRE</option>
         </select>
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>

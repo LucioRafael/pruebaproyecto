@@ -20,13 +20,15 @@
                     <div>
                     @auth 
                     <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-                    auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                    @endauth
+                            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
                     <a href="F7-SETCS-ELE-20-L1-01-1-1" class="btn btn-info" style="color: white">Volver</a>
-                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                    
+                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
+                    @endauth                        
                     </div>
-                </div>
+                </div>                
             </nav>
+            @foreach ($datoshojas as $datoshoja)
+            @endforeach
             <br>
         </div>
         <table class="table table-success table-bordered table-striped mt-4">
@@ -52,7 +54,8 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-SETCS-ELE-20-L1-01-1-1" && $reverso->turno == "1")
+                @if ($reverso->documentoid == "F7-SETCS-ELE-20-L1-01-1-1" && $reverso->turno == "1" &&
+                     $reverso->mes == $datoshoja->mes)
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>

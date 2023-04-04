@@ -28,7 +28,7 @@
             </div>
         </div>
     </nav>
-    <form action="/reversoSETCS40111T3/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoSETCS40111T3C4/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         @method('PUT')
         <div class="container">
@@ -85,7 +85,7 @@
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
                 <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1"
-                    hidden value="F7-SETCS-ELE-40-L1-01-1-2">
+                    hidden value="F7-SETCS-ELE-40-L1-01-4-2">
             </div>
             <div class="mb-3">
                 <label for="" id=txt1 class="form-label" hidden>Turno</label>
@@ -94,7 +94,7 @@
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoSETCS40111T3" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoSETCS40111T3C4" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>

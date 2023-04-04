@@ -35,7 +35,8 @@
         <table class="table table-success table-bordered">
             <thead>
                 @foreach ($datoshojas as $datoshoja)
-                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-100-L1-01')
+                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-100-L1-01' &&
+                         $datoshoja->linea == 'Secador AMI 2')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>

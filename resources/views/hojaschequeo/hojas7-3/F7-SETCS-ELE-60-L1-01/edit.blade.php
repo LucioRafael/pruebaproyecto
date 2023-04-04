@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-SETCS-ELE-60-L1-08-T3</title>
+    <title>F7-SETCS-ELE-60-L1-01-T3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet" >
 </head>
@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-60-L1-08-T3/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-60-L1-01-T3/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -49,7 +49,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-60-L1-08-T3" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-60-L1-01-T3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

@@ -88,7 +88,7 @@
                             <th>accion</th>
                             <th>
                             @role('Admin')
-                            <a href="/edit2SETCS2031T3/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            <a href="/edit2SETCS2031T3C2/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
                             @endrole                                
                             </th>
                             <th colspan="30"></th>
@@ -182,7 +182,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'cumple')
                                 <tr>
@@ -406,8 +406,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-20-L1-03-1T3.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-20-L1-03-1T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-20-L1-03-2T3.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-20-L1-03-2T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -417,11 +417,11 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'rango')
                                 <tr>
-                                    <td>{{ $registro->criterio}}, {{$registro->valor1}}, {{$registro->valor2}}</td>
+                                    <td>{{ $registro->criterio}}</td>
                                     <td>
                                         @if ($registro['d1'] >= $registro->valor1 && $registro['d1'] <= $registro->valor2)
                                             <p style="color: green">{{ $registro['d1'] }}</p>
@@ -641,8 +641,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-20-L1-03-1T3.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-20-L1-03-1T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-20-L1-03-2T3.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-20-L1-03-2T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -652,7 +652,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'texto')
                                 <tr>
@@ -752,8 +752,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-20-L1-03-1T3.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-20-L1-03-1T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-20-L1-03-2T3.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-20-L1-03-2T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -766,11 +766,11 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{route('checkSETCS2031T3')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS2031T3C2')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-20-L1-03-1T3/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintSETCS2031T3')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-SETCS-ELE-20-L1-03-2T3/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS2031T3C2')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoSETCS2031T3" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS2031T3C2" class="btn btn-secondary">Reverso</a>                    
 </body>
 </html>

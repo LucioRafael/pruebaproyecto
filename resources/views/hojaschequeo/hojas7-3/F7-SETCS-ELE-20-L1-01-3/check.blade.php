@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-SETCS-ELE-20-L1-01-1 T3</title>
+    <title>F7-SETCS-ELE-20-L1-01-3 T3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -24,7 +24,7 @@
                 @auth                    
                 <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                 auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                <a href="/F7-SETCS-ELE-20-L1-01-1T3" class="btn btn-info" style="color: white">Volver</a>
+                <a href="/F7-SETCS-ELE-20-L1-01-3T3" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
                 @endauth                       
                 </div>
@@ -112,9 +112,9 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS20T3',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS20T3C3',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-3' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'cumple')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -401,7 +401,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-3' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'rango')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -503,7 +503,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-3' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'texto')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>F7-SETCS-ELE-40-L1-01-1 T3</title>
+        <title>F7-SETCS-ELE-40-L1-01-2 T3</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link href="/css/app.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                     <div>
                     <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                    <a href="F7-SETCS-ELE-40-L1-01-1T3" class="btn btn-info" style="color: white">Volver</a>
+                    <a href="F7-SETCS-ELE-40-L1-01-2T3" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>
                     @endauth
@@ -52,7 +52,7 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-SETCS-ELE-40-L1-01-1-2" && $reverso->turno == "3")
+                @if ($reverso->documentoid == "F7-SETCS-ELE-40-L1-01-2-2" && $reverso->turno == "3")
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
@@ -66,8 +66,8 @@
                     <td>{{$reverso->accion}}</td>
                     <td>{{$reverso->responsable}}</td>
                     <td>
-                        <form action="{{route('reversoSETCS40111T3.destroy',$reverso->id)}}" method="POST">
-                        <a href="reversoSETCS40111T3/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                        <form action="{{route('reversoSETCS40111T3C2.destroy',$reverso->id)}}" method="POST">
+                        <a href="reversoSETCS40111T3C2/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Eliminar</button>    
@@ -78,9 +78,9 @@
                 @endforeach
             </tbody>
         </table>
-        <a href="/reversoSETCS40111T3/create" class="btn btn-primary">Añadir campo</a>
+        <a href="/reversoSETCS40111T3C2/create" class="btn btn-primary">Añadir campo</a>
         @role('Admin')
-        <a href="{{route('pdfReversoSETCS40111T3')}}" class="btn btn-danger">Guardar PDF</a>
+        <a href="{{route('pdfReversoSETCS40111T3C2')}}" class="btn btn-danger">Guardar PDF</a>
         @endrole
     </body>
 </html>

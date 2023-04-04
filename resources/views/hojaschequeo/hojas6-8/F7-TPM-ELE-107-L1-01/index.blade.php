@@ -31,41 +31,7 @@
         </nav>
         <br>
     </div>
-    <div>
-        <select id="partetabla" name="partetabla" class="" tabindex="1">
-            <option value="1">Copia 1</option>
-            <option value="2">Copia 2</option>
-            <option value="3">Copia 3</option>
-            <option value="4">Copia 4</option>
-            <option value="5">Copia 5</option>
-        </select>
-        <select id="partetabla" name="partetabla" class="" tabindex="1">
-            <option value="1">Enero</option>
-            <option value="2">Febrero</option>
-            <option value="3">Marzo</option>
-            <option value="4">Abril</option>
-            <option value="5">Mayo</option>
-            <option value="1">Junio</option>
-            <option value="2">Julio</option>
-            <option value="3">Agosto</option>
-            <option value="4">Septiembre</option>
-            <option value="5">Octubre</option>
-            <option value="5">Noviembre</option>
-            <option value="5">Diciembre</option>
-        </select>
-        <select id="partetabla" name="partetabla" class="" tabindex="1">
-            <option value="1">2023</option>
-            <option value="2">2024</option>
-            <option value="3">2025</option>
-            <option value="4">2026</option>
-            <option value="5">2027</option>
-            <option value="1">2028</option>
-            <option value="2">2029</option>
-            <option value="3">2030</option>
-            <option value="4">2031</option>
-            <option value="5">2032</option>
-        </select>
-    </div>
+    
     <div class="table-responsive">
         <table class="table table-success table-bordered">
             <thead>

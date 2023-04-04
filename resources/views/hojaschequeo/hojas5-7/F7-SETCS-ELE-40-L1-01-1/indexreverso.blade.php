@@ -15,25 +15,17 @@
         </script>
         <div>
             <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+                <div class="container-fluid">
                     <img src="/images/R.png" alt="" id="logoborg">
                     <div>
-<<<<<<< HEAD
                         @auth                    
         <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
         @endauth
                     <a href="F7-SETCS-ELE-40-L1-01-1-1" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
-=======
-                    @auth 
-                    <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-                            auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                    <a href="F7-SETCS-ELE-20-L1-01-1-1" class="btn btn-info" style="color: white">Volver</a>
-                    <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
-                    @endauth
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                     </div>
+
                 </div>
             </nav>
             <br>

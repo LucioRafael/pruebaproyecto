@@ -65,22 +65,7 @@
                         </tr>
                         <tr>
                             <th colspan="3" style="text-align: end">Mes:</th>
-                            <th colspan="1">
-                            <select id="mes" name="mes" tabindex="1" value="{{$datoshoja->mes}}">
-                                <option value="{{$datoshoja->mes}}">{{$datoshoja->mes}}</option>
-                                <option value="ENERO">ENERO</option>
-                                <option value="FEBRERO">FEBRERO</option>
-                                <option value="MARZO">MARZO</option>
-                                <option value="ABRIL">ABRIL</option>
-                                <option value="MAYO">MAYO</option>
-                                <option value="JUNIO">JUNIO</option>
-                                <option value="JULIO">JULIO</option>
-                                <option value="AGOSTO">AGOSTO</option>
-                                <option value="SEPTIEMBRE">SEPTIEMBRE</option>
-                                <option value="OCTUBRE">OCTUBRE</option>
-                                <option value="NOVIEMBRE">NOVIEMBRE</option>
-                                <option value="DICIEMBRE">DICIEMBRE</option>
-                                </select>></th>
+                            <th colspan="1"><input type="text" name="mes" id="mes" value="{{$datoshoja->mes}}"></th>
                             <th colspan="3" style="text-align: end">Año:</th>
                             <th colspan="3"><input type="text" name="año" id="año" value="{{$datoshoja->año}}"></th>
                         </tr>

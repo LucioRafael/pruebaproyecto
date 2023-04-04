@@ -35,7 +35,7 @@
         <table class="table table-success table-bordered">
             <thead>
                 @foreach ($datoshojas as $datoshoja)
-                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-60-L1-08')
+                    @if ($datoshoja->documentoid == 'F7-SETCS-ELE-60-L1-01')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>
@@ -89,7 +89,7 @@
                             <th>
                             @role('Admin')
                             <a href="/edit2SETCS606113H1/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
-                            @endrole                                
+                            @endrole
                             </th>
                             <th colspan="30"></th>
                         </tr>

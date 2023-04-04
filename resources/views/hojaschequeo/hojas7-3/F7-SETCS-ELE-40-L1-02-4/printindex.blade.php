@@ -378,7 +378,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == '6:00' &&
                                 $registro->tipo == 'rango')
                                 <tr>
@@ -605,7 +605,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == '6:00' &&
                                 $registro->tipo == 'texto')
                                 <tr>
@@ -713,7 +713,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == 'CAMBIO1' &&
                                 $registro->tipo == 'cumple')
                                 <tr>
@@ -940,7 +940,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == 'CAMBIO1' &&
                                 $registro->tipo == 'rango')
                                 <tr>
@@ -1167,7 +1167,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == 'CAMBIO1' &&
                                 $registro->tipo == 'texto')
                                 <tr>
@@ -1275,7 +1275,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == 'CAMBIO2' &&
                                 $registro->tipo == 'cumple')
                                 <tr>
@@ -1502,7 +1502,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == 'CAMBIO2' &&
                                 $registro->tipo == 'rango')
                                 <tr>
@@ -1729,7 +1729,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-4' &&
                                 $registro->partetabla == 'CAMBIO2' &&
                                 $registro->tipo == 'texto')
                                 <tr>

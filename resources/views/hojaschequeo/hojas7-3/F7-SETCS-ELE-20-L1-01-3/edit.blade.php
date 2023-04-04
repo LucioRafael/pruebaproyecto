@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-20-L1-01-1T3/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-20-L1-01-3T3/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -62,7 +62,7 @@
     @endif
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-20-L1-01-1T3" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-20-L1-01-3T3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

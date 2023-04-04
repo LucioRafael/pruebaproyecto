@@ -111,14 +111,8 @@ class Datoshojasetcs18011Controller extends Controller
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
         $registros->tipo = $request->get('tipo');
-<<<<<<< HEAD
         $registros->valor1 = $request->get('valor1');
         $registros->valor2 = $request->get('valor2');
-=======
-        $registros->n1 = $request->get('n1');
-        $registros->n2 = $request->get('n2');
-        $registros->mes = $request->get('mes');
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
         $registros->save();
         return redirect ('/F7-SETCS-ELE-180-L1-01-1');
     }
@@ -149,6 +143,7 @@ class Datoshojasetcs18011Controller extends Controller
     public function check(Request $request)
     {
         $registros = Registro::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-180-L1-01.check')
         ->with('registros',$registros);
     }
@@ -209,17 +204,9 @@ class Datoshojasetcs18011Controller extends Controller
         $registro->criterio = $request->get('criterio');
         $registro->turno = $request->get('turno');
         $registro->documentoid = $request->get('documentoid');
-<<<<<<< HEAD
         $registro->tipo = $request->get('tipo');
         $registro->valor1 = $request->get('valor1');
         $registro->valor2 = $request->get('valor2');
-=======
-        $registro->partetabla = $request->get('partetabla');
-        $registro->tipo = $request->get('tipo');
-        $registro->n1 = $request->get('n1');
-        $registro->n2 = $request->get('n2');
-        $registro->mes = $request->get('mes');
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
         $registro->save();
         return redirect ('/F7-SETCS-ELE-180-L1-01-1');
     }

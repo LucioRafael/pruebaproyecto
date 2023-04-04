@@ -151,7 +151,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-2-2' &&
                                 $registro->partetabla == 'ARRIBA' &&
                                 $registro->tipo == 'cumple')
                                 <tr>
@@ -378,7 +378,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-2-2' &&
                                 $registro->partetabla == 'ARRIBA' &&
                                 $registro->tipo == 'rango')
                                 <tr>
@@ -605,7 +605,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-2-2' &&
                                 $registro->partetabla == 'ARRIBA' &&
                                 $registro->tipo == 'texto')
                                 <tr>
@@ -713,7 +713,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-2-2' &&
                                 $registro->partetabla == 'ABAJO' &&
                                 $registro->tipo == 'cumple')
                                 <tr>
@@ -940,7 +940,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-2-2' &&
                                 $registro->partetabla == 'ABAJO' &&
                                 $registro->tipo == 'rango')
                                 <tr>
@@ -1167,7 +1167,7 @@
                         @endforeach
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-2-2' &&
                                 $registro->partetabla == 'ABAJO' &&
                                 $registro->tipo == 'texto')
                                 <tr>

@@ -192,8 +192,6 @@
                             <th colspan="1">Snap Off</th>
                         </tr>
                         @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
                         $registro->partetabla == '1-2-3')
@@ -242,9 +240,7 @@
                             <input type="text" size='15' name="registro[{{$key}}][d30]" id="d30" tabindex="1" hidden value="{{$registro->d30}}">
                             <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" hidden value="{{$registro->d31}}">
                         @endif
-                        @endforeach
                         </tr>
-                        @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
                         $registro->partetabla == 'HE1-HE2-4')
@@ -293,9 +289,7 @@
                             <input type="text" size='15' name="registro[{{$key}}][d30]" id="d30" tabindex="1" hidden value="{{$registro->d30}}">
                             <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" hidden value="{{$registro->d31}}">
                         @endif
-                        @endforeach
                         </tr>
-                        @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
                         $registro->partetabla == '5-6-HE3-HE4')
@@ -347,9 +341,7 @@
                             <input type="text" size='15' name="registro[{{$key}}][d30]" id="d30" tabindex="1" hidden value="{{$registro->d30}}">
                             <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" hidden value="{{$registro->d31}}">
                         @endif
-                        @endforeach
                         </tr>
-                        @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
                         $registro->partetabla == '7-8-9')
@@ -399,32 +391,30 @@
                             <input type="text" size='15' name="registro[{{$key}}][d30]" id="d30" tabindex="1" hidden value="{{$registro->d30}}">
                             <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" hidden value="{{$registro->d31}}">
                         @endif
-                        @endforeach
                         </tr>
-                        @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
                         $registro->partetabla == 'HE5-HE6')
                         <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                         <tr>
                             <th>Hoja Extra 5</th>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d1}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d2}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d3}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}"></td>
                             <th colspan="1"></th>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d4}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d5}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d6}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}"></td>
                         </tr>
                         <tr>
                             <th>Hoja Extra 6</th>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d7}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d8}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d9}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}"></td>
                             <th colspan="1"></th>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d10}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d11}}"></td>
-                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d12}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}"></td>
+                            <td colspan="1"><input type="text" size='15' name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}"></td>
                             <input type="text" size='15' name="registro[{{$key}}][d13]" id="d13" tabindex="1" hidden value="{{$registro->d13}}">
                             <input type="text" size='15' name="registro[{{$key}}][d14]" id="d14" tabindex="1" hidden value="{{$registro->d14}}">
                             <input type="text" size='15' name="registro[{{$key}}][d15]" id="d15" tabindex="1" hidden value="{{$registro->d15}}">
@@ -451,7 +441,7 @@
                             @csrf
                             @method('PUT')
                             <button type="submit" class="btn btn-primary">Guardar Cambios</button>            
-                        </form>                     
+                        </form>
             </table>            
         </div>
 </body>

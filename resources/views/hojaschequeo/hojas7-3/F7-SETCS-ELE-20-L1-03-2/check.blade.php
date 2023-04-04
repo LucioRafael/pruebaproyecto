@@ -23,7 +23,7 @@
                 @auth                    
                 <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                 auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
-                <a href="F7-SETCS-ELE-20-L1-03-1T3" class="btn btn-info" style="color: white">Volver</a>
+                <a href="F7-SETCS-ELE-20-L1-03-2T3" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
                 @endauth                       
                 </div>
@@ -111,9 +111,9 @@
                             </th>
                         </tr>
                         @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheckSETCS2031T3',$registro->id)}}" method="POST">                            
+                        <form action="{{route('finalcheckSETCS2031T3C2',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'cumple')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -400,7 +400,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'rango')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
@@ -502,7 +502,7 @@
                                 </tr>
                             @endif
                             @if ($registro->turno == '3' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-2-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'texto')
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">

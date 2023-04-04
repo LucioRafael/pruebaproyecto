@@ -17,9 +17,8 @@
     </script>
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+            <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
-<<<<<<< HEAD
                 <div>                
                 @auth                    
                 <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
@@ -27,15 +26,6 @@
                 @endauth
                 <a href="F7-SETCS-ELE-60-L1-06-4-1-1" class="btn btn-info" style="color: white">Volver</a>
                 <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                                        
-=======
-                <div>                    
-                @auth                    
-                <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
-                auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>                
-                <a href="F7-SETCS-ELE-60-L1-06-4-1-1" class="btn btn-info" style="color: white">Volver</a>
-                <a href="/logout" class="btn" id="b3">Cerrar sesion</a> 
-                @endauth                       
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                 </div>
             </div>
         </nav>
@@ -417,7 +407,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -509,99 +498,6 @@
                                     </td>
                                     <td>
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -613,7 +509,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="text" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -705,99 +600,6 @@
                                     </td>
                                     <td>
                                         <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="text" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -1104,7 +906,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -1196,99 +997,6 @@
                                     </td>
                                     <td>
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -1300,7 +1008,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="text" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -1392,99 +1099,6 @@
                                     </td>
                                     <td>
                                         <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="text" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -1791,7 +1405,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -1883,99 +1496,6 @@
                                     </td>
                                     <td>
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -1987,7 +1507,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="text" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -2079,99 +1598,6 @@
                                     </td>
                                     <td>
                                         <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="text" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -2478,7 +1904,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -2570,99 +1995,6 @@
                                     </td>
                                     <td>
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="number" step="0.01" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
@@ -2674,7 +2006,6 @@
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
-<<<<<<< HEAD
                                         <input type="text" size='15' name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
                                     </td>
                                     <td>
@@ -2766,99 +2097,6 @@
                                     </td>
                                     <td>
                                         <input type="text" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
-=======
-                                        <input type="text" name="registro[{{$key}}][d1]" id="d1" tabindex="1" value="{{$registro->d1}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d2]" id="d2" tabindex="1" value="{{$registro->d2}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d3]" id="d3" tabindex="1" value="{{$registro->d3}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d4]" id="d4" tabindex="1" value="{{$registro->d4}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d5]" id="d5" tabindex="1" value="{{$registro->d5}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d6]" id="d6" tabindex="1" value="{{$registro->d6}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d7]" id="d7" tabindex="1" value="{{$registro->d7}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d8]" id="d8" tabindex="1" value="{{$registro->d8}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d9]" id="d9" tabindex="1" value="{{$registro->d9}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d10]" id="d10" tabindex="1" value="{{$registro->d10}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d11]" id="d11" tabindex="1" value="{{$registro->d11}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d12]" id="d12" tabindex="1" value="{{$registro->d12}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d13]" id="d13" tabindex="1" value="{{$registro->d13}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d14]" id="d14" tabindex="1" value="{{$registro->d14}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d15]" id="d15" tabindex="1" value="{{$registro->d15}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d16]" id="d16" tabindex="1" value="{{$registro->d16}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d17]" id="d17" tabindex="1" value="{{$registro->d17}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d18]" id="d18" tabindex="1" value="{{$registro->d18}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d19]" id="d19" tabindex="1" value="{{$registro->d19}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d20]" id="d20" tabindex="1" value="{{$registro->d20}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d21]" id="d21" tabindex="1" value="{{$registro->d21}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d22]" id="d22" tabindex="1" value="{{$registro->d22}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d23]" id="d23" tabindex="1" value="{{$registro->d23}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d24]" id="d24" tabindex="1" value="{{$registro->d24}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d25]" id="d25" tabindex="1" value="{{$registro->d25}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d26]" id="d26" tabindex="1" value="{{$registro->d26}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d27]" id="d27" tabindex="1" value="{{$registro->d27}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d28]" id="d28" tabindex="1" value="{{$registro->d28}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d29]" id="d29" tabindex="1" value="{{$registro->d29}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d30]" id="d30" tabindex="1" value="{{$registro->d30}}">
-                                    </td>
-                                    <td>
-                                        <input type="text" name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
->>>>>>> 6f1809be1af828dd6105466d48164c28e32a6d3d
                                     </td>
                                 </tr>
                             @endif
