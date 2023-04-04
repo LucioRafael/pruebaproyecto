@@ -55,6 +55,8 @@ class Reversosetcs2031Controllert3 extends Controller
         $reversos->responsable = $request->get('responsable');
         $reversos->turno = $request->get('turno');
         $reversos->documentoid = $request->get('documentoid');
+        $reversos->mes = $request->get('mes');
+        $reversos->año = $request->get('año');
         $reversos->save();
         return redirect('/reversoSETCS2031T3');
     }
