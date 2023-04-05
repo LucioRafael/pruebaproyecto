@@ -144,8 +144,10 @@ class Datoshojastpm6011Controllert3 extends Controller
     public function check(Request $request)
     {
         $registros = Registro::all();
+        $datoshojas = Datoshoja::all();
         return view('hojaschequeo.hojas7-3.F7-TPM-ELE-60-L1-01.check')
-        ->with('registros',$registros);
+        ->with('registros',$registros)
+        ->with('datoshojas',$datoshojas);
     }
 
     public function finalcheck(Request $request,$id)

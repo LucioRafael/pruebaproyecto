@@ -33,7 +33,8 @@
     </div>
     <div class="table-responsive">
         <div class="table-responsive" align="center">
-
+            @foreach ($datoshojas as $datoshoja)
+            @endforeach
             <table class="table table-success table-bordered">
                 <thead>
                     <tr>
@@ -114,7 +115,9 @@
                         <form action="{{route('finalcheckTPM6011',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-TPM-ELE-60-L1-01-1' &&
-                                $registro->partetabla == 'ARRIBA')
+                                $registro->partetabla == 'ARRIBA' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

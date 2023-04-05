@@ -112,9 +112,10 @@ class Datoshojasetcs201ControllerC3 extends Controller
         $registros->documentoid = $request->get('documentoid');
         $registros->partetabla = $request->get('partetabla');
         $registros->tipo = $request->get('tipo');
-        $registros->n1 = $request->get('n1');
-        $registros->n2 = $request->get('n2');
-        $registros->mes = $request->get('mes');
+        $registros->valor1 = $request->get('valor1');
+        $registros->valor2 = $request->get('valor2');
+        $registros->mes = $request ->get('mes');
+        $registros->año = $request ->get('año');
         $registros->save();
         return redirect ('/F7-SETCS-ELE-20-L1-01-2-1C3');
     }

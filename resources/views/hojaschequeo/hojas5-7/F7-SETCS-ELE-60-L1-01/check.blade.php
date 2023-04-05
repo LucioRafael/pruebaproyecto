@@ -33,7 +33,8 @@
     </div>
     <div class="table-responsive">
         <div class="table-responsive" align="center">
-
+            @foreach ($datoshojas as $datoshoja)
+            @endforeach
             <table class="table table-success table-bordered">
                 <thead>
                     <tr>
@@ -46,7 +47,9 @@
                 <form action="{{route('finalcheckSETCS606113H1T1',$registro->id)}}" method="POST">  
                 @if ($registro->turno == '1' &&
                     $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                    $registro->partetabla == 'formato')
+                    $registro->partetabla == 'formato' &&
+                    $registro->mes == $datoshoja->mes &&
+                    $registro->año == $datoshoja->año)
                     <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                     <tbody>                        
                         <tr>
@@ -194,7 +197,9 @@
                         @endif
                         @if ($registro->turno == '1' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == '1-2-3')
+                        $registro->partetabla == '1-2-3' &&
+                        $registro->mes == $datoshoja->mes &&
+                        $registro->año == $datoshoja->año)
                         <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                         <tr>
                             <th rowspan="5">1</th>
@@ -243,7 +248,9 @@
                         </tr>
                         @if ($registro->turno == '1' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == 'HE1-HE2-4')
+                        $registro->partetabla == 'HE1-HE2-4' &&
+                        $registro->mes == $datoshoja->mes &&
+                        $registro->año == $datoshoja->año)
                         <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                         <tr>
                             <th>Hoja Extra 1</th>
@@ -292,7 +299,9 @@
                         </tr>
                         @if ($registro->turno == '1' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == '5-6-HE3-HE4')
+                        $registro->partetabla == '5-6-HE3-HE4' &&
+                        $registro->mes == $datoshoja->mes &&
+                        $registro->año == $datoshoja->año)
                         <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                         <tr>
                             <th>5</th>
@@ -344,7 +353,9 @@
                         </tr>
                         @if ($registro->turno == '1' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == '7-8-9')
+                        $registro->partetabla == '7-8-9' &&
+                        $registro->mes == $datoshoja->mes &&
+                        $registro->año == $datoshoja->año)
                         <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                         <tr>
                             <th rowspan="5">3</th>
@@ -394,7 +405,9 @@
                         </tr>
                         @if ($registro->turno == '1' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == 'HE5-HE6')
+                        $registro->partetabla == 'HE5-HE6' &&
+                        $registro->mes == $datoshoja->mes &&
+                        $registro->año == $datoshoja->año)
                         <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                         <tr>
                             <th>Hoja Extra 5</th>

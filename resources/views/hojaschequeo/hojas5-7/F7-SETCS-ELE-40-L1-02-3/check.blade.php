@@ -33,7 +33,8 @@
     </div>
     <div class="table-responsive">
         <div class="table-responsive" align="center">
-
+            @foreach ($datoshojas as $datoshoja)
+            @endforeach
             <table class="table table-success table-bordered">
                 <thead>
                     <tr>
@@ -114,7 +115,9 @@
                         <form action="{{route('finalcheckSETCS40213',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-3' &&
-                                $registro->partetabla == '6:00')
+                                $registro->partetabla == '6:00' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -407,7 +410,9 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-3' &&
-                                $registro->partetabla == 'CAMBIO1')
+                                $registro->partetabla == 'CAMBIO1' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -701,7 +706,9 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-3' &&
-                                $registro->partetabla == 'CAMBIO2')
+                                $registro->partetabla == 'CAMBIO2' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

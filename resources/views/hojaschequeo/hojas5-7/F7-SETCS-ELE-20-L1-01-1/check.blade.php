@@ -117,7 +117,8 @@
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-1' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'cumple'&&
-                                $registro->mes == $datoshoja->mes)
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -405,7 +406,8 @@
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-1' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'rango' &&
-                                $registro->mes == $datoshoja->mes)
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -508,7 +510,8 @@
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-01-1-1' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
                                 $registro->tipo == 'texto' &&
-                                $registro->mes == $datoshoja->mes)
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>

@@ -69,8 +69,10 @@ class Datoshojasetcs40212Controller extends Controller
         $datoshojas->departamento = $request ->get('departamento');
         $datoshojas->pagina = $request ->get('pagina');
         $datoshojas->numeroparte = $request ->get('numeroparte');
-        $datoshojas->mes = $request ->get('mes');
-        $datoshojas->año = $request ->get('año');
+        $registros->valor1 = $request->get('valor1');
+        $registros->valor2 = $request->get('valor2');
+        $registros->mes = $request ->get('mes');
+        $registros->año = $request ->get('año');
         $datoshojas->save();
     }
     public function store(Request $request)

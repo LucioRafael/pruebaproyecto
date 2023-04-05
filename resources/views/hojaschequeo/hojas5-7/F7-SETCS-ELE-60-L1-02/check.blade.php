@@ -26,7 +26,8 @@
     </div>
     <div class="table-responsive">
         <div class="table-responsive" align="center">
-
+            @foreach ($datoshojas as $datoshoja)
+            @endforeach
             <table class="table table-success table-bordered">
                 <thead>
                     <tr>
@@ -107,7 +108,9 @@
                         <form action="{{route('finalcheckSETCS606111',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                $registro->partetabla == 'INICIO')
+                                $registro->partetabla == 'INICIO' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -400,7 +403,9 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                $registro->partetabla == 'AJUSTES')
+                                $registro->partetabla == 'AJUSTES' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -694,7 +699,9 @@
                         @foreach ($registros as $key=>$registro)                          
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                $registro->partetabla == '#1')
+                                $registro->partetabla == '#1' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
@@ -988,7 +995,9 @@
                            @foreach ($registros as $key=>$registro)                          
                                @if ($registro->turno == '1' &&
                                    $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                   $registro->partetabla == '#2')
+                                   $registro->partetabla == '#2' &&
+                                   $registro->mes == $datoshoja->mes &&
+                                   $registro->año == $datoshoja->año)
                                    <input class="form-control" type="hidden" value="{{$registro->id}}" name="registro[{{$key}}][id]">
                                    <tr>
                                        <td>{{ $registro->criterio }}</td>

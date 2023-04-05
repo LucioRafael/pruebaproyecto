@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-20-L1-03-1"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-20-L1-03-1"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -179,6 +179,27 @@
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>V2</label>
         <input type="text" name="valor2" id="valor2" class="form-control" tabindex="1" hidden value="0">
+    </div>
+    <div class="mb-3">
+        <label for="" id="txt1" class="form-label">Mes</label>
+        <select id="mes" name="mes" class="form-control" tabindex="1">
+            <option value="ENERO">ENERO</option>
+            <option value="FEBRERO">FEBRERO</option>
+            <option value="MARZO">MARZO</option>
+            <option value="ABRIL">ABRIL</option>
+            <option value="MAYO">MAYO</option>
+            <option value="JUNIO">JUNIO</option>
+            <option value="JULIO">JULIO</option>
+            <option value="AGOSTO">AGOSTO</option>
+            <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+            <option value="OCTUBRE">OCTUBRE</option>
+            <option value="NOVIEMBRE">NOVIEMBRE</option>
+            <option value="DICIEMBRE">DICIEMBRE</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Año</label>
+        <input type="text" name="año" id="año" class="form-control" tabindex="1">
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>

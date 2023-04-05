@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-20-L1-01-1-1"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-20-L1-01-1-1"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -176,15 +176,14 @@
             <option value="rango">RANGOS</option>
         </select>        
     </div>
-    <p style="color: white">Si Seleccionas "RANGOS" ingresa los valores del rango correspondientes, si no, solo
-    ignoralos</p>
+    
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">Valor1</label>
-        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1">
+        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1" value="00">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label">Valor2</label>
-        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1">
+        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1" value="00">
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Mes</label>
@@ -202,6 +201,10 @@
             <option value="NOVIEMBRE">NOVIEMBRE</option>
             <option value="DICIEMBRE">DICIEMBRE</option>
         </select>
+        <div class="mb-3">
+            <label for="" id=txt1 class="form-label">Año</label>
+            <input type="text" name="año" id="año" class="form-control" tabindex="1">
+        </div>
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
