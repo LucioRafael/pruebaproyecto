@@ -28,6 +28,8 @@
 
                 </div>
             </nav>
+            @foreach ($datoshojas as $datoshoja)
+            @endforeach
             <br>
         </div>
         <table class="table table-success table-bordered table-striped mt-4">
@@ -53,7 +55,9 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-TPM-ELE-107-L1-01-1" && $reverso->turno == "1")
+                @if ($reverso->documentoid == "F7-TPM-ELE-107-L1-01-1" && $reverso->turno == "1" &&
+                $reverso->mes == $datoshoja->mes && 
+                $reverso->año == $datoshoja->año)
                 <tr>
                     <td>{{$reverso->fechahora}}</td>
                     <td>{{$reverso->falla}}</td>
