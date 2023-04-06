@@ -174,11 +174,11 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>V1</label>
-        <input type="text" name="valor1" id="valor1" class="form-control" tabindex="1" hidden value="0">
+        <input type="text" name="valor1" id="valor1" class="form-control" tabindex="1" hidden value="00">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>V2</label>
-        <input type="text" name="valor2" id="valor2" class="form-control" tabindex="1" hidden value="0">
+        <input type="text" name="valor2" id="valor2" class="form-control" tabindex="1" hidden value="00">
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Mes</label>

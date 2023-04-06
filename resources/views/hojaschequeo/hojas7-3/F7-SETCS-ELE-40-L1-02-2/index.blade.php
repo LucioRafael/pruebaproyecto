@@ -1963,7 +1963,7 @@
         </div>
                     <a href="{{route('checkSETCS40223C2')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-40-L1-02-T3/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="F7-SETCS-ELE-40-L1-02-2T3/create" class="btn btn-success">Añadir criterio</a>
                     <a href="{{route('pdfprintSETCS40223C2')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
                     <a href="/reversoSETCS40223C2" class="btn btn-secondary">Reverso</a>                    

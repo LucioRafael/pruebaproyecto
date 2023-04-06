@@ -651,7 +651,7 @@
                                     </td>
                                     @endrole
                                 </tr>
-                            @endif)
+                            @endif
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-1' &&
                                 $registro->partetabla == 'ARRIBA' &&

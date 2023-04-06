@@ -47,8 +47,13 @@
         </select>
     </div>
     <div class="mb-3">
-        <label for="" id=txt1 class="form-label" hidden>Tipo</label>
-        <input type="text" name="tipo" id="tipo" class="form-control" tabindex="1" hidden value="cumple">
+        <label for="" id=txt1  class="form-label">tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1" value="{{$registro->tipo}}">
+            <option value="{{$registro->tipo}}">{{$registro->tipo}}</option>
+            <option value="cumple">Cumple</option>
+            <option value="rango">rango</option>
+            <option value="texto">texto</option>
+        </select>
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>V1</label>
