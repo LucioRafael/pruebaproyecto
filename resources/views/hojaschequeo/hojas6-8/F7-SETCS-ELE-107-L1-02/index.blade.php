@@ -184,7 +184,9 @@
                             @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-107-L1-02-1' &&
                                 $registro->partetabla == 'ARRIBA' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -419,7 +421,9 @@
                             @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-107-L1-02-1' &&
                                 $registro->partetabla == 'ARRIBA' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -654,7 +658,9 @@
                             @if ($registro->turno == '2' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-107-L1-02-1' &&
                                 $registro->partetabla == 'ARRIBA' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>

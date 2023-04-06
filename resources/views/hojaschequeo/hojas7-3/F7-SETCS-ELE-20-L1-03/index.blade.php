@@ -184,7 +184,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -419,7 +421,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio}}, {{$registro->valor1}}, {{$registro->valor2}}</td>
                                     <td>
@@ -654,7 +658,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-20-L1-03-1-2' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>                                        

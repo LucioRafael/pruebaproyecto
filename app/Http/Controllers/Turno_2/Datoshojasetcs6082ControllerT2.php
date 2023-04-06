@@ -113,6 +113,8 @@ class Datoshojasetcs6082Controllert2 extends Controller
         $registros->tipo = $request->get('tipo');
         $registros->valor1 = $request->get('valor1');
         $registros->valor2 = $request->get('valor2');
+        $registros->mes = $request ->get('mes');
+        $registros->año = $request ->get('año');
         $registros->save();
         return redirect ('/F7-SETCS-ELE-60-L1-08-T2');
     }

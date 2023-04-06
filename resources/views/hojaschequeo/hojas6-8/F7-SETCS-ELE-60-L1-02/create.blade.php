@@ -17,7 +17,7 @@
     <a href="../logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/F7-SETCS-ELE-60-L1-06-1-1-1"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-60-L1-06-1-1-1"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">

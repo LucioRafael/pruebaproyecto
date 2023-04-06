@@ -185,7 +185,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == 'INICIO' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -422,7 +424,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == 'INICIO' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio}}</td>
                                     <td>
@@ -659,7 +663,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == 'INICIO' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>                                        
@@ -777,7 +783,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == 'AJUSTES' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -1014,7 +1022,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == 'AJUSTES' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio}}</td>
                                     <td>
@@ -1251,7 +1261,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == 'AJUSTES' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año) 
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>                                        
@@ -1369,7 +1381,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#1' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -1606,7 +1620,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#1' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio}}</td>
                                     <td>
@@ -1843,7 +1859,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#1' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>                                        
@@ -1961,7 +1979,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#2' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -2198,7 +2218,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#2' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio}}</td>
                                     <td>
@@ -2435,7 +2457,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#2' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>                                        
@@ -2553,7 +2577,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#3' &&
-                                $registro->tipo == 'cumple')
+                                $registro->tipo == 'cumple' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -2790,7 +2816,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#3' &&
-                                $registro->tipo == 'rango')
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio}}</td>
                                     <td>
@@ -3027,7 +3055,9 @@
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-5-2' &&
                                 $registro->partetabla == '#3' &&
-                                $registro->tipo == 'texto')
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>                                        

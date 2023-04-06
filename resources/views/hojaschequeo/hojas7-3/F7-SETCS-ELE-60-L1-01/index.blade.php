@@ -110,7 +110,9 @@
                 @foreach ($registros as $registro)
                 @if ($registro->turno == '3' &&
                     $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                    $registro->partetabla == 'formato')
+                    $registro->partetabla == 'formato' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                     <tbody>                        
                         <tr>
                             <th colspan="2">Fecha:</th>
@@ -206,7 +208,9 @@
                         @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == '1-2-3')
+                        $registro->partetabla == '1-2-3' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                         <tr>
                             <th rowspan="5">1</th>
                             <th colspan="1">1</th>
@@ -252,7 +256,9 @@
                         @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == 'HE1-HE2-4')
+                        $registro->partetabla == 'HE1-HE2-4' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                         <tr>
                             <th>Hoja Extra 1</th>
                             <td colspan="1"><p>{{ $registro['d1'] }}</p></td>
@@ -298,7 +304,9 @@
                         @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == '5-6-HE3-HE4')
+                        $registro->partetabla == '5-6-HE3-HE4' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                         <tr>
                             <th>5</th>
                             <td colspan="1"><p>{{ $registro['d1'] }}</p></td>
@@ -344,7 +352,9 @@
                         @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == '7-8-9')
+                        $registro->partetabla == '7-8-9' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                         <tr>
                             <th rowspan="5">3</th>
                             <th>7</th>
@@ -390,7 +400,9 @@
                         @foreach ($registros as $registro)
                         @if ($registro->turno == '3' &&
                         $registro->documentoid == 'F7-SETCS-ELE-60-L1-01-1' &&
-                        $registro->partetabla == 'HE5-HE6')
+                        $registro->partetabla == 'HE5-HE6' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                         <tr>
                             <th>Hoja Extra 5</th>
                             <td colspan="1"><p>{{ $registro['d1'] }}</p></td>

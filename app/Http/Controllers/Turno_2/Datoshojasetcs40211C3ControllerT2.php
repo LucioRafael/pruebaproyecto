@@ -114,6 +114,8 @@ class Datoshojasetcs40211C3Controllert2 extends Controller
         $registros->tipo = $request->get('tipo');
         $registros->valor1 = $request->get('valor1');
         $registros->valor2 = $request->get('valor2');
+        $registros->mes = $request ->get('mes');
+        $registros->año = $request ->get('año');
         $registros->save();
         return redirect ('/F7-SETCS-ELE-40-L1-02-3T2');
     }

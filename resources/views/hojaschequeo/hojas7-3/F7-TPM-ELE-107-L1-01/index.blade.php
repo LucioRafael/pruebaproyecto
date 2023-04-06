@@ -183,7 +183,9 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '3' &&
                                 $registro->documentoid == 'F7-TPM-ELE-107-L1-01-1' &&
-                                $registro->partetabla == 'ARRIBA')
+                                $registro->partetabla == 'ARRIBA' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>

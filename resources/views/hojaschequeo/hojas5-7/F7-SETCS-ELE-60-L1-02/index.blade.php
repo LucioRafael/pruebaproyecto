@@ -180,7 +180,9 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                $registro->partetabla == 'INICIO')
+                                $registro->partetabla == 'INICIO' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -421,7 +423,9 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-1-1-1' &&
-                                $registro->partetabla == 'AJUSTES')
+                                $registro->partetabla == 'AJUSTES' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -662,7 +666,9 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                $registro->partetabla == '#1')
+                                $registro->partetabla == '#1' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>
@@ -903,7 +909,9 @@
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-60-L1-06-1-1-1' &&
-                                $registro->partetabla == '#2')
+                                $registro->partetabla == '#2' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
                                     <td>

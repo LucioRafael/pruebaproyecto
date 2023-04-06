@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-120-L1-01-T2"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-120-L1-01-T2"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
