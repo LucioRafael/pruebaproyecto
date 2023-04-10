@@ -18,6 +18,7 @@
         <div class="table-responsive" align="center">
             <table class="table table-success table-bordered">
                 <thead>
+                    @foreach ($datoshojas as $datoshoja)
                     @if ($datoshoja->documentoid == 'F7-SETCS-ELE-60-L1-01')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>

@@ -1657,6 +1657,17 @@ Route::get('/pdfprintSETCS606113C5',[App\Http\Controllers\Turno_3\Datoshojasetcs
 Route::get('/printindexSETCS606113C5',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC5t3::class,'printindex'])->name('printindexSETCS606113C5');
 Route::get('/printreversoSETCS606113C5',[App\Http\Controllers\Turno_3\Reversosetcs606111ControllerC5t3::class,'printreverso'])->name('printreversoSETCS606113C5');
 Route::get('/pdfReversoSETCS606113C5',[App\Http\Controllers\Turno_3\Reversosetcs606111ControllerC5t3::class,'pdfReverso'])->name('pdfReversoSETCS606113C5');
+//Rutas F7-SETCS-ELE-60-L1-06-T3
+Route::resource('F7-SETCS-ELE-60-L1-06-6T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6T3');
+Route::resource('reversoSETCS606113C6', 'App\Http\Controllers\Turno_3\Reversosetcs606111ControllerC6T3');
+Route::get('/checkSETCS606113C6',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6t3::class,'check'])->name('checkSETCS606113C6');
+Route::put('/finalcheckSETCS606113C6/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6t3::class,'finalcheck'])->name('finalcheckSETCS606113C6');
+Route::get('/edit2SETCS606113C6/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6t3::class,'edit2'])->name('edit2SETCS606113C6');
+Route::put('/update2SETCS606113C6/{id}',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6t3::class,'update2'])->name('update2SETCS606113C6');
+Route::get('/pdfprintSETCS606113C6',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6t3::class,'pdfprint'])->name('pdfprintSETCS606113C6');
+Route::get('/printindexSETCS606113C6',[App\Http\Controllers\Turno_3\Datoshojasetcs606111ControllerC6t3::class,'printindex'])->name('printindexSETCS606113C6');
+Route::get('/printreversoSETCS606113C6',[App\Http\Controllers\Turno_3\Reversosetcs606111ControllerC6t3::class,'printreverso'])->name('printreversoSETCS606113C6');
+Route::get('/pdfReversoSETCS606113C6',[App\Http\Controllers\Turno_3\Reversosetcs606111ControllerC6t3::class,'pdfReverso'])->name('pdfReversoSETCS606113C6');
 //Rutas F7-SETCS-ELE-60-L1-08-T3
 Route::resource('F7-SETCS-ELE-60-L1-08-T3', 'App\Http\Controllers\Turno_3\Datoshojasetcs6082ControllerT3');
 Route::resource('reversoSETCS6083', 'App\Http\Controllers\Turno_3\Reversosetcs6082ControllerT3');
