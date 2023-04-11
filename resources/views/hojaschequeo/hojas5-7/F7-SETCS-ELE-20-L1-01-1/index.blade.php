@@ -178,7 +178,7 @@
                     <tbody>
                         <tr>
                             <th colspan="33" class="table-secondary">
-                                <p align="center">CADA DIA (Al inicio del turno){{ $datoshoja->mes }}</p>
+                                <p align="center">CADA DIA (Al inicio del turno)</p>
                             </th>
                         </tr>
                         @foreach ($registros as $registro)

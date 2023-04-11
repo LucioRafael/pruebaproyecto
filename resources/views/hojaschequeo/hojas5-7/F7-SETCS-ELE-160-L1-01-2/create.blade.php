@@ -190,25 +190,12 @@
         <input type="number" step="0.0001" name="valor2" id="valor2" class="form-control" tabindex="1">
     </div>
     <div class="mb-3">
-        <label for="" id="txt1" class="form-label">Mes</label>
-        <select id="mes" name="mes" class="form-control" tabindex="1">
-            <option value="ENERO">ENERO</option>
-            <option value="FEBRERO">FEBRERO</option>
-            <option value="MARZO">MARZO</option>
-            <option value="ABRIL">ABRIL</option>
-            <option value="MAYO">MAYO</option>
-            <option value="JUNIO">JUNIO</option>
-            <option value="JULIO">JULIO</option>
-            <option value="AGOSTO">AGOSTO</option>
-            <option value="SEPTIEMBRE">SEPTIEMBRE</option>
-            <option value="OCTUBRE">OCTUBRE</option>
-            <option value="NOVIEMBRE">NOVIEMBRE</option>
-            <option value="DICIEMBRE">DICIEMBRE</option>
-        </select>
+        <label for="" id=txt1 class="form-label" hidden>Mes</label>
+        <input type="text" name="mes" id="mes" class="form-control" tabindex="1" hidden value="ABRIL">
     </div>
     <div class="mb-3">
-        <label for="" id=txt1 class="form-label">Año</label>
-        <input type="text" name="año" id="año" class="form-control" tabindex="1">
+        <label for="" id=txt1 class="form-label" hidden>Año</label>
+        <input type="text" name="año" id="año" class="form-control" tabindex="1" hidden value="2023">
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
