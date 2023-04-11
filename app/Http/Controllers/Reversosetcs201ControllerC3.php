@@ -56,6 +56,8 @@ class Reversosetcs201ControllerC3 extends Controller
         $reversos->documentoid = $request->get('documentoid');
         $reversos->mes = $request->get('mes');
         $reversos->año = $request->get('año');
+        $reverso->accion = $request->get('accion');
+        $reverso->responsable = $request->get('responsable');
         $reversos->save();
         return redirect('/reversoSETCS201C3');
     }

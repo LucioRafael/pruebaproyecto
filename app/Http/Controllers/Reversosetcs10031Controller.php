@@ -56,6 +56,8 @@ class Reversosetcs10031Controller extends Controller
         $reversos->documentoid = $request->get('documentoid');
         $reversos->mes = $request->get('mes');
         $reversos->año = $request->get('año');
+        $reverso->accion = $request->get('accion');
+        $reverso->responsable = $request->get('responsable');
         $reversos->save();
         return redirect('/reversoSETCS10031');
     }

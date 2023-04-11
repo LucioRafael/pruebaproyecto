@@ -91,6 +91,8 @@ class Reversosetcs606111C5Controllert2 extends Controller
         $reverso->Cantidad = $request->get('Cantidad');
         $reverso->nombre = $request->get('nombre');
         $reverso->causa = $request->get('causa');
+        $reverso->accion = $request->get('accion');
+        $reverso->responsable = $request->get('responsable');
         $reverso->save();
         return redirect('/reversoSETCS606112C5');
     }

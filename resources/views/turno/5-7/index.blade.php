@@ -39,6 +39,11 @@
     </tbody>
 </table>
 @role('Admin')
-<a href="Turno1/create" class="btn btn-primary">Crear</a>
+<form action="{{ route('borrar-registros') }}" method="POST">
+    @csrf
+    <a href="Turno1/create" class="btn btn-primary">Crear</a>
+    <button type="submit" class="btn btn-danger">Borrar todos los registros</button>
+</form>
+
 @endrole
 @endsection

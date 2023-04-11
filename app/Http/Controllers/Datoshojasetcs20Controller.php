@@ -255,6 +255,13 @@ class Datoshojasetcs20Controller extends Controller
         $registro->delete();
         return redirect('/F7-SETCS-ELE-20-L1-01-1-1');
     }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    
     public function pdfprint()
     {
         $registros = Registro::all();
