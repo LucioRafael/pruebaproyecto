@@ -88,7 +88,7 @@
                             <th>accion</th>
                             <th>
                             @role('Admin')
-                            <a href="/edit2SETCS40221C3/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            <a href="/edit2SETCS40221C6/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
                             @endrole                                
                             </th>
                             <th colspan="30"></th>
@@ -183,7 +183,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '2' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-3' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-6' &&
                                 $registro->partetabla == '6:00' &&
                                 $registro->mes == $datoshoja->mes &&
                                 $registro->año == $datoshoja->año)
@@ -408,8 +408,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-3T2.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-40-L1-02-3T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-6T2.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-40-L1-02-6T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -426,7 +426,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '2' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-3' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-6' &&
                                 $registro->partetabla == 'CAMBIO1' &&
                                 $registro->mes == $datoshoja->mes &&
                                 $registro->año == $datoshoja->año)
@@ -651,8 +651,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-3T2.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-40-L1-02-3T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-6T2.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-40-L1-02-6T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -669,7 +669,7 @@
                         </tr>
                         @foreach ($registros as $registro)
                             @if ($registro->turno == '2' &&
-                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-3' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-40-L1-02-2-6' &&
                                 $registro->partetabla == 'CAMBIO2' &&
                                 $registro->mes == $datoshoja->mes &&
                                 $registro->año == $datoshoja->año)
@@ -894,8 +894,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-3T2.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-40-L1-02-3T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-6T2.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-40-L1-02-6T2/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
@@ -908,11 +908,11 @@
                     </tbody>
             </table>
         </div>
-                    <a href="{{route('checkSETCS40221C3')}}" class="btn btn-primary">Chequeo Diario</a>
+                    <a href="{{route('checkSETCS40221C6')}}" class="btn btn-primary">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-40-L1-02-3T2/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintSETCS40221C3')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-SETCS-ELE-40-L1-02-6T2/create" class="btn btn-success">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS40221C6')}}" class="btn btn-danger">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoSETCS40221C3" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS40221C6" class="btn btn-secondary">Reverso</a>                    
 </body>
 </html>

@@ -88,7 +88,7 @@
                             <th>accion</th>
                             <th>
                             @role('Admin')
-                            <a href="/edit2SETCS40221/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
+                            <a href="/edit2SETCS40221C4/{{$datoshoja->id}}" class="btn btn-warning">Editar</a>
                             @endrole                                
                             </th>
                             <th colspan="30"></th>
