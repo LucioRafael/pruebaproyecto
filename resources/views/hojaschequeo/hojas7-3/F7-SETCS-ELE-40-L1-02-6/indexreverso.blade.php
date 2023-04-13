@@ -22,7 +22,7 @@
                         <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
                         @endauth
-                    <a href="F7-SETCS-ELE-40-L1-02-5T3" class="btn btn-info" style="color: white">Volver</a>
+                    <a href="F7-SETCS-ELE-40-L1-02-6T3" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>
 
@@ -55,7 +55,7 @@
             </thead>
             <tbody>
                 @foreach ($reversos as $reverso)
-                @if ($reverso->documentoid == "F7-SETCS-ELE-40-L1-02-2-5" && $reverso->turno == "3" &&
+                @if ($reverso->documentoid == "F7-SETCS-ELE-40-L1-02-2-6" && $reverso->turno == "3" &&
                 $reverso->mes == $datoshoja->mes && 
                 $reverso->año == $datoshoja->año)
                 <tr>
@@ -71,8 +71,8 @@
                     <td>{{$reverso->accion}}</td>
                     <td>{{$reverso->responsable}}</td>
                     <td>
-                        <form action="{{route('reversoSETCS40223C5.destroy',$reverso->id)}}" method="POST">
-                        <a href="reversoSETCS40223C5/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                        <form action="{{route('reversoSETCS40223C6.destroy',$reverso->id)}}" method="POST">
+                        <a href="reversoSETCS40223C6/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Eliminar</button>    
@@ -83,9 +83,9 @@
                 @endforeach
             </tbody>
         </table>
-        <a href="/reversoSETCS40223C5/create" class="btn btn-primary">Añadir campo</a>
+        <a href="/reversoSETCS40223C6/create" class="btn btn-primary">Añadir campo</a>
         @role('Admin')
-        <a href="{{route('pdfReversoSETCS40223C5')}}" class="btn btn-danger">Guardar PDF</a>
+        <a href="{{route('pdfReversoSETCS40223C6')}}" class="btn btn-danger">Guardar PDF</a>
         @endrole
     </body>
 </html>

@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-SETCS-ELE-60-L1-06-6T3"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+<form action="/F7-SETCS-ELE-60-L1-06-7T3"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -160,7 +160,7 @@
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>DocumentoID</label>
-        <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1" hidden value="F7-SETCS-ELE-60-L1-06-1-6-2">
+        <input type="text" name="documentoid" id="documentoid" class="form-control" tabindex="1" hidden value="F7-SETCS-ELE-60-L1-06-1-7-2">
     </div>
     <div class="mb-3">
         <label for="" id="txt1" class="form-label">Parte</label>
@@ -200,7 +200,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-60-L1-06-6T3" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-60-L1-06-7T3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

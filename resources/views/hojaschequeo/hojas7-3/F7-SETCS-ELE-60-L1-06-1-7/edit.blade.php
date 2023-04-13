@@ -17,7 +17,7 @@
     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>
   </div>
 </nav>
-<form action="/F7-SETCS-ELE-60-L1-06-6T3/{{$registro->id}}"id="loginreg" method="POST">
+<form action="/F7-SETCS-ELE-60-L1-06-7T3/{{$registro->id}}"id="loginreg" method="POST">
     @csrf
     @method('PUT')
     <div class="container">
@@ -64,7 +64,7 @@
     @endif
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-SETCS-ELE-60-L1-06-6T3" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-SETCS-ELE-60-L1-06-7T3" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

@@ -420,8 +420,6 @@
                                     @endrole
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
@@ -659,8 +657,6 @@
                                     @endrole
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
@@ -1018,8 +1014,6 @@
                                     @endrole
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO' &&
@@ -1257,8 +1251,6 @@
                                     @endrole
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO' &&
@@ -1618,8 +1610,6 @@
                                     @endrole
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA' &&
@@ -1857,8 +1847,6 @@
                                     @endrole
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA' &&

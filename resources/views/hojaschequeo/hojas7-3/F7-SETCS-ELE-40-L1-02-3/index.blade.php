@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-SETCS-ELE-40-L1-02-T3</title>
+    <title>F7-SETCS-ELE-40-L1-02-3T3</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css')}}" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -1834,8 +1834,8 @@
                                     </td>
                                     @role('Admin')
                                     <td>
-                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-T3.destroy',$registro->id)}}" method="POST">
-                                        <a href="F7-SETCS-ELE-40-L1-02-T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        <form action="{{route('F7-SETCS-ELE-40-L1-02-3T3.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-40-L1-02-3T3/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>

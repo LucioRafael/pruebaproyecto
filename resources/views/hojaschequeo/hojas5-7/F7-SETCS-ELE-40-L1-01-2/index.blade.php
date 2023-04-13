@@ -1251,7 +1251,7 @@
                             @endif
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
-                                $registro->partetabla == 'ARRIBA' &&
+                                $registro->partetabla == 'ABAJO' &&
                                 $registro->tipo == 'texto' &&
                                 $registro->mes == $datoshoja->mes &&
                                 $registro->año == $datoshoja->año)

@@ -1,6 +1,13 @@
 @extends('diseños.diseñoturnos')
 @section('diseñomenus')
 <br>
+@role('Admin')
+<form action="{{ route('borrar-registros') }}" method="POST" >
+    @csrf
+    <button type="submit" class="btn btn-danger btn-block">Borrar todos los registros</button>
+</form>
+<br>
+@endrole
 <h1 style="text-align: center; color:white; background-color:rgb(113, 113, 255)">Lista de hojas de chequeo turno 1</h1>
 <table class="table table-success table-striped mt-4">
     <thead>
@@ -38,12 +45,6 @@
         @endforeach
     </tbody>
 </table>
-@role('Admin')
-<form action="{{ route('borrar-registros') }}" method="POST">
     @csrf
     <a href="Turno1/create" class="btn btn-primary">Crear</a>
-    <button type="submit" class="btn btn-danger">Borrar todos los registros</button>
-</form>
-
-@endrole
 @endsection

@@ -402,8 +402,6 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
                                 $registro->partetabla == 'ARRIBA' &&
@@ -508,8 +506,6 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
                                 $registro->partetabla == 'ARRIBA' &&
@@ -910,8 +906,6 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
                                 $registro->partetabla == 'ABAJO' &&
@@ -1016,8 +1010,6 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-40-L1-01-1-2' &&
                                 $registro->partetabla == 'ABAJO' &&

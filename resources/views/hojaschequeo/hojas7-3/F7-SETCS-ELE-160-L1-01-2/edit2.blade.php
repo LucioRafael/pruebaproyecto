@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="{{route('update2SETCS16013',$datoshoja->id)}}" method="POST">
+<form action="{{route('update2SETCS16013C2',$datoshoja->id)}}" method="POST">
     <div class="table table-responsive">
         <table class="table table-success table-bordered">
             <thead>
@@ -81,7 +81,7 @@
     @csrf
     @method('PUT')
     <button type="submit" class="btn btn-primary">Guardar</button>
-    <a href="/F7-SETCS-ELE-160-L1-01-T3" class="btn btn-danger">Cancelar</a>
+    <a href="/F7-SETCS-ELE-160-L1-01-2T3" class="btn btn-danger">Cancelar</a>
 </form>
 </body>
 </html>

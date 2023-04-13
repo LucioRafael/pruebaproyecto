@@ -19,7 +19,7 @@
   <p id="txtreg">Registro de Hojas de chequeo</p>
   <br><br>
   <div>
-  <a href="welcome"class="btn" id="b1" data-bs-toggle="modal" data-bs-target="#exampleModal">Inciar Sesion</a>    
+  <a href="welcome"class="btn" id="b1" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar Sesion</a>    
   </div>
   <p></p>
 </form>

@@ -401,9 +401,6 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)
-                        <form action="{{route('finalcheck',$registro->id)}}" method="POST">                            
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
@@ -508,8 +505,6 @@
                                     </td>
                                 </tr>
                             @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'AL INICIO DE TURNO' &&
@@ -910,9 +905,7 @@
                                         </select>
                                     </td>
                                 </tr>
-                            @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)                          
+                            @endif                         
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO' &&
@@ -1016,9 +1009,7 @@
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
                                     </td>
                                 </tr>
-                            @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)                          
+                            @endif                       
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'DIARIO' &&
@@ -1421,9 +1412,7 @@
                                         </select>
                                     </td>
                                 </tr>
-                            @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)                          
+                            @endif                         
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA' &&
@@ -1527,9 +1516,7 @@
                                         <input type="number" step="0.01" size='15' name="registro[{{$key}}][d31]" id="d31" tabindex="1" value="{{$registro->d31}}">
                                     </td>
                                 </tr>
-                            @endif
-                        @endforeach
-                        @foreach ($registros as $key=>$registro)                          
+                            @endif                         
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-CR-L1-01' &&
                                 $registro->partetabla == 'NOTA' &&
