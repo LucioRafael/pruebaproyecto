@@ -100,3 +100,14 @@ border-style: solid;
   background-attachment: fixed;
   background-position: center;
 }
+#miBoton {
+  padding-block: 0.5%;
+  position: fixed; 
+  bottom:1%; 
+  right: 0.5%; 
+  width: 10%;
+}
+
+#miTabla {
+  width: 100%;
+}

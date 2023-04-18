@@ -179,6 +179,7 @@
                             @if ($registro->turno == '1' &&
                                 $registro->documentoid == 'F7-SETCS-ELE-140-L1-01-1' &&
                                 $registro->partetabla == 'ARRIBA' &&
+                                $registro->tipo == 'cumple' &&
                                 $registro->mes == $datoshoja->mes &&
                                 $registro->año == $datoshoja->año)
                                 <tr>
@@ -399,6 +400,356 @@
                                         @else
                                             <p style="color: red">{{ $registro['d31'] }}</p>
                                         @endif
+                                    </td>
+                                    @role('Admin')
+                                    <td>
+                                        <form action="{{route('F7-SETCS-ELE-140-L1-01-1-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-140-L1-01-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </td>
+                                    @endrole
+                                </tr>
+                            @endif
+                            @if ($registro->turno == '1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-140-L1-01-1' &&
+                                $registro->partetabla == 'ARRIBA' &&
+                                $registro->tipo == 'rango' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
+                                <tr>
+                                    <td>{{ $registro->criterio }}</td>
+                                    <td>
+                                        @if ($registro['d1'] >= $registro->valor1 && $registro['d1'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d1'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d1'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d2'] >= $registro->valor1 && $registro['d2'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d2'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d2'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d3'] >= $registro->valor1 && $registro['d3'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d3'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d3'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d4'] >= $registro->valor1 && $registro['d4'] <= $registro->valor2)
+                                        <p style="color: green">{{ $registro['d4'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d4'] }}</p>
+                                    @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d5'] >= $registro->valor1 && $registro['d5'] <= $registro->valor2)
+                                        <p style="color: green">{{ $registro['d5'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d5'] }}</p>
+                                    @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d6'] >= $registro->valor1 && $registro['d6'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d6'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d6'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d7'] >= $registro->valor1 && $registro['d7'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d7'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d7'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d8'] >= $registro->valor1 && $registro['d8'] <= $registro->valor2)
+                                        <p style="color: green">{{ $registro['d8'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d8'] }}</p>
+                                    @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d9'] >= $registro->valor1 && $registro['d9'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d9'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d9'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d10'] >= $registro->valor1 && $registro['d10'] <= $registro->valor2)
+                                        <p style="color: green">{{ $registro['d10'] }}</p>
+                                    @else
+                                        <p style="color: red">{{ $registro['d10'] }}</p>
+                                    @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d11'] >= $registro->valor1 && $registro['d11'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d11'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d11'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d12'] >= $registro->valor1 && $registro['d12'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d12'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d12'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d13'] >= $registro->valor1 && $registro['d13'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d13'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d13'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d14'] >= $registro->valor1 && $registro['d14'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d14'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d14'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d15'] >= $registro->valor1 && $registro['d15'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d15'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d15'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d16'] >= $registro->valor1 && $registro['d16'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d16'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d16'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d17'] >= $registro->valor1 && $registro['d17'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d17'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d17'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d18'] >= $registro->valor1 && $registro['d18'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d18'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d18'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d19'] >= $registro->valor1 && $registro['d19'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d19'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d19'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d20'] >= $registro->valor1 && $registro['d20'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d20'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d20'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d21'] >= $registro->valor1 && $registro['d21'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d21'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d21'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d22'] >= $registro->valor1 && $registro['d22'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d22'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d22'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d23'] >= $registro->valor1 && $registro['d23'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d23'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d23'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d24'] >= $registro->valor1 && $registro['d24'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d24'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d24'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d25'] >= $registro->valor1 && $registro['d25'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d25'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d25'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d26'] >= $registro->valor1 && $registro['d26'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d26'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d26'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d27'] >= $registro->valor1 && $registro['d27'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d27'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d27'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d28'] >= $registro->valor1 && $registro['d28'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d28'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d28'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d29'] >= $registro->valor1 && $registro['d29'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d29'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d29'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d30'] >= $registro->valor1 && $registro['d30'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d30'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d30'] }}</p>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($registro['d31'] >= $registro->valor1 && $registro['d31'] <= $registro->valor2)
+                                            <p style="color: green">{{ $registro['d31'] }}</p>
+                                        @else
+                                            <p style="color: red">{{ $registro['d31'] }}</p>
+                                        @endif
+                                    </td>
+                                    @role('Admin')
+                                    <td>
+                                        <form action="{{route('F7-SETCS-ELE-140-L1-01-1-1.destroy',$registro->id)}}" method="POST">
+                                        <a href="F7-SETCS-ELE-140-L1-01-1-1/{{$registro->id}}/edit" class="btn btn-warning">Editar</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                        </form>
+                                    </td>
+                                    @endrole
+                                </tr>
+                            @endif
+                            @if ($registro->turno == '1' &&
+                                $registro->documentoid == 'F7-SETCS-ELE-140-L1-01-1' &&
+                                $registro->partetabla == 'ARRIBA' &&
+                                $registro->tipo == 'texto' &&
+                                $registro->mes == $datoshoja->mes &&
+                                $registro->año == $datoshoja->año)
+                                <tr>
+                                    <td>{{ $registro->criterio }}</td>
+                                    <td>
+                                        <p>{{ $registro['d1'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d2'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d3'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d4'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d5'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d6'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d7'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d8'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d9'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d10'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d11'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d12'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d13'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d14'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d15'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d16'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d17'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d18'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d19'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d20'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d21'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d22'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d23'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d24'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d25'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d26'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d27'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d28'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d29'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d30'] }}</p>
+                                    </td>
+                                    <td>
+                                        <p>{{ $registro['d31'] }}</p>
                                     </td>
                                     @role('Admin')
                                     <td>
