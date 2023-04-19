@@ -608,7 +608,7 @@
                     </tbody>
                             @csrf
                             @method('PUT')
-                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>            
+                            <button type="submit" class="btn btn-primary" id="miBoton">Guardar Cambios</button>            
                         </form>                     
             </table>
 
