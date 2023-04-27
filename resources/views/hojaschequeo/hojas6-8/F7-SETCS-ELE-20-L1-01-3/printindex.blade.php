@@ -20,7 +20,7 @@
             <thead>
                 @foreach ($datoshojas as $datoshoja)
                     @if ($datoshoja->documentoid == 'F7-SETCS-ELE-20-L1-01' &&
-                    $datoshoja->area == 'Cuarto Limpio 2')
+                    $datoshoja->area == 'Cuarto Limpio 1')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>

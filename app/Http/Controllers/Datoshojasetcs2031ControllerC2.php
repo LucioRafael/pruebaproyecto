@@ -212,7 +212,6 @@ class Datoshojasetcs2031ControllerC2 extends Controller
         $registro->tipo = $request->get('tipo');
         $registro->valor1 = $request->get('valor1');
         $registro->valor2 = $request->get('valor2');
-        $registro->mes = $request->get('mes');
         $registro->save();
         return redirect ('/F7-SETCS-ELE-20-L1-03-2');
     }

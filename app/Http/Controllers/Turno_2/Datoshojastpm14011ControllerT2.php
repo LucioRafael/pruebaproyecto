@@ -10,7 +10,7 @@ use App\Models\option;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
-class Datoshojastpm14011Controllert2 extends Controller
+class Datoshojastpm14011ControllerT2 extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -117,7 +117,7 @@ class Datoshojastpm14011Controllert2 extends Controller
         $registros->mes = $request ->get('mes');
         $registros->año = $request ->get('año');
         $registros->save();
-        return redirect ('/F7-TPM-ELE-140-L1-01-T2');
+        return redirect ('/F7-TPM-ELE-140-L1-01-1T2');
     }
 
     /**
@@ -193,7 +193,7 @@ class Datoshojastpm14011Controllert2 extends Controller
                 $registro->save();
             }
         }
-        return redirect ('/F7-TPM-ELE-140-L1-01-T2');
+        return redirect ('/F7-TPM-ELE-140-L1-01-1T2');
     }
     /**
      * Update the specified resource in storage.
@@ -213,7 +213,7 @@ class Datoshojastpm14011Controllert2 extends Controller
         $registro->valor1 = $request->get('valor1');
         $registro->valor2 = $request->get('valor2');
         $registro->save();
-        return redirect ('/F7-TPM-ELE-140-L1-01-T2');
+        return redirect ('/F7-TPM-ELE-140-L1-01-1T2');
     }
 
     public function update2(Request $request, $id)
@@ -239,7 +239,7 @@ class Datoshojastpm14011Controllert2 extends Controller
         $datoshojas->mes = $request ->get('mes');
         $datoshojas->año = $request ->get('año');
         $datoshojas->save();
-        return redirect ('/F7-TPM-ELE-140-L1-01-T2');
+        return redirect ('/F7-TPM-ELE-140-L1-01-1T2');
     }
 
     /**
@@ -252,7 +252,7 @@ class Datoshojastpm14011Controllert2 extends Controller
     {
         $registro = Registro::find($id);
         $registro->delete();
-        return redirect('/F7-TPM-ELE-140-L1-01-T2');
+        return redirect('/F7-TPM-ELE-140-L1-01-1T2');
     }
     public function pdfprint()
     {
@@ -262,7 +262,7 @@ class Datoshojastpm14011Controllert2 extends Controller
         view()-> share('registros',$registros);
         $pdf = PDF::loadView('hojaschequeo.hojas6-8.F7-TPM-ELE-140-L1-01.printindex');
         $pdf->setPaper('b3','landscape');
-        return $pdf-> download('F7-TPM-ELE-140-L1-01-T2.pdf');
+        return $pdf-> download('F7-TPM-ELE-140-L1-01-1.pdf');
     }
 }
 

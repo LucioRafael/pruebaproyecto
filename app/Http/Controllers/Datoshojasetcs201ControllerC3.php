@@ -19,11 +19,11 @@ class Datoshojasetcs201ControllerC3 extends Controller
      */
     public function index()
     {        
+        $registros = Registro::all();
         $datoshojas = Datoshoja::all();
-        $nombre_variable = 'ABRIL';
-        $registros = Registro::where('mes', '=', $nombre_variable)
-        ->get();
-        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-3.index', compact('registros'))->with('datoshojas',$datoshojas);
+        return view('hojaschequeo.hojas5-7.F7-SETCS-ELE-20-L1-01-3.index')
+        ->with('registros',$registros)
+        ->with('datoshojas',$datoshojas);
     }
     public function printindex()
     {
@@ -210,9 +210,8 @@ class Datoshojasetcs201ControllerC3 extends Controller
         $registro->documentoid = $request->get('documentoid');
         $registro->partetabla = $request->get('partetabla');
         $registro->tipo = $request->get('tipo');
-        $registro->n1 = $request->get('n1');
-        $registro->n2 = $request->get('n2');
-        $registro->mes = $request->get('mes');
+        $registro->valor1 = $request->get('valor1');
+        $registro->valor2 = $request->get('valor2');
         $registro->save();
         return redirect ('/F7-SETCS-ELE-20-L1-01-2-1C3');
     }

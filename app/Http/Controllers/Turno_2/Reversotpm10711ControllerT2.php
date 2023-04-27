@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Reverso;
 use App\Models\Datoshoja;
 use PDF;
-class Reversotpm10711Controllert2 extends Controller
+class Reversotpm10711T2ControllerT2 extends Controller
 {
                                /**
      * Display a listing of the resource.
@@ -57,7 +57,7 @@ class Reversotpm10711Controllert2 extends Controller
         $reversos->mes = $request->get('mes');
         $reversos->año = $request->get('año');
         $reversos->save();
-        return redirect('/reversoTPM10712');
+        return redirect('/reversoTPM10711T2');
     }
     /**
      * Show the form for editing the specified resource.
@@ -93,7 +93,7 @@ class Reversotpm10711Controllert2 extends Controller
         $reverso->accion = $request->get('accion');
         $reverso->responsable = $request->get('responsable');
         $reverso->save();
-        return redirect('/reversoTPM10712');
+        return redirect('/reversoTPM10711T2');
     }
 
     /**
@@ -106,7 +106,7 @@ class Reversotpm10711Controllert2 extends Controller
     {
         $reverso = Reverso::find($id);
         $reverso->delete();
-        return redirect('/reversoTPM10712');
+        return redirect('/reversoTPM10711T2');
     }
     public function pdfReverso()
     {
@@ -114,6 +114,6 @@ class Reversotpm10711Controllert2 extends Controller
         view()-> share('reversos',$reversos);
         $pdf = PDF::loadView('hojaschequeo.hojas6-8.F7-TPM-ELE-107-L1-01.printreverso');
         $pdf->setPaper('b4','landscape');
-        return $pdf-> download('Reverso-F7-TPM-ELE-107-L1-01-T3.pdf');
+        return $pdf-> download('Reverso-F7-TPM-ELE-107-L1-01-1.pdf');
     }
 }

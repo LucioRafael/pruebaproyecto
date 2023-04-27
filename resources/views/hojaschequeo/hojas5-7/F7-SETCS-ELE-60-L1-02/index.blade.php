@@ -1146,12 +1146,12 @@
                         @endforeach
                     </tbody>
             </table>
-        </div>
-                    <a href="{{route('checkSETCS606111')}}" class="btn btn-primary">Chequeo Diario</a>
+        </div><br><br>
+                    <a href="{{route('checkSETCS606111')}}" class="btn btn-primary" id="btnIndex">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-SETCS-ELE-60-L1-06-1-1-1/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintSETCS606111')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-SETCS-ELE-60-L1-06-1-1-1/create" class="btn btn-success" id="btnIndex2">Añadir criterio</a>
+                    <a href="{{route('pdfprintSETCS606111')}}" class="btn btn-danger" id="btnIndex3">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoSETCS606111" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoSETCS606111" class="btn btn-secondary" id="btnIndex4">Reverso</a>                    
 </body>
 </html>

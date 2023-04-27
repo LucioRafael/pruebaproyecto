@@ -92,22 +92,78 @@ border-style: solid;
   padding-right: 300px;
 }
 #vistas{
-  background-image: url("../images/BTN68.jfif");
+  background-image: url("../images/fondo4.jpg");
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  zoom: 0.8;
 }
 #miBoton {
-  padding-block: 0.5%;
+  padding-block: 1%;
   position: fixed; 
-  bottom:1%; 
-  right: 0.5%; 
-  width: 10%;
+  z-index: 9999;
+  bottom: 3%;
+  right: 2%;
+  left: 2%;
+  width: 96%;
+  zoom: 1.5;
 }
-
+#btnIndex2 {
+  padding-block: 1.5%;
+  position: fixed; 
+  bottom:3%; 
+  right: 10%; 
+  width: 15%;
+  zoom: 0.9;
+}
+#btnIndex3 {
+  padding-block: 1.5%;
+  position: fixed; 
+  bottom:3%; 
+  right: 35%; 
+  width: 15%;
+  zoom: 0.9;
+}
+#btnIndex4 {
+  padding-block: 1.5%;
+  position: fixed; 
+  bottom:3%; 
+  right: 55%; 
+  width: 10%;
+  zoom: 0.9;
+}
+#btnIndex {
+  padding-block: 1.5%;
+  position: fixed; 
+  bottom:3%; 
+  left: 10%; 
+  width: 15%;
+  zoom: 0.9;
+}
 #miTabla {
   width: 100%;
+}
+.table{
+  zoom: 0.8;
+}
+#nav{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.btn{
+  zoom: 1;
+}
+#txtturno{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+
+  font-family: 'Oswald', sans-serif;
+  align-items: center;
 }

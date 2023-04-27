@@ -56,7 +56,7 @@ class ReversoController002 extends Controller
         $reversos->mes = $request->get('mes');
         $reversos->año = $request->get('año');
         $reversos->save();
-        return redirect('/reversoC2');
+        return redirect('/reverso2');
     }
     /**
      * Show the form for editing the specified resource.
@@ -92,7 +92,7 @@ class ReversoController002 extends Controller
         $reverso->accion = $request->get('accion');
         $reverso->responsable = $request->get('responsable');
         $reverso->save();
-        return redirect('/reversoC2');
+        return redirect('/reverso2');
     }
 
     /**
@@ -105,14 +105,14 @@ class ReversoController002 extends Controller
     {
         $reverso = Reverso::find($id);
         $reverso->delete();
-        return redirect('/reversoC2');
+        return redirect('/reverso2');
     }
     public function pdfprintReversoF7SETCSELECRL1011()
     {
         $reversos = Reverso::all();
-        view()-> share('reversosC2',$reversos);
+        view()-> share('reversos2',$reversos);
         $pdf = PDF::loadView('hojaschequeo.hojas5-7.F7-SETCS-ELE-CR-L1-01-2.printreverso');
         $pdf->setPaper('b4','landscape');
-        return $pdf-> download('Reverso-F7-SETCS-ELE-CR-L1-01-1.pdf');
+        return $pdf-> download('Reverso-F7-SETCS-ELE-CR-L1-01-2.pdf');
     }
 }

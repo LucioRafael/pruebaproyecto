@@ -10,7 +10,7 @@
 </head>
 <body id="vistas">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light" style="position: fixed; left: 0; right: 0; top: 0; width: 100%;">
   <div class="container-fluid">
     <img src="/images/R.png" alt="" id="logoborg">
     <div>

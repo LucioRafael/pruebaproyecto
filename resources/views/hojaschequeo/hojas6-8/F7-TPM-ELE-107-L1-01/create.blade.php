@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-TPM-ELE-107-L1-01-T2</title>
+    <title>F7-TPM-ELE-107-L1-01</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet" >
 </head>
@@ -23,7 +23,7 @@
         </div>
     </div>
 </nav>
-<form action="/F7-TPM-ELE-107-L1-01-T2"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+<form action="/F7-TPM-ELE-107-L1-01-1T2"id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
     @csrf
     <div class="container">
     <div class="mb-3">
@@ -169,16 +169,22 @@
         </select>
     </div>
     <div class="mb-3">
-        <label for="" id=txt1 class="form-label" hidden>Tipo</label>
-        <input type="text" name="tipo" id="tipo" class="form-control" tabindex="1" hidden value="cumple">
+        <label for="" id="txt1" class="form-label">Tipo</label>
+        <select id="tipo" name="tipo" class="form-control" tabindex="1">
+            <option value="cumple">Cumple - No Cumple</option>
+            <option value="texto">TEXTO</option>
+            <option value="rango">RANGOS</option>
+        </select>        
+    </div>
+    <p style="color: white">Si Seleccionas "RANGOS" ingresa los valores del rango correspondientes, si no, solo
+    ignoralos</p>
+    <div class="mb-3">
+        <label for="" id=txt1 class="form-label">Valor1</label>
+        <input type="number" step="0.01" name="valor1" id="valor1" class="form-control" tabindex="1">
     </div>
     <div class="mb-3">
-        <label for="" id=txt1 class="form-label" hidden>V1</label>
-        <input type="text" name="valor1" id="valor1" class="form-control" tabindex="1" hidden value="0">
-    </div>
-    <div class="mb-3">
-        <label for="" id=txt1 class="form-label" hidden>V2</label>
-        <input type="text" name="valor2" id="valor2" class="form-control" tabindex="1" hidden value="0">
+        <label for="" id=txt1 class="form-label">Valor2</label>
+        <input type="number" step="0.01" name="valor2" id="valor2" class="form-control" tabindex="1">
     </div>
     <div class="mb-3">
         <label for="" id=txt1 class="form-label" hidden>Mes</label>
@@ -190,7 +196,7 @@
     </div>
     <div>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/F7-TPM-ELE-107-L1-01-T2" class="btn btn-danger">Cancelar</a>
+        <a href="/F7-TPM-ELE-107-L1-01-1T2" class="btn btn-danger">Cancelar</a>
     </div>
     </div>
 </form>    

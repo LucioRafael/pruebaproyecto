@@ -22,15 +22,15 @@
             <td>{{$turno3->Operacion}}</td>
             <td>{{$turno3->Numero}}</td>
             <td>
-                <form action="{{route('Turno3.destroy',$turno3->id)}}" method="POST">
+                <form action="{{route('Turno3.destroy',$turno3->id)}}" method="POST" style="zoom: 1.2">
                 @role('Admin')
-                <a href="Turno3/{{$turno3->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                <a href="Turno3/{{$turno3->id}}/edit" style="color: white" class="btn btn-info" style="zoom: 1.2">Editar</a>
                 @endrole
                 @csrf
                 @method('DELETE')
-                <a href="{{$turno3->Ruta}}" class="btn btn-success">Mostrar</a>
+                <a href="{{$turno3->Ruta}}" class="btn btn-success" style="zoom: 1.2">Mostrar</a>
                 @role('Admin')
-                <button type="submit" class="btn btn-danger">Eliminar</button>
+                <button type="submit" class="btn btn-danger" style="zoom: 1.2">Eliminar</button>
                 @endrole
                 </form>         
             </td>

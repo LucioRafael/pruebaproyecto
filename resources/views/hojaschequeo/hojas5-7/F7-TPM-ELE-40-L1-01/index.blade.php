@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F7-TPM-ELE-40-L1-01-1</title>
     <link href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css')}}" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -16,7 +16,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
     <div>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light" id="nav">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
                 <div>                    
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </nav>
-        <br>
+        <br><br><br><br>
     </div>
     <div class="table-responsive">
         <table class="table table-success table-bordered">
@@ -40,7 +40,7 @@
                     </th>
                 </tr>
                 @foreach ($datoshojas as $datoshoja)
-                    @if ($datoshoja->documentoid == 'F7-TPM-ELE-40-L1-01-1')
+                    @if ($datoshoja->documentoid == 'F7-TPM-ELE-40-L1-01')
                         <tr>
                             <th rowspan="2" colspan="3" style="text-align: end">Titulo</th>
                             <th colspan="4" style="text-align: center">{{ $datoshoja->titulo }}</th>
@@ -776,12 +776,12 @@
                  @endforeach
                     </tbody>
             </table>
-        </div>
-                    <a href="{{route('checkTPM4011')}}" class="btn btn-primary">Chequeo Diario</a>
+        </div><br><br>
+                    <a href="{{route('checkTPM4011')}}" class="btn btn-primary" id="btnIndex">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-TPM-ELE-40-L1-01-1/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintTPM4011')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-TPM-ELE-40-L1-01-1/create" class="btn btn-success" id="btnIndex2">Añadir criterio</a>
+                    <a href="{{route('pdfprintTPM4011')}}" class="btn btn-danger" id="btnIndex3">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoTPM4011" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoTPM4011" class="btn btn-secondary" id="btnIndex4">Reverso</a>                    
 </body>
 </html>

@@ -16,7 +16,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
     <div>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light" id="nav">
             <div class="container-fluid">
                 <img src="/images/R.png" alt="" id="logoborg">
                 <div>                    
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </nav>
-        <br>
+        <br><br><br><br>
     </div>
     <div class="table-responsive">
         <table class="table table-success table-bordered">
@@ -771,12 +771,12 @@
                         @endforeach
                     </tbody>
             </table>
-        </div>
-                    <a href="{{route('checkTPM10711')}}" class="btn btn-primary">Chequeo Diario</a>
+        </div><br><br>
+                    <a href="{{route('checkTPM10711')}}" class="btn btn-primary" id="btnIndex">Chequeo Diario</a>
                     @role('Admin')
-                    <a href="F7-TPM-ELE-107-L1-01-1/create" class="btn btn-success">Añadir criterio</a>
-                    <a href="{{route('pdfprintTPM10711')}}" class="btn btn-danger">Guardar PDF</a>
+                    <a href="F7-TPM-ELE-107-L1-01-1/create" class="btn btn-success" id="btnIndex2">Añadir criterio</a>
+                    <a href="{{route('pdfprintTPM10711')}}" class="btn btn-danger" id="btnIndex3">Guardar PDF</a>
                     @endrole
-                    <a href="/reversoTPM10711" class="btn btn-secondary">Reverso</a>                    
+                    <a href="/reversoTPM10711" class="btn btn-secondary" id="btnIndex4">Reverso</a>                    
 </body>
 </html>

@@ -28,7 +28,7 @@
             </div>
         </div>
     </nav>
-    <form action="/reversoTPM4012/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoTPM4011T2/{{$reverso->id}}" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         @method('PUT')
         <div class="container">
@@ -43,6 +43,7 @@
             <div class="mb-3">
                 <label for="" style="color: white" class="form-label">¿Se paro el proceso?</label>
                 <select name="proceso" id="proceso" class="form-control" tabindex="1">
+                    <option value="{{$reverso->proceso}}">{{$reverso->proceso}}</option>
                     <option value="SI">SI</option>
                     <option value="NO">NO</option>
                 </select>
@@ -94,7 +95,7 @@
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoTPM4012" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoTPM4011T2" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>

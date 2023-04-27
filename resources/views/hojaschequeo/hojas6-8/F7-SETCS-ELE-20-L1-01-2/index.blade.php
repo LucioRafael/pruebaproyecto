@@ -664,8 +664,8 @@
                                 $registro->año == $datoshoja->año)
                                 <tr>
                                     <td>{{ $registro->criterio }}</td>
-                                    <td>                                        
-                                        <p>{{ $registro['d1'] }}</p>                                                                        
+                                    <td>
+                                        <p>{{ $registro['d1'] }}</p>
                                     </td>
                                     <td>
                                         <p>{{ $registro['d2'] }}</p>

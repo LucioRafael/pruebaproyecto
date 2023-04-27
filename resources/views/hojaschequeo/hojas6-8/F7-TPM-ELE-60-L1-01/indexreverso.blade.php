@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>F7-TPM-ELE-60-L1-01-T2</title>
+        <title>F7-TPM-ELE-60-L1-01<</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link href="/css/app.css" rel="stylesheet">
@@ -22,7 +22,7 @@
                         <a href="" class="btn btn-info" style="color: white">IBM: {{auth()->user()->name ?? 
                         auth()->user()->IBM}} \ {{auth()->user()->name ?? auth()->user()->firstname}}</a>
                         @endauth
-                    <a href="F7-TPM-ELE-60-L1-01-T2" class="btn btn-info" style="color: white">Volver</a>
+                    <a href="F7-TPM-ELE-60-L1-01-1T2" class="btn btn-info" style="color: white">Volver</a>
                     <a href="/logout" class="btn" id="b3">Cerrar sesion</a>                        
                     </div>
 
@@ -71,8 +71,8 @@
                     <td>{{$reverso->accion}}</td>
                     <td>{{$reverso->responsable}}</td>
                     <td>
-                        <form action="{{route('reversoTPM6012.destroy',$reverso->id)}}" method="POST">
-                        <a href="reversoTPM6012/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
+                        <form action="{{route('reversoTPM6011T2.destroy',$reverso->id)}}" method="POST">
+                        <a href="reversoTPM6011T2/{{$reverso->id}}/edit" style="color: white" class="btn btn-info">Editar</a>
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Eliminar</button>    
@@ -83,9 +83,9 @@
                 @endforeach
             </tbody>
         </table>
-        <a href="/reversoTPM6012/create" class="btn btn-primary">Añadir campo</a>
+        <a href="/reversoTPM6011T2/create" class="btn btn-primary">Añadir campo</a>
         @role('Admin')
-        <a href="{{route('pdfReversoTPM6012')}}" class="btn btn-danger">Guardar PDF</a>
+        <a href="{{route('pdfReversoTPM6011T2')}}" class="btn btn-danger">Guardar PDF</a>
         @endrole
     </body>
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F7-TPM-ELE-60-L1-01-T2</title>
+    <title>F7-TPM-ELE-60-L1-01-1<</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
@@ -28,7 +28,7 @@
             </div>
         </div>
     </nav>
-    <form action="/reversoTPM6012" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
+    <form action="/reversoTPM6011T2" id="loginreg" style=" height: 70%; overflow:scroll;" method="POST">
         @csrf
         <div class="container">
             <div class="mb-3">
@@ -102,7 +102,7 @@
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a href="/reversoTPM6012" class="btn btn-danger">Cancelar</a>
+                <a href="/reversoTPM6011T2" class="btn btn-danger">Cancelar</a>
             </div>
         </div>
     </form>
